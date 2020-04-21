@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information. -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddToNullProjectError" xml:space="preserve">
+    <value>Невозможно добавить в проект файл "{0}", так как проект указан как null.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Дополнительный</value>
+    <comment>Project Property Page Caption</comment>
+  </data>
+  <data name="ReferenceCouldNotBeAdded" xml:space="preserve">
+    <value>Не удалось добавить ссылку на "{0}".</value>
+    <comment>ReferenceCouldNotBeAdded error message</comment>
+  </data>
+  <data name="ReferenceAlreadyExists" xml:space="preserve">
+    <value>Не удается добавить ссылку на "{0}". Ссылка на компонент "{1}" уже присутствует в данном проекте.</value>
+    <comment>ReferenceAlreadyExists error message</comment>
+  </data>
+  <data name="ReferenceWithAssemblyNameAlreadyExists" xml:space="preserve">
+    <value>Не удалось добавить ссылку на "{0}" (с именем сборки "{1}"). Ссылка на компонент "{2}" с таким именем сборки уже существует в данном проекте.</value>
+    <comment>ReferenceAlreadyExists error message</comment>
+  </data>
+  <data name="AttributeLoad" xml:space="preserve">
+    <value>Не удалось загрузить атрибут "{0}" из файла проекта "{1}".</value>
+  </data>
+  <data name="BuildAction" xml:space="preserve">
+    <value>Действие сборки</value>
+    <comment>Project Build Property Name</comment>
+  </data>
+  <data name="BuildActionDescription" xml:space="preserve">
+    <value>Роль этого файла в процессе построения и развертывания</value>
+    <comment>Project Build Property Description</comment>
+  </data>
+  <data name="BuildVerbosity" xml:space="preserve">
+    <value>Уровень детализации</value>
+  </data>
+  <data name="BuildVerbosityDescription" xml:space="preserve">
+    <value>Объем сведений, включаемых в выходные данные сборки</value>
+  </data>
+  <data name="cli1" xml:space="preserve">
+    <value>ECMA-335 CLI-совместимая инфраструктура (следует указать расположение)</value>
+    <comment>Target platform drop down option</comment>
+  </data>
+  <data name="Compile" xml:space="preserve">
+    <value>Компиляция</value>
+    <comment>Build Action - drop down option</comment>
+  </data>
+  <data name="ConfirmExtensionChange" xml:space="preserve">
+    <value>Смена расширения имени файла может помешать дальнейшей работе с ним. Изменить расширение?</value>
+  </data>
+  <data name="CannotAddFileThatIsOpenInEditor" xml:space="preserve">
+    <value>Файл с именем "{0}" уже существует и открыт в редакторе. Присвойте добавляемому элементу уникальное имя или сначала удалите существующий элемент.</value>
+  </data>
+  <data name="CanNotSaveFileNotOpeneInEditor" xml:space="preserve">
+    <value>Не удается сохранить "{0}": файл не открыт в редакторе.</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Содержимое</value>
+    <comment>Build Action - drop down option</comment>
+  </data>
+  <data name="CopyToLocal" xml:space="preserve">
+    <value>Копировать локально</value>
+    <comment>File property</comment>
+  </data>
+  <data name="CopyToLocalDescription" xml:space="preserve">
+    <value>Указывает, что ссылка будет скопирована в папку вывода.</value>
+  </data>
+  <data name="Detailed" xml:space="preserve">
+    <value>Подробные</value>
+  </data>
+  <data name="Diagnostic" xml:space="preserve">
+    <value>Диагностика</value>
+  </data>
+  <data name="DirectoryExistError" xml:space="preserve">
+    <value>Каталог с таким именем уже существует</value>
+  </data>
+  <data name="EditorViewError" xml:space="preserve">
+    <value>Обнаружена ошибка при открытии указанного представления "{0}" в редакторе "{1}"</value>
+  </data>
+  <data name="EmbeddedResource" xml:space="preserve">
+    <value>Внедренный ресурс</value>
+    <comment>Build Action - drop down option</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ErrorInvalidFileName" xml:space="preserve">
+    <value>Файлы и папки не могут:
+– быть пустыми строками; 
+– совпадать с именами, зарезервированными системой, например CON, AUX, PRN, COM1 или LPT2; 
+– содержать только "."; 
+– содержать символы / ? : &amp; \ * " &lt; &gt; | # %.</value>
+  </data>
+  <data name="ErrorInvalidProjectName" xml:space="preserve">
+    <value>Указанное имя не является допустимым именем проекта.</value>
+  </data>
+  <data name="ErrorMsBuildRegistration" xml:space="preserve">
+    <value>Путь к MSBuild не найден в реестре. Чтобы устранить эту неполадку, повторите установку.</value>
+  </data>
+  <data name="ErrorSaving" xml:space="preserve">
+    <value>Ошибка при сохранении файла</value>
+  </data>
+  <data name="Exe" xml:space="preserve">
+    <value>Консольное приложение</value>
+  </data>
+  <data name="ExpectedObjectOfType" xml:space="preserve">
+    <value>Требуется объект типа {0}.</value>
+  </data>
+  <data name="FailedToRetrieveProperties" xml:space="preserve">
+    <value>Не удается загрузить свойство msbuild {0} из файла проекта.</value>
+    <comment>The exception message thrown when getting a property from msbuild fails.</comment>
+  </data>
+  <data name="FileAlreadyExists" xml:space="preserve">
+    <value>Файл с именем "{0}" уже существует в проекте. Заменить этот файл?</value>
+  </data>
+  <data name="FileAlreadyExistsAndCannotBeRenamed" xml:space="preserve">
+    <value>Файл с именем "{0}" уже существует в проекте.</value>
+  </data>
+  <data name="FileAlreadyExistsCaption" xml:space="preserve">
+    <value>Конечный файл существует</value>
+  </data>
+  <data name="FileAlreadyInProject" xml:space="preserve">
+    <value>Файл с таким именем уже существует в проекте. Заменить этот файл?</value>
+  </data>
+  <data name="FileAlreadyInProjectCaption" xml:space="preserve">
+    <value>Конечный файл существует</value>
+  </data>
+  <data name="FileCannotBeRenamedToAnExistingFile" xml:space="preserve">
+    <value>Файл или папка с именем "{0}" уже существует в данном расположении. Выберите другое имя.</value>
+  </data>
+  <data name="FileCopyError" xml:space="preserve">
+    <value>Ошибка при копировании файла</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="FileNameCannotContainALeadingPeriod" xml:space="preserve">
+    <value>Имена файлов и папок не могут начинаться с точки.</value>
+  </data>
+  <data name="FileNameDescription" xml:space="preserve">
+    <value>Имя файла или папки</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Имя папки</value>
+  </data>
+  <data name="FolderNameDescription" xml:space="preserve">
+    <value>Имя этой папки</value>
+  </data>
+  <data name="FullPath" xml:space="preserve">
+    <value>Полный путь</value>
+  </data>
+  <data name="FullPathDescription" xml:space="preserve">
+    <value>Расположение файла</value>
+  </data>
+  <data name="ItemDoesNotExistInProjectDirectory" xml:space="preserve">
+    <value>Элемент "{0}" не существует в каталоге проекта. Возможно, он был перемещен, переименован или удален.</value>
+  </data>
+  <data name="LinkedItemsAreNotSupported" xml:space="preserve">
+    <value>Невозможно сохранить "{0}" вне каталога проекта. Связанные элементы не поддерживаются.</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Библиотека классов</value>
+  </data>
+  <data name="Minimal" xml:space="preserve">
+    <value>minimal</value>
+  </data>
+  <data name="Misc" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>NONE</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>NORMAL</value>
+  </data>
+  <data name="PasteFailed" xml:space="preserve">
+    <value>Элемент не может быть вставлен, так как недоступен или поврежден.</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>Программа</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="ProjectContainsCircularReferences" xml:space="preserve">
+    <value>Невозможно добавить ссылку на библиотеку "{0}". Добавление этого проекта в виде ссылки может образовать циклическую зависимость. </value>
+  </data>
+  <data name="ProjectFile" xml:space="preserve">
+    <value>Файл проекта</value>
+  </data>
+  <data name="ProjectFileDescription" xml:space="preserve">
+    <value>Имя файла, содержащего сведения о сборке и конфигурации, а также другую информацию о проекте.</value>
+  </data>
+  <data name="ProjectFolder" xml:space="preserve">
+    <value>Папка проекта</value>
+  </data>
+  <data name="ProjectFolderDescription" xml:space="preserve">
+    <value>Абсолютный путь к расположению проекта.</value>
+  </data>
+  <data name="Quiet" xml:space="preserve">
+    <value>Тихий</value>
+  </data>
+  <data name="RefName" xml:space="preserve">
+    <value>(Имя)</value>
+  </data>
+  <data name="ReferencesNodeName" xml:space="preserve">
+    <value>Ссылки</value>
+  </data>
+  <data name="RefNameDescription" xml:space="preserve">
+    <value>Отобразить имя ссылки</value>
+  </data>
+  <data name="RenameFolder" xml:space="preserve">
+    <value>Не удалось переименовать каталог. {0}</value>
+  </data>
+  <data name="RTL" xml:space="preserve">
+    <value>RTL_False</value>
+  </data>
+  <data name="SaveCaption" xml:space="preserve">
+    <value>Сохранить?</value>
+  </data>
+  <data name="SaveModifiedDocuments" xml:space="preserve">
+    <value>Сохранить измененные документы?</value>
+  </data>
+  <data name="SaveOfProjectFileOutsideCurrentDirectory" xml:space="preserve">
+    <value>Файл проекта можно сохранить только в его папку "{0}".</value>
+  </data>
+  <data name="StandardEditorViewError" xml:space="preserve">
+    <value>Обнаружена ошибка при открытии указанного представления "{0}" в стандартном редакторе.</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL-адрес</value>
+  </data>
+  <data name="UseOfDeletedItemError" xml:space="preserve">
+    <value>Этот элемент удален или не существует и поэтому недоступен.</value>
+  </data>
+  <data name="v1" xml:space="preserve">
+    <value>Microsoft .Net Framework, версия 1.0</value>
+  </data>
+  <data name="v11" xml:space="preserve">
+    <value>Microsoft .Net Framework, версия 1.1</value>
+  </data>
+  <data name="v2" xml:space="preserve">
+    <value>Microsoft .Net Framework, версия 2.0</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="WinExe" xml:space="preserve">
+    <value>Приложение Windows</value>
+  </data>
+  <data name="InvalidAutomationObject" xml:space="preserve">
+    <value>Недопустимый объект автоматизации.</value>
+  </data>
+  <data name="CancelQueryEdit" xml:space="preserve">
+    <value>Выполнение данной команды невозможно, поскольку изменение файла "{0}", который необходимо изменить, невозможно. Если этот файл находится в системе управления версиями, его можно извлечь; если файл доступен на диске только для чтения, может потребоваться изменение его атрибутов.</value>
+    <comment>MsgBox</comment>
+  </data>
+  <data name="ParameterMustBeAValidGuid" xml:space="preserve">
+    <value>Значение параметра должно быть допустимым идентификатором GUID.</value>
+    <comment>Error message in the ArgumentException for a  parameter that is not a valid guid.</comment>
+  </data>
+  <data name="InvalidLoggerType" xml:space="preserve">
+    <value>Недопустимый тип средства ведения журнала\nОжидается: {0}\nПолучено: {1}</value>
+    <comment>Error message thrown for when an  invalid logger type is set.</comment>
+  </data>
+  <data name="InvalidParameter" xml:space="preserve">
+    <value>InvalidParameter</value>
+    <comment>Generic error message for invalid parameters.</comment>
+  </data>
+  <data name="ParameterCannotBeNullOrEmpty" xml:space="preserve">
+    <value>ParameterCannotBeNullOrEmpty</value>
+    <comment>Error message for string parameters that cannot be null or empty.</comment>
+  </data>
+  <data name="ParameterMustBeAValidItemId" xml:space="preserve">
+    <value>Значение параметра должно быть допустимым идентификатором элемента.</value>
+    <comment>Error message thrown when an invalid item id is retrieved.</comment>
+  </data>
+  <data name="FileProperties" xml:space="preserve">
+    <value>Свойства файла</value>
+  </data>
+  <data name="FolderProperties" xml:space="preserve">
+    <value>Свойства папки</value>
+  </data>
+  <data name="ProjectProperties" xml:space="preserve">
+    <value>Свойства проекта</value>
+  </data>
+  <data name="ReferenceProperties" xml:space="preserve">
+    <value>Свойства ссылки</value>
+  </data>
+  <data name="FileOrFolderAlreadyExists" xml:space="preserve">
+    <value>Файл или папка с именем "{0}" уже существует в данном расположении. Выберите другое имя.</value>
+  </data>
+  <data name="FolderCannotBeRenamed" xml:space="preserve">
+    <value>Эту папку невозможно переименовать в "{0}", так как она уже существует на диске.\n\nВ существующие папки можно переименовать только пустые папки. Эта папка содержит файлы на диске.</value>
+  </data>
+  <data name="BuildCaption" xml:space="preserve">
+    <value>Сборка</value>
+  </data>
+  <data name="OutputPath" xml:space="preserve">
+    <value>Путь для создаваемых файлов</value>
+  </data>
+  <data name="OutputPathDescription" xml:space="preserve">
+    <value>Путь к основному выходному файлу</value>
+  </data>
+  <data name="PathTooLong" xml:space="preserve">
+    <value>Длина полного пути к файлу "{0}" превышает максимальное количество символов, разрешенное в файловой системе.</value>
+  </data>
+  <data name="CustomTool" xml:space="preserve">
+    <value>Пользовательский инструмент</value>
+  </data>
+  <data name="CustomToolDescription" xml:space="preserve">
+    <value>Указывает инструмент, который преобразует файл во время разработки и помещает выходные данные этого преобразования в другой файл. Например, файл набора данных (XSD) поставляется с пользовательским инструментом по умолчанию.</value>
+  </data>
+  <data name="CustomToolNamespace" xml:space="preserve">
+    <value>Пространство имен пользовательского инструмента</value>
+  </data>
+  <data name="CustomToolNamespaceDescription" xml:space="preserve">
+    <value>Пространство имен, в которое помещаются выходные данные пользовательского инструмента.</value>
+  </data>
+  <data name="OutputBuilt" xml:space="preserve">
+    <value>Основные выходные файлы</value>
+  </data>
+  <data name="OutputContentFiles" xml:space="preserve">
+    <value>Файлы содержимого</value>
+  </data>
+  <data name="OutputDocumentation" xml:space="preserve">
+    <value>Файлы документации</value>
+  </data>
+  <data name="OutputLocalizedResourceDlls" xml:space="preserve">
+    <value>Локализованные ресурсы</value>
+  </data>
+  <data name="OutputSourceFiles" xml:space="preserve">
+    <value>Исходные файлы</value>
+  </data>
+  <data name="OutputSymbols" xml:space="preserve">
+    <value>Отладочные символы</value>
+  </data>
+  <data name="OutputXmlSerializer" xml:space="preserve">
+    <value>Сборки XML-сериализации</value>
+  </data>
+  <data name="OutputBuiltDescription" xml:space="preserve">
+    <value>DLL- или EXE-файлы, результат сборки проекта.</value>
+  </data>
+  <data name="OutputContentFilesDescription" xml:space="preserve">
+    <value>Все файлы проекта, содержащие информацию.</value>
+  </data>
+  <data name="OutputDocumentationDescription" xml:space="preserve">
+    <value>Содержит файлы XML-документации для проекта.</value>
+  </data>
+  <data name="OutputLocalizedResourceDllsDescription" xml:space="preserve">
+    <value>Вспомогательные сборки для ресурсов каждого языка и региональных параметров.</value>
+  </data>
+  <data name="OutputSourceFilesDescription" xml:space="preserve">
+    <value>Содержит все исходные файлы проекта.</value>
+  </data>
+  <data name="OutputSymbolsDescription" xml:space="preserve">
+    <value>Файлы для отладки проекта.</value>
+  </data>
+  <data name="OutputXmlSerializerDescription" xml:space="preserve">
+    <value>Содержит сборки XML-сериализации для проекта.</value>
+  </data>
+  <data name="QueryReloadNestedProject" xml:space="preserve">
+    <value>Файл проекта "{0}" изменен вне среды разработки Visual Studio.  Перезагрузить проект?</value>
+  </data>
+  <data name="NestedProjectFailedToReload" xml:space="preserve">
+    <value>Не удалось перезагрузить вложенный проект.</value>
+  </data>
+  <data name="FileOrFolderCannotBeFound" xml:space="preserve">
+    <value>Элемент "{0}" не удается найти на диске, поскольку элемент был переименован, удален или перемещен в новое место.</value>
+  </data>
+  <data name="ErrorReferenceCouldNotBeAdded" xml:space="preserve">
+    <value>Не удалось добавить ссылку на {0}. Убедитесь в том, что файл доступен и является допустимой сборкой или COM-компонентом.</value>
+  </data>
+  <data name="DetailsImport" xml:space="preserve">
+    <value>В файле проекта "{0}" найден &lt;Import&gt; файла "{1}". Этот файл не зарегистрирован как безопасный для импорта, и может содержать опасные цели и задания.  Если файл является безопасным, он может быть зарегистрирован при помощи записи в раздел реестра {2}.</value>
+  </data>
+  <data name="DetailsUserImport" xml:space="preserve">
+    <value>В файле проекта пользователя "{0}" найден &lt;Import&gt; файла "{1}".  Весь импорт в пользовательских файлах проекта считается небезопасным.</value>
+  </data>
+  <data name="DetailsItem" xml:space="preserve">
+    <value>В файле проекта "{0}" найден один или более элементов "{1}". Обычно эти элементы не определяются в файле проекта. Они позволяют изменять способ выполнения целей и задач во время загрузки проекта, что может иметь не желательные эффекты.</value>
+  </data>
+  <data name="DetailsProperty" xml:space="preserve">
+    <value>В файле проекта "{0}" было обнаружено свойство с именем "{1}".  Обычно это свойство не определяется в файле проекта.  Его значение позволяет изменять способ выполнения целей и задач во время загрузки проекта, что может иметь не желательные эффекты.</value>
+  </data>
+  <data name="DetailsUsingTask" xml:space="preserve">
+    <value>В файле проекта "{0}" обнаружен тег "UsingTask", регистрирующий задачу "{1}".  Теги "UsingTask" в файле проекта имеют превосходство перед импортированными .TARGETS-файлами, и поэтому могут быть использованы для выполнения произвольного кода во время не изменяемого другими средствами процесса сборки.</value>
+  </data>
+  <data name="DetailsTarget" xml:space="preserve">
+    <value>В файле проекта "{0}" был обнаружен объект "цель" с именем "{1}".  Задачи в этом элементе могут содержать произвольный код, который может быть выполнен как только проект загрузится в среду разработки.</value>
+  </data>
+  <data name="DetailsItemLocation" xml:space="preserve">
+    <value>В файле проекта "{0}" найден элемент, ссылающийся на файл "{1}".  Так как это файл находится в системном каталоге, корневом каталоге или в общем сетевом каталоге, запись в данный файл может быть опасной.</value>
+  </data>
+  <data name="ProjectLocationNotTrusted" xml:space="preserve">
+    <value>Расположение проекта не является доверенным:{0}{0}{1}{0}{0}Выполнение приложения может привести к исключениям безопасности при попытке выполнить действия, требующие полного доверия.{0}{0}Нажмите кнопку "ОК", чтобы игнорировать ошибку и продолжить.</value>
+  </data>
+  <data name="BuildEventError" xml:space="preserve">
+    <value>Возникло исключение во время события BuildBegin\n{0}</value>
+  </data>
+  <data name="CopyAlways" xml:space="preserve">
+    <value>Всегда копировать</value>
+    <comment>CopyToOutputDirectory - drop down option</comment>
+  </data>
+  <data name="CopyToOutputDirectory" xml:space="preserve">
+    <value>Копировать в выходной каталог</value>
+  </data>
+  <data name="CopyToOutputDirectoryDescription" xml:space="preserve">
+    <value>Указывает, что исходный файл будет скопирован в указанный каталог</value>
+  </data>
+  <data name="CopyIfNewer" xml:space="preserve">
+    <value>Копировать более позднюю версию</value>
+    <comment>CopyToOutputDirectory - drop down option</comment>
+  </data>
+  <data name="DoNotCopy" xml:space="preserve">
+    <value>Не копировать</value>
+    <comment>CopyToOutputDirectory - drop down option</comment>
+  </data>
+  <data name="SpecificVersion" xml:space="preserve">
+    <value>Конкретная версия</value>
+  </data>
+  <data name="SpecificVersionDescription" xml:space="preserve">
+    <value>Показывает, является ли эта ссылка ссылкой на конкретную версию сборки.</value>
+  </data>
+  <data name="NoZeroImpactProjects" xml:space="preserve">
+    <value>Microsoft Visual F# не поддерживает проекты с нулевым влиянием. Чтобы создать проект F# из этого шаблона проекта, последовательно выберите в меню Visual Studio "Сервис" команды "Параметры", "Проекты и решения", "Общие", а затем установите флажок "Сохранять новые проекты в момент создания" либо укажите &lt;PromptForSaveOnCreation&gt;true&lt;/PromptForSaveOnCreation&gt; в разделе &lt;TemplateData&gt; файла .vstemplate этого шаблона, а затем повторите операцию.</value>
+  </data>
+  <data name="NoWildcardsInProject" xml:space="preserve">
+    <value>"Не удается открыть проект F# "{0}". \nЭтот проект использует подстановочные знаки в спецификации элемента: \n"{2}" для элемента типа "{1}"\n\nВ проектах F# подстановочные знаки сейчас не поддерживаются.</value>
+  </data>
+  <data name="CannotAddItemToProjectWithWildcards" xml:space="preserve">
+    <value>"Не удается добавить файл {3} в проект F# "{0}". \nЭтот проект использует подстановочные знаки в спецификации элемента: \n"{2}" для элемента типа "{1}"\n\nВ проектах F# подстановочные знаки сейчас не поддерживаются.</value>
+  </data>
+  <data name="UpgradeCannotOpenProjectFileForEdit" xml:space="preserve">
+    <value>Не удается открыть файл проекта для редактирования.</value>
+  </data>
+  <data name="UpgradeNoNeedToUpgradeAfterCheckout" xml:space="preserve">
+    <value>Файл проекта был извлечен и уже обновлен.</value>
+  </data>
+  <data name="CannotStartLibraries" xml:space="preserve">
+    <value>Проект, создающий библиотеку классов, не может быть непосредственно запущен.\n\nДля отладки данного проекта добавьте к решению проект, создающий приложение и ссылающийся на эту библиотеку, и сделайте его запускаемым.</value>
+  </data>
+  <data name="InvalidOutputPath" xml:space="preserve">
+    <value>Введенный путь не является допустимым путем вывода</value>
+  </data>
+  <data name="ProjectRefOnlyExeOrDll" xml:space="preserve">
+    <value>Невозможно задать ссылку на проект {0}. Сборка должна иметь расширение DLL или EXE для того, чтобы на нее можно было ссылаться.</value>
+  </data>
+  <data name="CannotBuildWhenBuildInProgress" xml:space="preserve">
+    <value>Не удается начать сборку, поскольку уже выполняется другая сборка.</value>
+  </data>
+  <data name="WorkingDirectoryNotExists" xml:space="preserve">
+    <value>Рабочий каталог не существует:\n'{0}'.</value>
+  </data>
+  <data name="ProjectReferencesDifferentFramework" xml:space="preserve">
+    <value>Не удается добавить ссылку на библиотеку "{0}". Этот проект предназначен для платформы ({2}), отличной от платформы текущего проекта ({1}).</value>
+  </data>
+  <data name="CannotLoadUnknownTargetFrameworkProject" xml:space="preserve">
+    <value>Проект "{0}" предназначен для "{1}"; однако на этом компьютере не установлена целевая версия платформы.</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>F#</value>
+  </data>
+  <data name="ProjectReferencesHigherVersionWarning" xml:space="preserve">
+    <value>Ссылочный проект "{0}" предназначен для более высокой версии платформы ({1}), чем текущая требуемая версия платформы ({2}) этого проекта. Это может привести к ошибкам сборки, если в каких-либо проектах из цепочки зависимостей будут использоваться типы из сборок, не принадлежащих требуемой версии платформы данного проекта.</value>
+  </data>
+  <data name="ProjectConversionNotRequired" xml:space="preserve">
+    <value>Файл проекта не нуждается в преобразовании.</value>
+  </data>
+  <data name="ConversionNotRequired" xml:space="preserve">
+    <value>Преобразование не требуется</value>
+  </data>
+  <data name="ErrorMakingProjectBackup" xml:space="preserve">
+    <value>Ошибка при создании резервной копии файла проекта: {0}</value>
+  </data>
+  <data name="ProjectBackupSuccessful" xml:space="preserve">
+    <value>Резервная копия файла проекта успешно сохранена под именем {0}</value>
+  </data>
+  <data name="BackupNameConflict" xml:space="preserve">
+    <value>Конфликт имени файла резервной копии. Файл будет переименован в: {0}</value>
+  </data>
+  <data name="ProjectContainsLinkedFile" xml:space="preserve">
+    <value>Возможны ошибки при сборке восстановленного проекта. Проект содержит скомпонованный файл: {0}</value>
+  </data>
+  <data name="ErrorMakingBackup" xml:space="preserve">
+    <value>Не удалось создать резервную копию файла под именем {0}</value>
+  </data>
+  <data name="BackupSuccessful" xml:space="preserve">
+    <value>Резервная копия файла успешно сохранена под именем {0}</value>
+  </data>
+  <data name="Identity" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
+  <data name="IdentityDescription" xml:space="preserve">
+    <value>Идентификатор безопасности сборки, на которую указывает ссылка.</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Путь</value>
+  </data>
+  <data name="PathDescription" xml:space="preserve">
+    <value>Расположение адресуемого файла.</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="CopyOf" xml:space="preserve">
+    <value>Копия {0}</value>
+  </data>
+  <data name="CopyOf2" xml:space="preserve">
+    <value>Копия ({0}) {1}</value>
+  </data>
+</root>

@@ -1,0 +1,3 @@
+..\FSStrings.resx
+Z:\fsharp\artifacts\obj\FSharp.Compiler.Private\Debug\net472\FSComp.resx
+Z:\fsharp\artifacts\obj\FSharp.Compiler.Private\Debug\net472\FSIstrings.resx

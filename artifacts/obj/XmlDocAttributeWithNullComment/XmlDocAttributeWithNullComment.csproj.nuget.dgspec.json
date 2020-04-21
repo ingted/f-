@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\fsharp\\vsintegration\\tests\\MockTypeProviders\\XmlDocAttributeWithNullComment\\XmlDocAttributeWithNullComment.csproj": {}
+  },
+  "projects": {
+    "E:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+      "version": "4.7.0-dev",
+      "restore": {
+        "projectUniqueName": "E:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj",
+        "projectName": "FSharp.Core",
+        "projectPath": "E:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages",
+        "outputPath": "E:\\fsharp\\artifacts\\obj\\FSharp.Core\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "E:\\fsharp\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/interactive-window/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-master-nightly/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
+          "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
+          "https://myget.org/F/vs-devcore/api/v3/index.json": {},
+          "https://myget.org/F/vs-editor/api/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vs-impl/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vssdk/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {},
+          "https://www.myget.org/F/fsharp-daily/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU5105"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-preview.2, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.SourceLink.Vsts.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "System.Linq.Queryable": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "System.Net.Requests": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "System.Threading.Tasks.Parallel": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "XliffTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta.19252.1, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "E:\\fsharp\\.dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-preview.2, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.SourceLink.Vsts.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "System.Linq.Queryable": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "System.Net.Requests": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "System.Threading.Tasks.Parallel": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "XliffTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta.19252.1, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "E:\\fsharp\\.dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\fsharp\\vsintegration\\tests\\MockTypeProviders\\XmlDocAttributeWithNullComment\\XmlDocAttributeWithNullComment.csproj": {
+      "version": "4.7.0-dev",
+      "restore": {
+        "projectUniqueName": "E:\\fsharp\\vsintegration\\tests\\MockTypeProviders\\XmlDocAttributeWithNullComment\\XmlDocAttributeWithNullComment.csproj",
+        "projectName": "XmlDocAttributeWithNullComment",
+        "projectPath": "E:\\fsharp\\vsintegration\\tests\\MockTypeProviders\\XmlDocAttributeWithNullComment\\XmlDocAttributeWithNullComment.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages",
+        "outputPath": "E:\\fsharp\\artifacts\\obj\\XmlDocAttributeWithNullComment\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\fsharp\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/interactive-window/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-master-nightly/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
+          "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
+          "https://myget.org/F/vs-devcore/api/v3/index.json": {},
+          "https://myget.org/F/vs-editor/api/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vs-impl/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vssdk/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {},
+          "https://www.myget.org/F/fsharp-daily/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "E:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+                "projectPath": "E:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU5105"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-preview.2, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.Vsts.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true
+            },
+            "XliffTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta.19252.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "E:\\fsharp\\.dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

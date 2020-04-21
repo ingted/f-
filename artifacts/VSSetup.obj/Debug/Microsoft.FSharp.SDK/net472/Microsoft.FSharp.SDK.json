@@ -1,0 +1,22 @@
+{
+  "manifestVersion": "1.1",
+  "info": {
+    "id": "Microsoft.FSharp.SDK,version=42.42.42.4242424"
+  },
+  "packages": [
+    {
+      "id": "Microsoft.FSharp.SDK",
+      "version": "42.42.42.4242424",
+      "type": "Vsix",
+      "payloads": [
+        {
+          "fileName": "Microsoft.FSharp.SDK.vsix",
+          "size": 15452486
+        }
+      ],
+      "installSizes": {
+        "targetDrive": 61353593
+      }
+    }
+  ]
+}

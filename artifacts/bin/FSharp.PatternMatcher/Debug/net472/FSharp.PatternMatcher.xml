@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSharp.PatternMatcher</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.CodeAnalysis.ArrayBuilder`1.ToImmutable">
+            <summary>
+            Realizes the array.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.ArrayBuilder`1.SetItem(System.Int32,`0)">
+            <summary>
+            Write <paramref name="value"/> to slot <paramref name="index"/>. 
+            Fills in unallocated slots preceding the <paramref name="index"/>, if any.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.ArrayBuilder`1.ToImmutableOrNull">
+            <summary>
+            Realizes the array.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.ArrayBuilder`1.ToDowncastedImmutable``1">
+            <summary>
+            Realizes the array, downcasting each element to a derived type.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.ArrayBuilder`1.ToImmutableAndFree">
+            <summary>
+            Realizes the array and disposes the builder in one operation.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.ArrayBuilder`1.Enumerator">
+            <summary>
+            struct enumerator used in foreach.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.ToLower(System.Char)">
+            <summary>
+            ToLower implements the Unicode lowercase mapping
+            as described in ftp://ftp.unicode.org/Public/UNIDATA/UnicodeData.txt.
+            VB uses these mappings for case-insensitive comparison.
+            </summary>
+            <param name="c"></param>
+            <returns>If <paramref name="c"/> is upper case, then this returns its Unicode lower case equivalent. Otherwise, <paramref name="c"/> is returned unmodified.</returns>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.OneToOneUnicodeComparer">
+            <summary>
+            This class seeks to perform the lowercase Unicode case mapping.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.s_comparer">
+            <summary>
+            Returns a StringComparer that compares strings according the VB identifier comparison rules.
+            </summary>
+        </member>
+        <member name="P:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.Comparer">
+            <summary>
+            Returns a StringComparer that compares strings according the VB identifier comparison rules.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.Equals(System.String,System.String)">
+            <summary>
+            Determines if two VB identifiers are equal according to the VB identifier comparison rules.
+            </summary>
+            <param name="left">First identifier to compare</param>
+            <param name="right">Second identifier to compare</param>
+            <returns>true if the identifiers should be considered the same.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.EndsWith(System.String,System.String)">
+            <summary>
+            Determines if the string 'value' end with string 'possibleEnd'.
+            </summary>
+            <param name="value"></param>
+            <param name="possibleEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.StartsWith(System.String,System.String)">
+            <summary>
+            Determines if the string 'value' starts with string 'possibleStart'.
+            </summary>
+            <param name="value"></param>
+            <param name="possibleStart"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.Compare(System.String,System.String)">
+            <summary>
+            Compares two VB identifiers according to the VB identifier comparison rules.
+            </summary>
+            <param name="left">First identifier to compare</param>
+            <param name="right">Second identifier to compare</param>
+            <returns>-1 if <paramref name="left"/> &lt; <paramref name="right"/>, 1 if <paramref name="left"/> &gt; <paramref name="right"/>, 0 if they are equal.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.GetHashCode(System.String)">
+            <summary>
+            Gets a case-insensitive hash code for VB identifiers.
+            </summary>
+            <param name="value">identifier to get the hash code for</param>
+            <returns>The hash code for the given identifier</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.ToLower(System.String)">
+            <summary>
+            Convert a string to lower case per Unicode
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Utilities.CaseInsensitiveComparison.ToLower(System.Text.StringBuilder)">
+            <summary>
+            In-place convert string in StringBuilder to lower case per Unicode rules
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.IObjectWritable">
+            <summary>
+            Objects that implement this interface know how to write their contents to an <see cref="T:Microsoft.CodeAnalysis.ObjectWriter"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection"/> that is
+            empty.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.#ctor(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection"/> that contains the specified span.
+            </summary>
+            <param name="span">TextSpan contained by the span set.</param>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.#ctor(System.Collections.Generic.IEnumerable{Roslyn.Utilities.TextSpan})">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection"/> that contains the specified list of spans.
+            </summary>
+            <param name="spans">The spans to be added.</param>
+            <remarks>
+            <para>The list of spans will be sorted and normalized (overlapping and adjoining spans will be combined).</para>
+            <para>This constructor runs in O(N log N) time, where N = spans.Count.</para></remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="spans"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.Union(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection,Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Finds the union of two span sets.
+            </summary>
+            <param name="left">
+            The first span set.
+            </param>
+            <param name="right">
+            The second span set.
+            </param>
+            <returns>
+            The new span set that corresponds to the union of <paramref name="left"/> and <paramref name="right"/>.
+            </returns>
+            <remarks>This operator runs in O(N+M) time where N = left.Count, M = right.Count.</remarks>
+            <exception cref="T:System.ArgumentNullException">Either <paramref name="left"/> or <paramref name="right"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.Overlap(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection,Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Finds the overlap of two span sets.
+            </summary>
+            <param name="left">The first span set.</param>
+            <param name="right">The second span set.</param>
+            <returns>The new span set that corresponds to the overlap of <paramref name="left"/> and <paramref name="right"/>.</returns>
+            <remarks>This operator runs in O(N+M) time where N = left.Count, M = right.Count.</remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.Intersection(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection,Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Finds the intersection of two span sets.
+            </summary>
+            <param name="left">The first span set.</param>
+            <param name="right">The second span set.</param>
+            <returns>The new span set that corresponds to the intersection of <paramref name="left"/> and <paramref name="right"/>.</returns>
+            <remarks>This operator runs in O(N+M) time where N = left.Count, M = right.Count.</remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="left"/> is null.</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="right"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.Difference(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection,Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Finds the difference between two sets. The difference is defined as everything in the first span set that is not in the second span set.
+            </summary>
+            <param name="left">The first span set.</param>
+            <param name="right">The second span set.</param>
+            <returns>The new span set that corresponds to the difference between <paramref name="left"/> and <paramref name="right"/>.</returns>
+            <remarks>
+            Empty spans in the second set do not affect the first set at all. This method returns empty spans in the first set that are not contained by any set in
+            the second set.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="left"/> is null.</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="right"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.op_Equality(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection,Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Determines whether two span sets are the same. 
+            </summary>
+            <param name="left">The first set.</param>
+            <param name="right">The second set.</param>
+            <returns><c>true</c> if the two sets are equivalent, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.op_Inequality(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection,Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Determines whether two span sets are not the same.
+            </summary>
+            <param name="left">The first set.</param>
+            <param name="right">The second set.</param>
+            <returns><c>true</c> if the two sets are not equivalent, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.OverlapsWith(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Determines whether this span set overlaps with another span set.
+            </summary>
+            <param name="set">The span set to test.</param>
+            <returns><c>true</c> if the span sets overlap, otherwise <c>false</c>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="set"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.OverlapsWith(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines whether this span set overlaps with another span.
+            </summary>
+            <param name="span">The span to test.</param>
+            <returns><c>true</c> if this span set overlaps with the given span, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.IntersectsWith(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection)">
+            <summary>
+            Determines whether this span set intersects with another span set.
+            </summary>
+            <param name="set">Set to test.</param>
+            <returns><c>true</c> if the span sets intersect, otherwise <c>false</c>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="set"/> is null.</exception>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.IntersectsWith(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines whether this span set intersects with another span.
+            </summary>
+            <returns><c>true</c> if this span set intersects with the given span, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.GetHashCode">
+            <summary>
+            Gets a unique hash code for the span set.
+            </summary>
+            <returns>A 32-bit hash code associated with the set.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.Equals(System.Object)">
+            <summary>
+            Determines whether this span set is the same as another object.
+            </summary>
+            <param name="obj">The object to test.</param>
+            <returns><c>true</c> if the two objects are equal, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.ToString">
+            <summary>
+            Provides a string representation of the set.
+            </summary>
+            <returns>The string representation of the set.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.#ctor(Microsoft.CodeAnalysis.Shared.NormalizedTextSpanCollection.OrderedSpanList)">
+            <summary>
+            Private constructor for use when the span list is already normalized.
+            </summary>
+            <param name="normalizedSpans">An already normalized span list.</param>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.Shared.Utilities.StringBreaks">
+            <summary>
+            Values returned from <see cref="T:Microsoft.CodeAnalysis.Shared.Utilities.StringBreaker"/> routines.
+            Optimized for short strings with a handful of spans.
+            Each span is encoded in two bitfields 'gap' and 'length' and these
+            bitfields are stored in a 32-bit bitmap.
+            Falls back to a <see cref="T:System.Collections.Generic.List`1"/> if the encoding won't work.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.Utilities.StringBreaker.BreakIntoCharacterParts(System.String)">
+            <summary>
+            Breaks an identifier string into constituent parts.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.Shared.Utilities.StringBreaker.BreakIntoWordParts(System.String)">
+            <summary>
+            Breaks an identifier string into constituent parts.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.ObjectWriter">
+            <summary>
+            An abstraction of a stream of values that can be written to.
+            </summary>
+        </member>
+        <member name="P:Microsoft.CodeAnalysis.PatternMatching.PatternMatch.CamelCaseWeight">
+            <summary>
+            The weight of a CamelCase match. A higher number indicates a more accurate match.
+            </summary>
+        </member>
+        <member name="P:Microsoft.CodeAnalysis.PatternMatching.PatternMatch.IsCaseSensitive">
+            <summary>
+            True if this was a case sensitive match.
+            </summary>
+        </member>
+        <member name="P:Microsoft.CodeAnalysis.PatternMatching.PatternMatch.Kind">
+            <summary>
+            The type of match that occurred.
+            </summary>
+        </member>
+        <member name="P:Microsoft.CodeAnalysis.PatternMatching.PatternMatch.MatchedSpans">
+            <summary>
+            The spans in the original text that were matched.  Only returned if the 
+            pattern matcher is asked to collect these spans.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher">
+            <summary>
+            The pattern matcher is thread-safe.  However, it maintains an internal cache of
+            information as it is used.  Therefore, you should not keep it around forever and should get
+            and release the matcher appropriately once you no longer need it.
+            Also, while the pattern matcher is culture aware, it uses the culture specified in the
+            constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Construct a new PatternMatcher using the calling thread's culture for string searching and comparison.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.#ctor(System.String,System.Globalization.CultureInfo,System.Boolean,System.Boolean)">
+            <summary>
+            Construct a new PatternMatcher using the specified culture.
+            </summary>
+            <param name="pattern">The pattern to make the pattern matcher for.</param>
+            <param name="culture">The culture to use for string searching and comparison.</param>
+            <param name="verbatimIdentifierPrefixIsWordCharacter">Whether to consider "@" as a word character</param>
+            <param name="allowFuzzyMatching">Whether or not close matches should count as matches.</param>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.GetMatches(System.String,System.Boolean)">
+            <summary>
+            Determines if a given candidate string matches under a multiple word query text, as you
+            would find in features like Navigate To.
+            </summary>
+            <param name="candidate">The word being tested.</param>
+            <param name="includeMatchSpans">Whether or not the matched spans should be included with results</param>
+            <returns>If this was a match, a set of match types that occurred while matching the
+            patterns. If it was not a match, it returns null.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.GetMatches(System.String,System.String,System.Boolean)">
+            <summary>
+            Matches a pattern against a candidate, and an optional dotted container for the 
+            candidate. If the container is provided, and the pattern itself contains dots, then
+            the pattern will be tested against the candidate and container.  Specifically,
+            the part of the pattern after the last dot will be tested against the candidate. If
+            a match occurs there, then the remaining dot-separated portions of the pattern will
+            be tested against every successive portion of the container from right to left.
+            
+            i.e. if you have a pattern of "Con.WL" and the candidate is "WriteLine" with a 
+            dotted container of "System.Console", then "WL" will be tested against "WriteLine".
+            With a match found there, "Con" will then be tested against "Console".
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.GetFirstMatch(System.String,System.Boolean)">
+            <summary>
+            Determines if a given candidate string matches under a multiple word query text, as you
+            would find in features like Navigate To.
+            </summary>
+            <remarks>
+            PERF: This is slightly faster and uses less memory than <see cref="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.GetMatches(System.String,System.Boolean)"/>
+            so, unless you need to know the full set of matches, use this version.
+            </remarks>
+            <param name="candidate">The word being tested.</param>
+            <param name="inludeMatchSpans">Whether or not the matched spans should be included with results</param>
+            <returns>If this was a match, the first element of the set of match types that occurred while matching the
+            patterns. If it was not a match, it returns null.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.MatchSegment(System.String,System.Boolean,Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.Segment,System.Boolean,System.Boolean,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.PatternMatching.PatternMatch}@)">
+            <summary>
+            Internal helper for MatchPatternInternal
+            </summary>
+            <remarks>
+            PERF: Designed to minimize allocations in common cases.
+            If there's no match, then null is returned.
+            If there's a single match, or the caller only wants the first match, then it is returned (as a Nullable)
+            If there are multiple matches, and the caller wants them all, then a List is allocated.
+            </remarks>
+            <param name="candidate">The word being tested.</param>
+            <param name="segment">The segment of the pattern to check against the candidate.</param>
+            <param name="wantAllMatches">Does the caller want all matches or just the first?</param>
+            <param name="fuzzyMatch">If a fuzzy match should be performed</param>
+            <param name="allMatches">If <paramref name="wantAllMatches"/> is true, and there's more than one match, then the list of all matches.</param>
+            <param name="includeMatchSpans">Whether or not the matched spans should be included with results</param>
+            <returns>If there's only one match, then the return value is that match. Otherwise it is null.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.PartStartsWith(System.String,Roslyn.Utilities.TextSpan,System.String,Roslyn.Utilities.TextSpan,System.Globalization.CompareOptions)">
+            <summary>
+            Do the two 'parts' match? i.e. Does the candidate part start with the pattern part?
+            </summary>
+            <param name="candidate">The candidate text</param>
+            <param name="candidatePart">The span within the <paramref name="candidate"/> text</param>
+            <param name="pattern">The pattern text</param>
+            <param name="patternPart">The span within the <paramref name="pattern"/> text</param>
+            <param name="compareOptions">Options for doing the comparison (case sensitive or not)</param>
+            <returns>True if the span identified by <paramref name="candidatePart"/> within <paramref name="candidate"/> starts with
+            the span identified by <paramref name="patternPart"/> within <paramref name="pattern"/>.</returns>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.PartStartsWith(System.String,Roslyn.Utilities.TextSpan,System.String,System.Globalization.CompareOptions)">
+            <summary>
+            Does the given part start with the given pattern?
+            </summary>
+            <param name="candidate">The candidate text</param>
+            <param name="candidatePart">The span within the <paramref name="candidate"/> text</param>
+            <param name="pattern">The pattern text</param>
+            <param name="compareOptions">Options for doing the comparison (case sensitive or not)</param>
+            <returns>True if the span identified by <paramref name="candidatePart"/> within <paramref name="candidate"/> starts with <paramref name="pattern"/></returns>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.Segment">
+            <summary>
+            First we break up the pattern given by dots.  Each portion of the pattern between the
+            dots is a 'Segment'.  The 'Segment' contains information about the entire section of 
+            text between the dots, as well as information about any individual 'Words' that we 
+            can break the segment into.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.TextChunk">
+            <summary>
+            Information about a chunk of text from the pattern.  The chunk is a piece of text, with 
+            cached information about the character spans within in.  Character spans separate out
+            capitalized runs and lowercase runs.  i.e. if you have AAbb, then there will be two 
+            character spans, one for AA and one for BB.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.TextChunk.CharacterSpans">
+            <summary>
+            Character spans separate out
+            capitalized runs and lowercase runs.  i.e. if you have AAbb, then there will be two 
+            character spans, one for AA and one for BB.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.PatternMatching.PatternMatches">
+            <summary>
+            Pattern matching results returned when calling <see cref="M:Microsoft.CodeAnalysis.PatternMatching.PatternMatcher.GetMatches(System.String,System.String)"/>
+            Specifically, this type individually provides the matches produced when matching against the
+            'candidate' text and the 'container' text.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.PatternMatching.PatternMatchKind">
+            <summary>
+            Note(cyrusn): this enum is ordered from strongest match type to weakest match type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.PatternMatching.PatternMatchKind.Exact">
+            <summary>
+            The candidate string matched the pattern exactly.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.PatternMatching.PatternMatchKind.Prefix">
+            <summary>
+            The pattern was a prefix of the candidate string.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.PatternMatching.PatternMatchKind.Substring">
+            <summary>
+            The pattern was a substring of the candidate string, but in a way that wasn't a CamelCase match.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.PatternMatching.PatternMatchKind.CamelCase">
+            <summary>
+            The pattern matched the CamelCased candidate string.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.PatternMatching.PatternMatchKind.Fuzzy">
+            <summary>
+            The pattern matches the candidate in a fuzzy manner.  Fuzzy matching allows for 
+            misspellings, missing words, etc.
+            </summary>
+        </member>
+        <member name="T:Microsoft.CodeAnalysis.VersionStamp">
+            <summary>
+            VersionStamp should be only used to compare versions returned by same API.
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.VersionStamp.s_globalVersion">
+            <summary>
+            global counter to avoid collision within same session. 
+            it starts with a big initial number just for a clarity in debugging
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.VersionStamp._utcLastModified">
+            <summary>
+            time stamp
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.VersionStamp._localIncrement">
+            <summary>
+            indicate whether there was a collision on same item
+            </summary>
+        </member>
+        <member name="F:Microsoft.CodeAnalysis.VersionStamp._globalIncrement">
+            <summary>
+            unique version in same session
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.Create">
+            <summary>
+            Creates a new instance of a VersionStamp.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.Create(System.DateTime)">
+            <summary>
+            Creates a new instance of a version stamp based on the specified DateTime.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion(Microsoft.CodeAnalysis.VersionStamp)">
+            <summary>
+            compare two different versions and return either one of the versions if there is no collision, otherwise, create a new version
+            that can be used later to compare versions between different items
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion">
+            <summary>
+            Gets a new VersionStamp that is guaranteed to be newer than its base one
+            this should only be used for same item to move it to newer version
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.ToString">
+            <summary>
+            Returns the serialized text form of the VersionStamp.
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.CanReusePersistedVersion(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)">
+            <summary>
+            check whether given persisted version is re-usable
+            </summary>
+        </member>
+        <member name="M:Microsoft.CodeAnalysis.VersionStamp.TestOnly_IsNewerThan(Microsoft.CodeAnalysis.VersionStamp)">
+            <summary>
+            True if this VersionStamp is newer than the specified one.
+            </summary>
+        </member>
+        <member name="T:Roslyn.Utilities.BKTree">
+             <summary>
+             NOTE: Only use if you truly need a BK-tree.  If you just want to compare words, use
+             the <see cref="T:Roslyn.Utilities.SpellChecker"/> type instead.
+            
+             An implementation of a Burkhard-Keller tree.  Introduced in:
+             
+             'Some approaches to best-match file searching.'
+             Communications of the ACM CACM
+             Volume 16 Issue 4, April 1973 
+             Pages 230-236 
+             http://dl.acm.org/citation.cfm?doid=362003.362025
+             </summary>
+        </member>
+        <member name="F:Roslyn.Utilities.BKTree.Edge.ChildNodeIndex">
+            <summary>Where the child node can be found in <see cref="F:Roslyn.Utilities.BKTree._nodes"/>.</summary>
+        </member>
+        <member name="F:Roslyn.Utilities.BKTree.Node.WordSpan">
+            <summary>
+            The string this node corresponds to.  Specifically, this span is the range of
+            <see cref="F:Roslyn.Utilities.BKTree._concatenatedLowerCaseWords"/> for that string.
+            </summary>
+        </member>
+        <member name="F:Roslyn.Utilities.BKTree.Node.EdgeCount">
+            <summary>How many child edges this node has.</summary>
+        </member>
+        <member name="F:Roslyn.Utilities.BKTree.Node.FirstEdgeIndex">
+            <summary>Where the first edge can be found in <see cref="F:Roslyn.Utilities.BKTree._edges"/>.  The edges 
+            are in the range _edges[FirstEdgeIndex, FirstEdgeIndex + EdgeCount)
+            </summary>
+        </member>
+        <member name="T:Roslyn.Utilities.EditDistance">
+            <summary>
+             NOTE: Only use if you truly need an edit distance.  If you just want to compare words, use
+             the <see cref="T:Roslyn.Utilities.SpellChecker"/> type instead.
+            
+             Implementation of the Damerau-Levenshtein edit distance algorithm from:
+             An Extension of the String-to-String Correction Problem:
+             Published in Journal of the ACM (JACM)
+             Volume 22 Issue 2, April 1975.
+            
+             Important, unlike many edit distance algorithms out there, this one implements a true metric
+             that satisfies the triangle inequality.  (Unlike the "Optimal String Alignment" or "Restricted
+             string edit distance" solutions which do not).  This means this edit distance can be used in
+             other domains that require the triangle inequality (like BKTrees).
+            
+             Specifically, this implementation satisfies the following inequality: D(x, y) + D(y, z) >= D(x, z)
+             (where D is the edit distance).
+            </summary> 
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.Combine(System.Int32,System.Int32)">
+            <summary>
+            This is how VB Anonymous Types combine hash values for fields.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.Combine``1(``0,System.Int32)">
+            <summary>
+            This is how VB Anonymous Types combine hash values for fields.
+            PERF: Do not use with enum types because that involves multiple
+            unnecessary boxing operations.  Unfortunately, we can't constrain
+            T to "non-enum", so we'll use a more restrictive constraint.
+            </summary>
+        </member>
+        <member name="F:Roslyn.Utilities.Hash.FnvOffsetBias">
+            <summary>
+            The offset bias value used in the FNV-1a algorithm
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+        </member>
+        <member name="F:Roslyn.Utilities.Hash.FnvPrime">
+            <summary>
+            The generative factor used in the FNV-1a algorithm
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.Byte[])">
+            <summary>
+            Compute the FNV-1a hash of a sequence of bytes
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="data">The sequence of bytes</param>
+            <returns>The FNV-1a hash of <paramref name="data"/></returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.Collections.Immutable.ImmutableArray{System.Byte})">
+            <summary>
+            Compute the FNV-1a hash of a sequence of bytes
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="data">The sequence of bytes</param>
+            <returns>The FNV-1a hash of <paramref name="data"/></returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.String,System.Int32,System.Int32)">
+            <summary>
+            Compute the hashcode of a sub-string using FNV-1a
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            Note: FNV-1a was developed and tuned for 8-bit sequences. We're using it here
+            for 16-bit Unicode chars on the understanding that the majority of chars will
+            fit into 8-bits and, therefore, the algorithm will retain its desirable traits
+            for generating hash codes.
+            </summary>
+            <param name="text">The input string</param>
+            <param name="start">The start index of the first character to hash</param>
+            <param name="length">The number of characters, beginning with <paramref name="start"/> to hash</param>
+            <returns>The FNV-1a hash code of the substring beginning at <paramref name="start"/> and ending after <paramref name="length"/> characters.</returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.String,System.Int32)">
+            <summary>
+            Compute the hashcode of a sub-string using FNV-1a
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="text">The input string</param>
+            <param name="start">The start index of the first character to hash</param>
+            <returns>The FNV-1a hash code of the substring beginning at <paramref name="start"/> and ending at the end of the string.</returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.String)">
+            <summary>
+            Compute the hashcode of a string using FNV-1a
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="text">The input string</param>
+            <returns>The FNV-1a hash code of <paramref name="text"/></returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.Text.StringBuilder)">
+            <summary>
+            Compute the hashcode of a string using FNV-1a
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="text">The input string</param>
+            <returns>The FNV-1a hash code of <paramref name="text"/></returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Compute the hashcode of a sub string using FNV-1a
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="text">The input string as a char array</param>
+            <param name="start">The start index of the first character to hash</param>
+            <param name="length">The number of characters, beginning with <paramref name="start"/> to hash</param>
+            <returns>The FNV-1a hash code of the substring beginning at <paramref name="start"/> and ending after <paramref name="length"/> characters.</returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.GetFNVHashCode(System.Char)">
+            <summary>
+            Compute the hashcode of a single character using the FNV-1a algorithm
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            Note: In general, this isn't any more useful than "char.GetHashCode". However,
+            it may be needed if you need to generate the same hash code as a string or
+            substring with just a single character.
+            </summary>
+            <param name="ch">The character to hash</param>
+            <returns>The FNV-1a hash code of the character.</returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.CombineFNVHash(System.Int32,System.String)">
+            <summary>
+            Combine a string with an existing FNV-1a hash code
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="hashCode">The accumulated hash code</param>
+            <param name="text">The string to combine</param>
+            <returns>The result of combining <paramref name="hashCode"/> with <paramref name="text"/> using the FNV-1a algorithm</returns>
+        </member>
+        <member name="M:Roslyn.Utilities.Hash.CombineFNVHash(System.Int32,System.Char)">
+            <summary>
+            Combine a char with an existing FNV-1a hash code
+            See http://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+            </summary>
+            <param name="hashCode">The accumulated hash code</param>
+            <param name="ch">The new character to combine</param>
+            <returns>The result of combining <paramref name="hashCode"/> with <paramref name="ch"/> using the FNV-1a algorithm</returns>
+        </member>
+        <member name="T:Roslyn.Utilities.ObjectPool`1">
+            <summary>
+            Generic implementation of object pooling pattern with predefined pool size limit. The main
+            purpose is that limited number of frequently used objects can be kept in the pool for
+            further recycling.
+            
+            Notes: 
+            1) it is not the goal to keep all returned objects. Pool is not meant for storage. If there
+               is no space in the pool, extra returned objects will be dropped.
+            
+            2) it is implied that if object was obtained from a pool, the caller will return it back in
+               a relatively short time. Keeping checked out objects for long durations is ok, but 
+               reduces usefulness of pooling. Just new up your own.
+            
+            Not returning objects to the pool in not detrimental to the pool's work, but is a bad practice. 
+            Rationale: 
+               If there is no intent for reusing the object, do not use pool - just use "new". 
+            </summary>
+        </member>
+        <member name="T:Roslyn.Utilities.ObjectPool`1.Factory">
+            <remarks>
+            Not using System.Func{T} because this file is linked into the (debugger) Formatter,
+            which does not have that type (since it compiles against .NET 2.0).
+            </remarks>
+        </member>
+        <member name="M:Roslyn.Utilities.ObjectPool`1.Allocate">
+            <summary>
+            Produces an instance.
+            </summary>
+            <remarks>
+            Search strategy is a simple linear probing which is chosen for it cache-friendliness.
+            Note that Free will try to store recycled objects close to the start thus statistically 
+            reducing how far we will typically search.
+            </remarks>
+        </member>
+        <member name="M:Roslyn.Utilities.ObjectPool`1.Free(`0)">
+            <summary>
+            Returns objects to the pool.
+            </summary>
+            <remarks>
+            Search strategy is a simple linear probing which is chosen for it cache-friendliness.
+            Note that Free will try to store recycled objects close to the start thus statistically 
+            reducing how far we will typically search in Allocate.
+            </remarks>
+        </member>
+        <member name="M:Roslyn.Utilities.ObjectPool`1.ForgetTrackedObject(`0,`0)">
+            <summary>
+            Removes an object from leak tracking.  
+            
+            This is called when an object is returned to the pool.  It may also be explicitly 
+            called if an object allocated from the pool is intentionally not being returned
+            to the pool.  This can be of use with pooled arrays if the consumer wants to 
+            return a larger array to the pool than was originally allocated.
+            </summary>
+        </member>
+        <member name="T:Roslyn.Utilities.ObjectReader">
+            <summary>
+            An abstract of a stream of values that can be read from.
+            </summary>
+        </member>
+        <member name="F:Roslyn.Utilities.WordSimilarityChecker._substringsAreSimilar">
+            <summary>
+            Whether or words should be considered similar if one is contained within the other
+            (regardless of edit distance).  For example if is true then IService would be considered
+            similar to IServiceFactory despite the edit distance being quite high at 7.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.WordSimilarityChecker.AreSimilar(System.String,System.String,System.Boolean,System.Double@)">
+            <summary>
+            Returns true if 'originalText' and 'candidateText' are likely a misspelling of each other.
+            Returns false otherwise.  If it is a likely misspelling a similarityWeight is provided
+            to help rank the match.  Lower costs mean it was a better match.
+            </summary>
+        </member>
+        <member name="T:Roslyn.Utilities.TextSpan">
+            <summary>
+            Immutable abstract representation of a span of text.  For example, in an error diagnostic that reports a
+            location, it could come from a parsed string, text from a tool editor buffer, etc.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a TextSpan instance beginning with the position Start and having the Length
+            specified with <paramref name="length" />.
+            </summary>
+        </member>
+        <member name="P:Roslyn.Utilities.TextSpan.Start">
+            <summary>
+            Start point of the span.
+            </summary>
+        </member>
+        <member name="P:Roslyn.Utilities.TextSpan.End">
+            <summary>
+            End of the span.
+            </summary>
+        </member>
+        <member name="P:Roslyn.Utilities.TextSpan.Length">
+            <summary>
+            Length of the span.
+            </summary>
+        </member>
+        <member name="P:Roslyn.Utilities.TextSpan.IsEmpty">
+            <summary>
+            Determines whether or not the span is empty.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.Contains(System.Int32)">
+            <summary>
+            Determines whether the position lies within the span.
+            </summary>
+            <param name="position">
+            The position to check.
+            </param>
+            <returns>
+            <c>true</c> if the position is greater than or equal to Start and strictly less 
+            than End, otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.Contains(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines whether <paramref name="span"/> falls completely within this span.
+            </summary>
+            <param name="span">
+            The span to check.
+            </param>
+            <returns>
+            <c>true</c> if the specified span falls completely within this span, otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.OverlapsWith(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines whether <paramref name="span"/> overlaps this span. Two spans are considered to overlap 
+            if they have positions in common and neither is empty. Empty spans do not overlap with any 
+            other span.
+            </summary>
+            <param name="span">
+            The span to check.
+            </param>
+            <returns>
+            <c>true</c> if the spans overlap, otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.Overlap(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Returns the overlap with the given span, or null if there is no overlap.
+            </summary>
+            <param name="span">
+            The span to check.
+            </param>
+            <returns>
+            The overlap of the spans, or null if the overlap is empty.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.IntersectsWith(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines whether <paramref name="span"/> intersects this span. Two spans are considered to 
+            intersect if they have positions in common or the end of one span 
+            coincides with the start of the other span.
+            </summary>
+            <param name="span">
+            The span to check.
+            </param>
+            <returns>
+            <c>true</c> if the spans intersect, otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.IntersectsWith(System.Int32)">
+            <summary>
+            Determines whether <paramref name="position"/> intersects this span. 
+            A position is considered to intersect if it is between the start and
+            end positions (inclusive) of this span.
+            </summary>
+            <param name="position">
+            The position to check.
+            </param>
+            <returns>
+            <c>true</c> if the position intersects, otherwise <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.Intersection(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Returns the intersection with the given span, or null if there is no intersection.
+            </summary>
+            <param name="span">
+            The span to check.
+            </param>
+            <returns>
+            The intersection of the spans, or null if the intersection is empty.
+            </returns>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.FromBounds(System.Int32,System.Int32)">
+            <summary>
+            Creates a new <see cref="T:Roslyn.Utilities.TextSpan"/> from <paramref name="start" /> and <paramref
+            name="end"/> positions as opposed to a position and length.
+            
+            The returned TextSpan contains the range with <paramref name="start"/> inclusive, 
+            and <paramref name="end"/> exclusive.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.op_Equality(Roslyn.Utilities.TextSpan,Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines if two instances of <see cref="T:Roslyn.Utilities.TextSpan"/> are the same.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.op_Inequality(Roslyn.Utilities.TextSpan,Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines if two instances of <see cref="T:Roslyn.Utilities.TextSpan"/> are different.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.Equals(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Determines if current instance of <see cref="T:Roslyn.Utilities.TextSpan"/> is equal to another.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.Equals(System.Object)">
+            <summary>
+            Determines if current instance of <see cref="T:Roslyn.Utilities.TextSpan"/> is equal to another.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.GetHashCode">
+            <summary>
+            Produces a hash code for <see cref="T:Roslyn.Utilities.TextSpan"/>.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.ToString">
+            <summary>
+            Provides a string representation for <see cref="T:Roslyn.Utilities.TextSpan"/>.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Utilities.TextSpan.CompareTo(Roslyn.Utilities.TextSpan)">
+            <summary>
+            Compares current instance of <see cref="T:Roslyn.Utilities.TextSpan"/> with another.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+D:\fsharp\artifacts\bin\FSharp.Core\Proto\netstandard2.0\FSharp.Core.deps.json
+D:\fsharp\artifacts\bin\FSharp.Core\Proto\netstandard2.0\FSharp.Core.dll
+D:\fsharp\artifacts\bin\FSharp.Core\Proto\netstandard2.0\FSharp.Core.xml
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\buildproperties.fs
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSCore.fs
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSCore.resources
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.fsproj.GenerateResource.cache
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.sourcelink.json
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.dll
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\netstandard2.0\FSharp.Core.xml

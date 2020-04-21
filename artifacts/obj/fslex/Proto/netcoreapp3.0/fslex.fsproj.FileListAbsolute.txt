@@ -1,0 +1,14 @@
+D:\fsharp\artifacts\bin\fslex\Proto\netcoreapp3.0\fslex.exe
+D:\fsharp\artifacts\bin\fslex\Proto\netcoreapp3.0\fslex.deps.json
+D:\fsharp\artifacts\bin\fslex\Proto\netcoreapp3.0\fslex.runtimeconfig.json
+D:\fsharp\artifacts\bin\fslex\Proto\netcoreapp3.0\fslex.runtimeconfig.dev.json
+D:\fsharp\artifacts\bin\fslex\Proto\netcoreapp3.0\fslex.dll
+D:\fsharp\artifacts\bin\fslex\Proto\netcoreapp3.0\fslex.xml
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\buildproperties.fs
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.sourcelink.json
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.dll
+D:\fsharp\artifacts\obj\fslex\Proto\netcoreapp3.0\fslex.xml

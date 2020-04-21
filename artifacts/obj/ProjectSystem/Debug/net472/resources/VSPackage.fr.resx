@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ProjectReferenceError2" xml:space="preserve">
+    <value>Vous devez générer le projet cible pour qu'il puisse être référencé.</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="GeneralCaption" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="AssemblyName" xml:space="preserve">
+    <value>Nom de l'assembly</value>
+  </data>
+  <data name="AssemblyNameDescription" xml:space="preserve">
+    <value>Nom du fichier de sortie contenant les métadonnées de l'assembly.</value>
+  </data>
+  <data name="OutputType" xml:space="preserve">
+    <value>Type de sortie</value>
+  </data>
+  <data name="OutputTypeDescription" xml:space="preserve">
+    <value>Type d'application à générer.</value>
+  </data>
+  <data name="DefaultNamespace" xml:space="preserve">
+    <value>Espace de noms par défaut</value>
+  </data>
+  <data name="DefaultNamespaceDescription" xml:space="preserve">
+    <value>Spécifie l'espace de noms par défaut pour les éléments ajoutés, tels que les classes, qui sont ajoutés via la boîte de dialogue Ajouter un nouvel élément.</value>
+  </data>
+  <data name="StartupObject" xml:space="preserve">
+    <value>Objet de démarrage</value>
+  </data>
+  <data name="StartupObjectDescription" xml:space="preserve">
+    <value>Nom de la classe qui contient la méthode Main statique à appeler lors du lancement de votre application.</value>
+  </data>
+  <data name="ApplicationIcon" xml:space="preserve">
+    <value>Icône d'application</value>
+  </data>
+  <data name="ApplicationIconDescription" xml:space="preserve">
+    <value>Définit le fichier .ico à utiliser comme icône d'application.</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Projet</value>
+  </data>
+  <data name="ProjectFile" xml:space="preserve">
+    <value>Fichier projet</value>
+  </data>
+  <data name="ProjectFileDescription" xml:space="preserve">
+    <value>Nom du fichier contenant la build, la configuration et d'autres informations sur le projet.</value>
+  </data>
+  <data name="ProjectFolder" xml:space="preserve">
+    <value>Dossier du projet</value>
+  </data>
+  <data name="ProjectFolderDescription" xml:space="preserve">
+    <value>Emplacement absolu du projet.</value>
+  </data>
+  <data name="OutputFile" xml:space="preserve">
+    <value>Fichier de sortie</value>
+  </data>
+  <data name="OutputFileDescription" xml:space="preserve">
+    <value>Nom du fichier de sortie principale du projet.</value>
+  </data>
+  <data name="TargetPlatform" xml:space="preserve">
+    <value>Plateforme cible</value>
+  </data>
+  <data name="TargetPlatformDescription" xml:space="preserve">
+    <value>Version du Common Language Runtime à utiliser pour l'assembly de sortie</value>
+  </data>
+  <data name="TargetPlatformLocation" xml:space="preserve">
+    <value>Emplacement de la plateforme cible</value>
+  </data>
+  <data name="TargetPlatformLocationDescription" xml:space="preserve">
+    <value>Emplacement de la plateforme cible</value>
+  </data>
+  <data name="ProjectFileExtensionFilter" xml:space="preserve">
+    <value>Fichier projet F# (*.fsproj)</value>
+  </data>
+  <data name="ComponentFileExtensionFilter" xml:space="preserve">
+    <value>Fichier composant (*.dll;*.exe)</value>
+  </data>
+  <data name="OtherFlags" xml:space="preserve">
+    <value>Autres indicateurs</value>
+  </data>
+  <data name="OtherFlagsDescription" xml:space="preserve">
+    <value>Autres indicateurs du compilateur</value>
+  </data>
+  <data name="Build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="3" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpSplashScreenIcon.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpAboutBox.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpWindowsApplication.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpApplication_32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpScript.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpTutorial.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpCodeFile_32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpScriptFile.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpSignature.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpEmptyProject_32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Utility_Text.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Local_AppConfig.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Data_XML.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Resource_Bitmap.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpSilverLIghtClassLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Data_Source.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Data_LinQToSQL.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\Data_Entity.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpResources.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpTestLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\ProjectNode.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSFile.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSIFile.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSXFile.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>E:\fsharp\vsintegration\src\FSharp.ProjectSystem.FSharp\Resources\FSharpInteractive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5001" xml:space="preserve">
+    <value>Fichier de script F#</value>
+  </data>
+  <data name="5002" xml:space="preserve">
+    <value>Fichier de script F# vide (.fsx)</value>
+  </data>
+  <data name="5003" xml:space="preserve">
+    <value>Script.fsx</value>
+  </data>
+  <data name="5005" xml:space="preserve">
+    <value>Éditeur de texte FSharp</value>
+  </data>
+  <data name="5006" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="5007" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="5008" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="5009" xml:space="preserve">
+    <value>Silverlight</value>
+  </data>
+  <data name="5011" xml:space="preserve">
+    <value>Fichier source F#</value>
+  </data>
+  <data name="5012" xml:space="preserve">
+    <value>Fichier source F# vide (.fs)</value>
+  </data>
+  <data name="5013" xml:space="preserve">
+    <value>File.fs</value>
+  </data>
+  <data name="5014" xml:space="preserve">
+    <value>Application console (.NET Framework)</value>
+  </data>
+  <data name="5015" xml:space="preserve">
+    <value>Projet de création d'une application en ligne de commande</value>
+  </data>
+  <data name="5016" xml:space="preserve">
+    <value>Bibliothèque (.NET Framework)</value>
+  </data>
+  <data name="5017" xml:space="preserve">
+    <value>Projet de création d'une bibliothèque F#</value>
+  </data>
+  <data name="5018" xml:space="preserve">
+    <value>Tutoriel (.NET Framework)</value>
+  </data>
+  <data name="5019" xml:space="preserve">
+    <value>Projet de didacticiel fournissant une procédure pas à pas relative au langage F#</value>
+  </data>
+  <data name="5020" xml:space="preserve">
+    <value>Bibliothèque Silverlight</value>
+  </data>
+  <data name="5021" xml:space="preserve">
+    <value>Projet de création d'une bibliothèque Silverlight F#</value>
+  </data>
+  <data name="5022" xml:space="preserve">
+    <value>Fichier config de l'application</value>
+  </data>
+  <data name="5023" xml:space="preserve">
+    <value>Fichier pour stocker la configuration de l'application et les valeurs des paramètres</value>
+  </data>
+  <data name="5024" xml:space="preserve">
+    <value>Fichier source</value>
+  </data>
+  <data name="5025" xml:space="preserve">
+    <value>Fichier source F# vide (.fs)</value>
+  </data>
+  <data name="5026" xml:space="preserve">
+    <value>Fichier de script</value>
+  </data>
+  <data name="5027" xml:space="preserve">
+    <value>Fichier de script F# vide (.fsx)</value>
+  </data>
+  <data name="5028" xml:space="preserve">
+    <value>Fichier de signature</value>
+  </data>
+  <data name="5029" xml:space="preserve">
+    <value>Fichier de signature F# vide (.fsi)</value>
+  </data>
+  <data name="5030" xml:space="preserve">
+    <value>Fichier texte</value>
+  </data>
+  <data name="5031" xml:space="preserve">
+    <value>Fichier texte vide</value>
+  </data>
+  <data name="5032" xml:space="preserve">
+    <value>Fichier XML</value>
+  </data>
+  <data name="5033" xml:space="preserve">
+    <value>Fichier XML vide</value>
+  </data>
+  <data name="5034" xml:space="preserve">
+    <value>Bibliothèque portable (.NET 4.5, Windows Store, Silverlight 5, Xamarin)</value>
+  </data>
+  <data name="5035" xml:space="preserve">
+    <value>Projet de création d'une bibliothèque F# (.dll) qui peut s'exécuter sur le .NET Framework 4.5, Windows Store, Silverlight 5, Xamarin.iOS, Xamarin.Android et Xamarin.iOS(Classic). Profil 47</value>
+  </data>
+  <data name="5036" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="5037" xml:space="preserve">
+    <value>Connexion de service OData (LINQ, fournisseur de type)</value>
+  </data>
+  <data name="5038" xml:space="preserve">
+    <value>Élément de projet pour utiliser un service web OData (Open Data Protocol) à l'aide du fournisseur de type ODataService.</value>
+  </data>
+  <data name="5040" xml:space="preserve">
+    <value>Élément de projet pour utiliser un fichier de ressources managées .NET (Resx) à l'aide du fournisseur de type ResxFile.</value>
+  </data>
+  <data name="5041" xml:space="preserve">
+    <value>Connexion de base de données SQL (LINQ to SQL, fournisseur de type)</value>
+  </data>
+  <data name="5042" xml:space="preserve">
+    <value>Élément de projet pour utiliser le fournisseur de type SqlDataConnection (LINQ to SQL) pour générer des types et utiliser des données dans une base de données SQL active.</value>
+  </data>
+  <data name="5043" xml:space="preserve">
+    <value>Connexion de base de données SQL (LINQ to Entities, fournisseur de type)</value>
+  </data>
+  <data name="5044" xml:space="preserve">
+    <value>Élément de projet pour utiliser le fournisseur de type SqlEntityConnection (Entity Data Model) pour générer des types et utiliser des données dans une base de données SQL active.</value>
+  </data>
+  <data name="5045" xml:space="preserve">
+    <value>Connexion de service WSDL (fournisseur de type)</value>
+  </data>
+  <data name="5046" xml:space="preserve">
+    <value>Élément de projet pour utiliser un service web à l'aide du fournisseur de type WsdlService.</value>
+  </data>
+  <data name="5047" xml:space="preserve">
+    <value>Bibliothèque portable (.NET 4.5, Windows Store, Xamarin)</value>
+  </data>
+  <data name="5048" xml:space="preserve">
+    <value>Projet de création d'une bibliothèque F# (.dll) qui peut s'exécuter sur .NET Framework 4.5, le Windows Store, Xamarin.iOS, Xamarin.Android et Xamarin.iOS(Classic). Profil 7</value>
+  </data>
+  <data name="5049" xml:space="preserve">
+    <value>Bibliothèque portable (.NET 4.5, le Windows Store, Windows Phone 8 Silverlight, Xamarin)</value>
+  </data>
+  <data name="5050" xml:space="preserve">
+    <value>Projet de création d'une bibliothèque F# (.dll) qui peut s'exécuter sur .NET Framework 4.5, le Windows Store, Windows Phone 8 Silverlight, Xamarin.iOS, Xamarin.Android et Xamarin.iOS(Classic). Profile 78</value>
+  </data>
+  <data name="5051" xml:space="preserve">
+    <value>Bibliothèque portable (.NET 4.5, le Windows Store, Windows Phone 8.1, Windows Phone Silverlight 8, Xamarin)</value>
+  </data>
+  <data name="5052" xml:space="preserve">
+    <value>Projet de création d'une bibliothèque F# (.dll) qui peut s'exécuter sur .NET Framework 4.5, le Windows Store, Windows Phone 8.1, Windows Phone Silverlight 8, Xamarin.iOS, Xamarin.Android et Xamarin.iOS(Classic). Profile 259</value>
+  </data>
+  <data name="5053" xml:space="preserve">
+    <value>Fichier de ressources</value>
+  </data>
+  <data name="5054" xml:space="preserve">
+    <value>Fichier pour stocker les ressources</value>
+  </data>
+  <data name="6000" xml:space="preserve">
+    <value>Outils F#</value>
+  </data>
+  <data name="6001" xml:space="preserve">
+    <value>F# Interactive</value>
+  </data>
+  <data name="6002" xml:space="preserve">
+    <value>Fichiers projet F# (*.fsproj);*.fsproj</value>
+  </data>
+  <data name="6003" xml:space="preserve">
+    <value>Fichiers Visual F# (*.fs,*.fsi,*.fsx,*.fsscript);*.fs,*.fsi,*.fsx,*.fsscript</value>
+  </data>
+  <data name="7000" xml:space="preserve">
+    <value>Visual F#</value>
+  </data>
+  <data name="7001" xml:space="preserve">
+    <value>Personnalise l'environnement pour optimiser l'espace à l'écran de l'éditeur de code et rendre plus visibles les commandes ainsi que les fenêtres Outil F#.</value>
+  </data>
+  <data name="ProductDetails" xml:space="preserve">
+    <value>Microsoft Visual F# Tools 10.8.1.0 pour F# 4.7</value>
+  </data>
+  <data name="9002" xml:space="preserve">
+    <value>Microsoft Visual F# Tools 10.8.1.0 pour F# 4.7</value>
+  </data>
+  <data name="ProductID" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Microsoft Visual F# Tools</value>
+  </data>
+  <data name="9001" xml:space="preserve">
+    <value>Visual F# Tools 10.8.1.0 pour F# 4.7</value>
+  </data>
+  <data name="9027" xml:space="preserve">
+    <value>F# Interactive</value>
+  </data>
+  <data name="ProductRegistryName" xml:space="preserve">
+    <value>Microsoft Visual F#</value>
+  </data>
+  <data name="InvalidOutputType" xml:space="preserve">
+    <value>Valeur OutputType non valide</value>
+  </data>
+  <data name="InvalidRunPostBuildEvent" xml:space="preserve">
+    <value>Valeur RunPostBuildEvent non valide</value>
+  </data>
+  <data name="InvalidTargetFrameworkVersion" xml:space="preserve">
+    <value>Numéro TargetFrameworkVersion non valide</value>
+  </data>
+  <data name="ProjectRenderFolderMultiple" xml:space="preserve">
+    <value>Impossible d'ouvrir le projet '{0}', car cela entraînerait l'affichage multiple d'un dossier dans l'Explorateur de solutions. L'élément problématique est '{1}'. Pour ouvrir ce projet dans Visual Studio, modifiez d'abord le fichier projet et corrigez le problème.</value>
+  </data>
+  <data name="PropertyDefaultNamespace" xml:space="preserve">
+    <value>Espace de noms par défaut :\nLa chaîne pour l'espace de noms par défaut doit être un identificateur valide</value>
+  </data>
+  <data name="TemplateNotFound" xml:space="preserve">
+    <value>Fichier modèle introuvable : {0}</value>
+  </data>
+  <data name="NeedReloadToChangeTargetFx" xml:space="preserve">
+    <value>La modification du Framework cible requiert la fermeture et la réouverture du projet actif.\nLes modifications qui n'étaient pas enregistrées dans le projet le seront automatiquement.\n\nLa modification du Framework cible peut nécessiter la modification manuelle des fichiers projet pour la génération.\n\nVoulez-vous vraiment modifier le Framework cible pour ce projet ?</value>
+  </data>
+  <data name="AddReferenceDialogTitle" xml:space="preserve">
+    <value>Ajouter une référence</value>
+  </data>
+  <data name="6005" xml:space="preserve">
+    <value>Modifier les arguments de chemin d'accès et de ligne de commande passés à F# Interactive</value>
+  </data>
+  <data name="6006" xml:space="preserve">
+    <value>Activer ou désactiver les fournisseurs de type</value>
+  </data>
+  <data name="6007" xml:space="preserve">
+    <value>Éléments Visual F#</value>
+  </data>
+  <data name="AddReferenceDialogTitle_Dev11" xml:space="preserve">
+    <value>Gestionnaire de références - {0}</value>
+  </data>
+  <data name="Dev11SupportsOnlySilverlight5" xml:space="preserve">
+    <value>Les projets F# dans la version actuelle de Visual Studio prennent uniquement en charge Silverlight 5.</value>
+  </data>
+  <data name="AddReferenceAssemblyPageDialogRetargetingText" xml:space="preserve">
+    <value>Le projet va être reciblé et les versions cibles de .NET Framework vont être réduites.</value>
+  </data>
+  <data name="AddReferenceAssemblyPageDialogNoItemsText" xml:space="preserve">
+    <value>Tous les assemblys .NET Framework sont déjà référencés. Utilisez l'Explorateur d'objets pour explorer les références dans le Framework.</value>
+  </data>
+  <data name="FSharpCoreVersionIsNotLegacyCompatible" xml:space="preserve">
+    <value>Le référencement de cette version de FSharp.Core fera que votre projet ne sera plus compatible avec les versions précédentes de Visual Studio. Voulez-vous continuer ?</value>
+  </data>
+  <data name="ComputingSourcesAndFlags" xml:space="preserve">
+    <value>Mise à jour des indicateurs et des sources de compilation...</value>
+  </data>
+  <data name="UpdatingSolutionConfiguration" xml:space="preserve">
+    <value>Mise à jour de la configuration de la solution...</value>
+  </data>
+  <data name="FileCannotBePlacedBodyAbove" xml:space="preserve">
+    <value>Impossible de placer le fichier '{0}' au-dessus de '{1}' dans l'Explorateur de solutions.\n\n{2}.</value>
+  </data>
+  <data name="FileCannotBePlacedBodyBelow" xml:space="preserve">
+    <value>Impossible de placer le fichier '{0}' en dessous de '{1}' dans l'Explorateur de solutions.\n\n{2}.</value>
+  </data>
+  <data name="FileCannotBePlacedDifferentSubtree" xml:space="preserve">
+    <value>Le fichier se trouve dans une autre sous-arborescence</value>
+  </data>
+  <data name="FileCannotBePlacedMultipleFiles" xml:space="preserve">
+    <value>Impossible de déplacer le dossier '{0}', car il existe déjà dans l'Explorateur de solutions à un autre emplacement</value>
+  </data>
+</root>

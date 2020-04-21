@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.VS.FSI</name></assembly>
+<members>
+<member name="P:VFSIstrings.SR.SwallowResourceText(System.Boolean)">
+<summary>
+ If set to true, then all error messages will just return the filled &apos;holes&apos; delimited by &apos;,,,&apos;s - this is for language-neutral testing (e.g. localization-invariant baselines).
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.sessionTerminationDetected">
+<summary>
+ Session termination detected. Press Enter to restart.
+ (Originally from VFSIstrings.txt:7)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.sessionIsNotDebugFriendly">
+<summary>
+ The current F# Interactive session is not configured for debugging. For the best experience, enable debugging in F# Interactive settings, then reset the session.\n\nAttempt debugging with current settings?
+ (Originally from VFSIstrings.txt:11)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.killingProcessRaisedException(System.String)">
+<summary>
+ Killing process raised exception:\n%s
+ (Originally from VFSIstrings.txt:10)
+</summary>
+</member>
+<member name="P:VFSIstrings.SR.SwallowResourceText">
+<summary>
+ If set to true, then all error messages will just return the filled &apos;holes&apos; delimited by &apos;,,,&apos;s - this is for language-neutral testing (e.g. localization-invariant baselines).
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.fsharpInteractive">
+<summary>
+ F# Interactive
+ (Originally from VFSIstrings.txt:8)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.exceptionRaisedWhenRequestingToolWindow(System.String)">
+<summary>
+ Exception raised when requesting FSI ToolWindow.\n%s
+ (Originally from VFSIstrings.txt:5)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.exceptionRaisedWhenCreatingRemotingClient(System.String)">
+<summary>
+ Exception raised when creating remoting client for launched fsi.exe\n%s
+ (Originally from VFSIstrings.txt:4)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.doNotShowWarningInFuture">
+<summary>
+ Don&apos;t show this warning again
+ (Originally from VFSIstrings.txt:12)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.couldNotObtainFSharpLS">
+<summary>
+ Could not load F# language service
+ (Originally from VFSIstrings.txt:6)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.couldNotFindFsiExe(System.String)">
+<summary>
+ Could not find fsi.exe, the F# Interactive executable.\nThis file does not exist:\n\n%s\n
+ (Originally from VFSIstrings.txt:9)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.cannotCreateToolWindow">
+<summary>
+ Cannot create window F# Interactive ToolWindow
+ (Originally from VFSIstrings.txt:3)
+</summary>
+</member>
+<member name="M:VFSIstrings.SR.RunStartupValidation">
+<summary>
+ Call this method once to validate that all known resources are valid; throws if not
+</summary>
+</member>
+<member name="P:Internal.Utilities.FSharpEnvironment.FSharpBannerVersion">
+<summary>
+ The F# version reported in the banner
+</summary>
+</member>
+<member name="M:Internal.Utilities.FSharpEnvironment.Option.ofString(System.String)">
+<summary>
+ Convert string into Option string where null and String.Empty result in None
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.FsiToolWindow.Microsoft-VisualStudio-FSharp-Interactive-ITestVFSI-SendTextInteraction(System.String)">
+<summary>
+ Send a string; the &apos;;;&apos; will be added to the end; does not interact with history
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.FsiToolWindow.OnToolWindowCreated">
+<summary>
+ Function called when the window frame is set on this tool window.    
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.FsiToolWindow.GetService(System.Type)">
+<summary>
+ Return the service of the given type.
+ This override supplies a different command service from the one implemented in the base class.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.FsiToolWindow.Microsoft-VisualStudio-FSharp-Interactive-ITestVFSI-GetMostRecentLines(System.Int32)">
+<summary>
+ Returns the n most recent lines in the view.  After SendTextInteraction, can poll for a prompt to know when interaction finished.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.ITestVFSI.SendTextInteraction(System.String)">
+<summary>
+ Send a string; the &apos;;;&apos; will be added to the end; does not interact with history
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.ITestVFSI.GetMostRecentLines(System.Int32)">
+<summary>
+ Returns the n most recent lines in the view.  After SendTextInteraction, can poll for a prompt to know when interaction finished.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractivePreviewMode">
+ <summary>Enable preview language features</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractivePreviewModeDescr">
+ <summary>Enable preview of in-development language features in F# Interactive</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractivePreview">
+ <summary>FSI Preview</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveDebugging">
+ <summary>Debugging</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveDebugModeDescr">
+ <summary>Enable debugging of F# scripts (may impact script performance, requires reset of F# Interactive)</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveDebugMode">
+ <summary>Enable script debugging</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveShadowCopyDescr">
+ <summary>Prevents referenced assemblies from being locked by the F# Interactive process.</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveShadowCopy">
+ <summary>Shadow copy assemblies</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveMisc">
+ <summary>Misc</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveOptionsDescr">
+ <summary>Additional command line arguments passed to the F# Interactive executable by Visual Studio. (optimization and debug flags are ignored if script debugging is enabled)</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractiveOptions">
+ <summary>F# Interactive options</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractive64BitDescr">
+ <summary>If set to true, and the current machine is 64-bit, then run F# Interactive as a 64-bit process.  (Otherwise, F# Interactive is a 32-bit process.)</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.SRProperties.FSharpInteractive64Bit">
+ <summary>64-bit F# Interactive</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Interactive.Session.FsiSessions">
+<summary>
+ Represents a container for all the active F# Interactive sessions
+ Currently there is either 0 or 1 
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Interactive.Session.FsiSession.interruptTimeoutMS">
+<summary>
+ interrupt timeout in miliseconds 
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Interactive.Session.FsiSession">
+<summary>
+ Represents an active F# Interactive process to which Visual Studio is connected via stdin/stdout/stderr and a remoting channel
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Session.bufferEvent``2(System.Int32,``0)">
+<summary>
+ Buffer messages up into a list of messages.
+ Allow upto timeMS to pass.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Session.timeoutApp``2(System.String,System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0)">
+<summary>
+ Run function application return Some (f x) or None if execution exceeds timeout (in ms).
+ Exceptions raised by f x are caught and reported in DEBUG mode.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Util.CreateObject(System.IServiceProvider,System.Type,System.Type)">
+<summary>
+ Utility function to create an instance of a class from the local registry. [From Iron Python].
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Util.ArgParsing.optimizationsEnabled(System.String)">
+<summary>
+ checks if combined arg string results in optimizations on/off
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Util.ArgParsing.debugInfoEnabled(System.String)">
+<summary>
+ checks if combined arg string results in debug info on/off
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Util.RegistryHelpers.writeHKCU``1(System.String,System.String,``0)">
+<summary>
+ write value to HKCU subkey, uses default .NET/registry type conversions
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Util.RegistryHelpers.tryReadHKCU``1(System.String,System.String)">
+<summary>
+ returns Some(value) if key/value exists, None otherwise
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.Guids.guidFsiSessionToolWindow">
+<summary>
+ &quot;dee22b65-9761-4a26-8fb2-759b971d6dfc&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Interactive.Guids.guidFsiLanguageService">
+<summary>
+ &quot;35A5E6B8-4012-41fc-A652-2CDC56D74E9F&quot;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Interactive.Locals.chunkKeyValues``2(Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,``1}})">
+<summary>
+ Given a list of (key,value)
+ Chunk into (key,values) where the values are keys of (key,value) with the same key.    
+ Complexity: this code is linear in (length kxs).
+</summary>
+</member>
+</members>
+</doc>

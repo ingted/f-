@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information. -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddSvcRefDlg_DefaultDialogTitle" xml:space="preserve">
+    <value>サービス参照の追加</value>
+    <comment>Title for the "Add Service Reference" dialog</comment>
+  </data>
+  <data name="CodeGenerator_UnableToGetCodeDomProvider" xml:space="preserve">
+    <value>コード ジェネレーター (CodeDomProvider) が見つかりません。</value>
+  </data>
+  <data name="Configuration_CantSaveTemporaryConfigurations" xml:space="preserve">
+    <value>構成を保存できません。構成ファイルが存在し、編集できることを確認してください。</value>
+  </data>
+  <data name="Configuration_IVsProjectSpecialFilesNotSupported" xml:space="preserve">
+    <value>現在のプロジェクトは構成ファイルをサポートしていません。</value>
+  </data>
+  <data name="AddSvcRefDlg_NoServicesFoundInSolution" xml:space="preserve">
+    <value>ソリューションにサービスが見つかりません。</value>
+  </data>
+  <data name="AddSvcRefDlg_ErrorOnOK" xml:space="preserve">
+    <value>アドレスからメタデータをダウンロードするときに、エラーが発生しました。有効なアドレスを入力していることを確認してください。</value>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFoundAtUrl_2Args" xml:space="preserve">
+    <value>アドレス '{1}' で {0} 個のサービスが見つかりました。</value>
+    <comment>{0} = count, {1} = URL where the services were found</comment>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFoundInSolution_1Arg" xml:space="preserve">
+    <value>ソリューションで {0} 個のサービスが見つかりました。</value>
+    <comment>{0} = # of services</comment>
+  </data>
+  <data name="Configuration_OnlyRootItemIdSupported" xml:space="preserve">
+    <value>既定の (ITEMID_ROOT) 構成ファイルにのみアクセスすることができます。</value>
+  </data>
+  <data name="ReferenceGroup_InvalidNamespace" xml:space="preserve">
+    <value>'{0}' はサービス参照に有効な名前空間ではありません。</value>
+  </data>
+  <data name="ReferenceGroup_NamespaceConflictsOther" xml:space="preserve">
+    <value>同じ名前が既存のサービス参照、フォルダー、またはファイルによって使用されているので、名前空間 '{0}' を持つサービス参照を作成できません。</value>
+  </data>
+  <data name="ReferenceGroup_AddMultipleReference" xml:space="preserve">
+    <value>新しい参照を追加できません。1 つ以上の参照が既に存在するか、.svcmap ファイルの 'Metadata' セクションが空ではありません。.svcmap ファイルを編集して 'Metadata' セクションのすべてのエントリをクリアしてください。</value>
+  </data>
+  <data name="ReferenceGroup_NamespaceCantBeEmpty" xml:space="preserve">
+    <value>このサービス参照に対して名前空間を指定する必要があります。</value>
+  </data>
+  <data name="ReferenceGroup_InvalidName" xml:space="preserve">
+    <value>'{0}' はサービス参照に有効な名前ではありません。</value>
+  </data>
+  <data name="ReferenceGroup_NameCantBeEmpty" xml:space="preserve">
+    <value>空の文字列は参照グループに有効な名前ではありません。</value>
+  </data>
+  <data name="ReferenceGroup_NameConflictsOther" xml:space="preserve">
+    <value>同じ名前が既存の参照グループ、フォルダー、またはファイルによって使用されているので、'{0}' という名前の参照グループを作成できません。</value>
+  </data>
+  <data name="ReferenceGroup_NameCantStartEndWithSpace" xml:space="preserve">
+    <value>名前空間または名前の先頭や末尾にスペース文字を含む参照グループは作成できません。</value>
+  </data>
+  <data name="ReferenceGroup_NotFoundThroughPath" xml:space="preserve">
+    <value>.svcmap ファイルが見つかりません。移動したか、または削除された可能性があります。新しい .svcmap ファイルを生成するには、サービス参照を削除してから再び追加してください。</value>
+  </data>
+  <data name="ReferenceGroup_NotSupportedInCurrentProject" xml:space="preserve">
+    <value>現在のプロジェクトはサービス参照をサポートしていません。Windows Communication Foundation サポートを有効にするには、対象の Microsoft .NET Framework のバージョンを変更してください。</value>
+  </data>
+  <data name="ReferenceGroup_DeleteFailedConfigurationError" xml:space="preserve">
+    <value>次の問題により、サービス参照の構成を削除できませんでした: {0}</value>
+  </data>
+  <data name="ReferenceGroup_UpdateFailedConfigurationError" xml:space="preserve">
+    <value>次の問題により、サービス参照の構成を更新できませんでした: {0}</value>
+  </data>
+  <data name="ReferenceGroup_AddFailedConfigurationError" xml:space="preserve">
+    <value>次の問題により、サービス参照の構成を追加できませんでした: {0}</value>
+  </data>
+  <data name="AddSvcRefDlg_NothingSelectedOnGo" xml:space="preserve">
+    <value>サービスのアドレスを入力してください。</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_DiscoverUrl_1Arg" xml:space="preserve">
+    <value>'{0}' でサービスを検索しようとしてエラーが発生しました。</value>
+    <comment>{0} = a URL path</comment>
+  </data>
+  <data name="AddSvcRefDlg_Error_ServicesInSolution" xml:space="preserve">
+    <value>ソリューションでサービスを検索中にエラーが発生しました。</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_StartService_1Arg1" xml:space="preserve">
+    <value>'{0}' でサービスを開始しようとしてエラーが発生しました。</value>
+    <comment>{0} = a URL path</comment>
+  </data>
+  <data name="AddSvcRefDlg_PleaseWait" xml:space="preserve">
+    <value>サービス情報がダウンロードされるまでお待ちください。または [停止]5D; をクリックしてください。</value>
+  </data>
+  <data name="ReferenceGroup_FailedToGetReferencedAssembliesFromProject" xml:space="preserve">
+    <value>参照されたアセンブリをプロジェクト システムから取得できません。</value>
+  </data>
+  <data name="ReferenceGroup_SvcMapFileIsMissing" xml:space="preserve">
+    <value>.svcmap ファイル ('{0}') が見つからないためサービス参照が無効です。移動または削除されたか、プロジェクトから除外されている可能性があります。新しい .svcmap ファイルを生成するには、サービス参照を削除してから再び追加してください。</value>
+  </data>
+  <data name="ReferenceGroup_SvcMapFileBadFormat" xml:space="preserve">
+    <value>サービス参照が無効です。.svcmap ファイル ('{0}') を読み込むことができません。破損しているか、無効な形式の可能性があります: {1}</value>
+  </data>
+  <data name="AddSvcRegDlg_ShowErrorDetails" xml:space="preserve">
+    <value>(詳細)</value>
+    <comment>This is the text for a link to additional error information.</comment>
+  </data>
+  <data name="AddSvcRefDlg_OPSelectContract" xml:space="preserve">
+    <value>サービス コントラクトを選択して操作を表示します。</value>
+    <comment>This is the message displayed when user selects non-cotract nodes.</comment>
+  </data>
+  <data name="CSRDlg_Title" xml:space="preserve">
+    <value>サービス参照設定</value>
+  </data>
+  <data name="CSRDlg_CustomType" xml:space="preserve">
+    <value>(カスタム)</value>
+  </data>
+  <data name="CSRDlg_AssemblyNotFoundError" xml:space="preserve">
+    <value>アセンブリ '{0}' が見つかりませんでした。</value>
+  </data>
+  <data name="CSRDlg_NullURL" xml:space="preserve">
+    <value>アドレスには空ではない有効な URL を指定してください。</value>
+    <comment>Error message to display when user enters empty URL in the address change text box</comment>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFound_1Arg" xml:space="preserve">
+    <value>{0} 個のサービスが見つかりました。</value>
+    <comment>{0} = count</comment>
+  </data>
+  <data name="Err_UserCancelled" xml:space="preserve">
+    <value>処理が取り消されました。</value>
+  </data>
+  <data name="UpdateDialog_Title_1Arg" xml:space="preserve">
+    <value>サービス参照 '{0}' を更新しています</value>
+  </data>
+  <data name="Status_UpdateComplete" xml:space="preserve">
+    <value>サービス参照の更新が完了しました。</value>
+  </data>
+  <data name="Status_GeneratingProxy" xml:space="preserve">
+    <value>サービス参照クライアント コードを生成しています...</value>
+  </data>
+  <data name="Status_GeneratingProxyComplete" xml:space="preserve">
+    <value>サービス参照クライアント コードの生成が完了しました。</value>
+  </data>
+  <data name="Status_StartUpdate_1Arg" xml:space="preserve">
+    <value>サービス参照 '{0}' を更新しています...</value>
+  </data>
+  <data name="Status_UpdatingConfig" xml:space="preserve">
+    <value>構成を更新しています...</value>
+  </data>
+  <data name="Status_UpdatingConfigComplete" xml:space="preserve">
+    <value>構成の更新が完了しました。</value>
+  </data>
+  <data name="Status_UpdateCancelled" xml:space="preserve">
+    <value>サービス参照の更新が取り消されました。</value>
+  </data>
+  <data name="Status_UpdateFailed" xml:space="preserve">
+    <value>サービス参照の更新が失敗しました。</value>
+  </data>
+  <data name="Status_AddServiceComplete" xml:space="preserve">
+    <value>サービス参照の追加が完了しました。</value>
+  </data>
+  <data name="Status_AddServiceFailed" xml:space="preserve">
+    <value>サービス参照の追加が失敗しました。</value>
+  </data>
+  <data name="Status_StartAddService_1Arg" xml:space="preserve">
+    <value>'{0}' への新しいサービス参照を作成しています...</value>
+    <comment>{0}=URL</comment>
+  </data>
+  <data name="CSRDlg_NoAssemblySelected" xml:space="preserve">
+    <value>アセンブリが選択されていません。</value>
+  </data>
+  <data name="ReferenceGroup_AsyncOpPending" xml:space="preserve">
+    <value>要求された操作は、非同期操作を実行している間は無効です。</value>
+  </data>
+  <data name="CSRDlg_MultipleURL" xml:space="preserve">
+    <value>複数アドレス (.svcmap ファイルで編集可能)</value>
+  </data>
+  <data name="AddSvcRefDlg_ContractsFoundAtUrl_2Args" xml:space="preserve">
+    <value>アドレス '{1}' で {0} 個のコントラクトが見つかりました。</value>
+    <comment>{0} = count, {1} = URL where the contracts were found</comment>
+  </data>
+  <data name="AddSvcRefDlg_Error_CantCreateTempFile" xml:space="preserve">
+    <value>サービス情報をダウンロードするための一時構成ファイルを作成できません。</value>
+  </data>
+  <data name="ConfigurationFileOpenedInIncompatibleEditor" xml:space="preserve">
+    <value>ファイルが、互換性のないエディターで既に開かれています。</value>
+  </data>
+  <data name="Status_DownloadingMetadata" xml:space="preserve">
+    <value>サービス情報をダウンロードしています...</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_ExistingRefGroupNotSupported" xml:space="preserve">
+    <value>ソフトウェアの現在のバージョンでは、既存のサービス参照グループへのサービス参照の追加はサポートされていません。</value>
+  </data>
+  <data name="Discovery_ErrorBuildSolution" xml:space="preserve">
+    <value>サービスが現在のソリューションに定義されている場合は、ソリューションの構築とサービス参照の追加を再試行してください。</value>
+  </data>
+  <data name="ReferenceGroup_MismatchBeginEndBatch" xml:space="preserve">
+    <value>Begin/EndBatch の呼び出しが対応していません。EndBatch が BeginBatch よりも多く呼び出されています。</value>
+  </data>
+  <data name="SingleFileGenerator_FailedToGenerateTypes_1Arg" xml:space="preserve">
+    <value>サービス参照 '{0}' のコードを生成できませんでした。詳細については、他のエラー メッセージと警告メッセージを確認してください。</value>
+  </data>
+</root>

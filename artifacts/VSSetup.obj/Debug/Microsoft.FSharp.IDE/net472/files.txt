@@ -1,0 +1,5 @@
+D:\fsharp\setup\resources\NewFileDialog\Script\NewFSharpScriptItems.vsdir
+D:\fsharp\setup\resources\NewFileDialog\Script\Script.fsx
+D:\fsharp\setup\resources\NewFileDialog\General\NewFSharpFileItems.vsdir
+D:\fsharp\setup\resources\NewFileDialog\General\File.fs
+D:\fsharp\setup\resources\NewFileDialog\General\Script.fsx

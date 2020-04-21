@@ -1,0 +1,15 @@
+D:\fsharp\artifacts\bin\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.dll
+D:\fsharp\artifacts\bin\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.xml
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\buildproperties.fs
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\InteractiveDependencyManager.fs
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\InteractiveDependencyManager.resx
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\InteractiveDependencyManager.resources
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.fsproj.GenerateResource.cache
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.sourcelink.json
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.InternalsVisibleTo.fs
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.dll
+D:\fsharp\artifacts\obj\Interactive.DependencyManager\Proto\net472\Interactive.DependencyManager.xml

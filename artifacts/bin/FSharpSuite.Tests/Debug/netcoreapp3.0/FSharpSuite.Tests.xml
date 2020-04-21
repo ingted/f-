@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharpSuite.Tests</name></assembly>
+<members>
+<member name="M:FSharp.Compiler.UnitTests.ILChecker.filterSpecialComment(System.String)">
+<summary>
+ Filters i.e [&apos;The system type \&apos;System.ReadOnlySpan`1\&apos; was required but no referenced system DLL contained this type&apos;]
+</summary>
+</member>
+<member name="M:FSharp.Compiler.UnitTests.PrimitiveConstraints.Invalid object constructor">
+<summary>
+ Title: Type checking oddity
+
+ This suggestion was resolved as by design,
+ so the test makes sure, we&apos;re emitting error message about &apos;not being a valid object construction expression&apos;
+</summary>
+</member>
+<member name="M:FSharp.Compiler.UnitTests.ForInDoMutableRegressionTest.Script_ForInDoMutableRegressionTest">
+<summary>
+ This test is to ensure we initialize locals inside loops.
+</summary>
+</member>
+</members>
+</doc>

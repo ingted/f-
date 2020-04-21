@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\bin\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.dll
+D:\fsharp\artifacts\bin\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.xml
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.sourcelink.json
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.AssemblyInfo.cs
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.csproj.CopyComplete
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.dll
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.xml
+E:\fsharp\artifacts\bin\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.dll
+E:\fsharp\artifacts\bin\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.xml
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.sourcelink.json
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.AssemblyInfo.cs
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.csproj.CopyComplete
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.dll
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLocalizedComment\Debug\net45\XmlDocAttributeWithLocalizedComment.xml

@@ -1,0 +1,13 @@
+D:\fsharp\artifacts\bin\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.exe
+D:\fsharp\artifacts\bin\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.deps.json
+D:\fsharp\artifacts\bin\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.runtimeconfig.json
+D:\fsharp\artifacts\bin\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.runtimeconfig.dev.json
+D:\fsharp\artifacts\bin\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.dll
+D:\fsharp\artifacts\bin\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.xml
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\buildproperties.fs
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.sourcelink.json
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.dll
+D:\fsharp\artifacts\obj\AssemblyCheck\Proto\netcoreapp3.0\AssemblyCheck.xml

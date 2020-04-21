@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information. -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddSvcRefDlg_DefaultDialogTitle" xml:space="preserve">
+    <value>Dienstverweis hinzufügen</value>
+    <comment>Title for the "Add Service Reference" dialog</comment>
+  </data>
+  <data name="CodeGenerator_UnableToGetCodeDomProvider" xml:space="preserve">
+    <value>Es wurde kein Code-Generator (CodeDomProvider) gefunden.</value>
+  </data>
+  <data name="Configuration_CantSaveTemporaryConfigurations" xml:space="preserve">
+    <value>Die Konfiguration konnte nicht gespeichert werden. Stellen Sie sicher, dass die Konfigurationsdatei vorhanden ist und bearbeitet werden kann.</value>
+  </data>
+  <data name="Configuration_IVsProjectSpecialFilesNotSupported" xml:space="preserve">
+    <value>Das aktuelle Projekt unterstützt keine Konfigurationsdateien.</value>
+  </data>
+  <data name="AddSvcRefDlg_NoServicesFoundInSolution" xml:space="preserve">
+    <value>In der Projektmappe wurden keine Dienste gefunden.</value>
+  </data>
+  <data name="AddSvcRefDlg_ErrorOnOK" xml:space="preserve">
+    <value>Fehler beim Herunterladen von Metadaten von der Adresse. Stellen Sie sicher, dass die eingegebene Adresse gültig ist.</value>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFoundAtUrl_2Args" xml:space="preserve">
+    <value>{0} Dienst(e) gefunden bei Adresse "{1}".</value>
+    <comment>{0} = count, {1} = URL where the services were found</comment>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFoundInSolution_1Arg" xml:space="preserve">
+    <value>{0} Dienst(e) in der Projektmappe gefunden.</value>
+    <comment>{0} = # of services</comment>
+  </data>
+  <data name="Configuration_OnlyRootItemIdSupported" xml:space="preserve">
+    <value>Es ist nicht möglich, auf die Standardkonfigurationsdatei (ITEMID_ROOT) zuzugreifen.</value>
+  </data>
+  <data name="ReferenceGroup_InvalidNamespace" xml:space="preserve">
+    <value>{0} ist kein gültiger Namespace für den Dienstverweis.</value>
+  </data>
+  <data name="ReferenceGroup_NamespaceConflictsOther" xml:space="preserve">
+    <value>Ein Dienstverweis mit dem Namespace "{0}" kann nicht erstellt werden, weil der Name bereits von einem vorhandenen Dienstverweis bzw. einem Ordner oder einer Datei verwendet wird.</value>
+  </data>
+  <data name="ReferenceGroup_AddMultipleReference" xml:space="preserve">
+    <value>Neuer Verweis kann nicht hinzugefügt werden. Mindestens ein Verweis ist bereits vorhanden, oder der Abschnitt "Metadata" in der SVCMAP-Datei ist nicht leer. Bearbeiten Sie die SVCMAP-Datei, und löschen Sie alle Einträge im Abschnitt "Metadata".</value>
+  </data>
+  <data name="ReferenceGroup_NamespaceCantBeEmpty" xml:space="preserve">
+    <value>Ein Namespace muss für diesen Dienstverweis angegeben werden.</value>
+  </data>
+  <data name="ReferenceGroup_InvalidName" xml:space="preserve">
+    <value>{0} ist kein gültiger Name für einen Dienstverweis.</value>
+  </data>
+  <data name="ReferenceGroup_NameCantBeEmpty" xml:space="preserve">
+    <value>Eine leere Zeichenfolge ist kein gültiger Name für eine Verweisgruppe.</value>
+  </data>
+  <data name="ReferenceGroup_NameConflictsOther" xml:space="preserve">
+    <value>Die Verweisgruppe mit dem Namen "{0}" kann nicht erstellt werden, weil der Name bereits von einer vorhandenen Verweisgruppe bzw. einem Ordner oder einer Datei verwendet wird.</value>
+  </data>
+  <data name="ReferenceGroup_NameCantStartEndWithSpace" xml:space="preserve">
+    <value>Eine Verweisgruppe, deren Namespace oder Name führende oder nachstehende Leerzeichen enthält, kann nicht erstellt werden.</value>
+  </data>
+  <data name="ReferenceGroup_NotFoundThroughPath" xml:space="preserve">
+    <value>Die SVCMAP-Datei wurde nicht gefunden. Möglicherweise wurde sie verschoben oder gelöscht. Wenn Sie eine neue SVCMAP-Datei generieren möchten, löschen Sie den Dienstverweis und fügen ihn erneut hinzu.</value>
+  </data>
+  <data name="ReferenceGroup_NotSupportedInCurrentProject" xml:space="preserve">
+    <value>Das aktuelle Projekt unterstützt keine Dienstverweise. Um die Unterstützung der Windows Communication Foundation zu aktivieren, ändern Sie die Zielversion von Microsoft .NET Framework.</value>
+  </data>
+  <data name="ReferenceGroup_DeleteFailedConfigurationError" xml:space="preserve">
+    <value>Die Konfiguration für den Dienstverweis konnte aufgrund des folgenden Problems nicht gelöscht werden: {0}</value>
+  </data>
+  <data name="ReferenceGroup_UpdateFailedConfigurationError" xml:space="preserve">
+    <value>Die Konfiguration für den Dienstverweis konnte aufgrund des folgenden Problems nicht aktualisiert werden: {0}</value>
+  </data>
+  <data name="ReferenceGroup_AddFailedConfigurationError" xml:space="preserve">
+    <value>Die Konfiguration für den Dienstverweis konnte aufgrund des folgenden Problems nicht hinzugefügt werden: {0}</value>
+  </data>
+  <data name="AddSvcRefDlg_NothingSelectedOnGo" xml:space="preserve">
+    <value>Geben Sie die Adresse für einen Dienst ein.</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_DiscoverUrl_1Arg" xml:space="preserve">
+    <value>Fehler beim Versuch, Dienste bei "{0}" zu suchen.</value>
+    <comment>{0} = a URL path</comment>
+  </data>
+  <data name="AddSvcRefDlg_Error_ServicesInSolution" xml:space="preserve">
+    <value>Fehler beim Suchen nach Diensten in der Projektmappe.</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_StartService_1Arg1" xml:space="preserve">
+    <value>Fehler beim Versuch, Dienste bei "{0}" zu starten.</value>
+    <comment>{0} = a URL path</comment>
+  </data>
+  <data name="AddSvcRefDlg_PleaseWait" xml:space="preserve">
+    <value>Warten Sie, bis die Dienstinformationen heruntergeladen wurden, oder klicken Sie auf "Beenden".</value>
+  </data>
+  <data name="ReferenceGroup_FailedToGetReferencedAssembliesFromProject" xml:space="preserve">
+    <value>Assemblys, auf die verwiesen wird, können nicht aus dem Projektsystem abgerufen werden.</value>
+  </data>
+  <data name="ReferenceGroup_SvcMapFileIsMissing" xml:space="preserve">
+    <value>Der Dienstverweis ist ungültig, da die SVCMAP-Datei ("{0}") nicht gefunden wurde. Möglicherweise wurde sie verschoben, gelöscht oder aus dem Projekt ausgeschlossen. Wenn Sie eine neue SVCMAP-Datei generieren möchten, löschen Sie den Dienstverweis und fügen ihn erneut hinzu.</value>
+  </data>
+  <data name="ReferenceGroup_SvcMapFileBadFormat" xml:space="preserve">
+    <value>Der Dienstverweis ist ungültig. Die SVCMAP-Datei ("{0}") kann nicht geladen werden. Möglicherweise ist sie beschädigt oder hat ein unzulässiges Format: {1}</value>
+  </data>
+  <data name="AddSvcRegDlg_ShowErrorDetails" xml:space="preserve">
+    <value>(Details)</value>
+    <comment>This is the text for a link to additional error information.</comment>
+  </data>
+  <data name="AddSvcRefDlg_OPSelectContract" xml:space="preserve">
+    <value>Wählen Sie einen Dienstvertrag aus, um seine Abläufe anzuzeigen.</value>
+    <comment>This is the message displayed when user selects non-cotract nodes.</comment>
+  </data>
+  <data name="CSRDlg_Title" xml:space="preserve">
+    <value>Dienstverweiseinstellungen</value>
+  </data>
+  <data name="CSRDlg_CustomType" xml:space="preserve">
+    <value>(Benutzerdefiniert)</value>
+  </data>
+  <data name="CSRDlg_AssemblyNotFoundError" xml:space="preserve">
+    <value>Die Assembly "{0}" wurde nicht gefunden.</value>
+  </data>
+  <data name="CSRDlg_NullURL" xml:space="preserve">
+    <value>Die Adresse muss eine gültige, nicht leere URL sein.</value>
+    <comment>Error message to display when user enters empty URL in the address change text box</comment>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFound_1Arg" xml:space="preserve">
+    <value>{0} Dienst(e) gefunden.</value>
+    <comment>{0} = count</comment>
+  </data>
+  <data name="Err_UserCancelled" xml:space="preserve">
+    <value>Der Vorgang wurde abgebrochen.</value>
+  </data>
+  <data name="UpdateDialog_Title_1Arg" xml:space="preserve">
+    <value>Dienstverweis "{0}" wird aktualisiert</value>
+  </data>
+  <data name="Status_UpdateComplete" xml:space="preserve">
+    <value>Die Aktualisierung des Dienstverweises ist abgeschlossen.</value>
+  </data>
+  <data name="Status_GeneratingProxy" xml:space="preserve">
+    <value>Dienstverweis-Clientcode wird generiert...</value>
+  </data>
+  <data name="Status_GeneratingProxyComplete" xml:space="preserve">
+    <value>Das Generieren des Dienstverweis-Clientcodes ist abgeschlossen.</value>
+  </data>
+  <data name="Status_StartUpdate_1Arg" xml:space="preserve">
+    <value>Dienstverweis "{0}" wird aktualisiert...</value>
+  </data>
+  <data name="Status_UpdatingConfig" xml:space="preserve">
+    <value>Konfiguration wird aktualisiert...</value>
+  </data>
+  <data name="Status_UpdatingConfigComplete" xml:space="preserve">
+    <value>Die Konfigurationsaktualisierung ist abgeschlossen.</value>
+  </data>
+  <data name="Status_UpdateCancelled" xml:space="preserve">
+    <value>Die Aktualisierung des Dienstverweises wurde abgebrochen.</value>
+  </data>
+  <data name="Status_UpdateFailed" xml:space="preserve">
+    <value>Fehler beim Aktualisieren des Dienstverweises.</value>
+  </data>
+  <data name="Status_AddServiceComplete" xml:space="preserve">
+    <value>Das Hinzufügen des Dienstverweises ist abgeschlossen.</value>
+  </data>
+  <data name="Status_AddServiceFailed" xml:space="preserve">
+    <value>Fehler beim Hinzufügen des Dienstverweises.</value>
+  </data>
+  <data name="Status_StartAddService_1Arg" xml:space="preserve">
+    <value>Neuer Dienstverweis auf "{0}" wird erstellt...</value>
+    <comment>{0}=URL</comment>
+  </data>
+  <data name="CSRDlg_NoAssemblySelected" xml:space="preserve">
+    <value>Es wurde keine Assembly ausgewählt.</value>
+  </data>
+  <data name="ReferenceGroup_AsyncOpPending" xml:space="preserve">
+    <value>Der angeforderte Vorgang ist unzulässig, während ein asynchroner Vorgang ausgeführt wird.</value>
+  </data>
+  <data name="CSRDlg_MultipleURL" xml:space="preserve">
+    <value>Mehrere Adressen (in SVCMAP-Datei bearbeitbar)</value>
+  </data>
+  <data name="AddSvcRefDlg_ContractsFoundAtUrl_2Args" xml:space="preserve">
+    <value>{0} Vertrag/Verträge gefunden bei Adresse "{1}".</value>
+    <comment>{0} = count, {1} = URL where the contracts were found</comment>
+  </data>
+  <data name="AddSvcRefDlg_Error_CantCreateTempFile" xml:space="preserve">
+    <value>Temporäre Konfigurationsdatei für das Herunterladen von Dienstinformationen kann nicht erstellt werden.</value>
+  </data>
+  <data name="ConfigurationFileOpenedInIncompatibleEditor" xml:space="preserve">
+    <value>Die Datei ist bereits in einem inkompatiblen Editor geöffnet.</value>
+  </data>
+  <data name="Status_DownloadingMetadata" xml:space="preserve">
+    <value>Dienstinformationen werden heruntergeladen...</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_ExistingRefGroupNotSupported" xml:space="preserve">
+    <value>Die aktuelle Version der Software unterstützt das Hinzufügen von Dienstverweisen zu einer vorhandenen Dienstverweisgruppe nicht.</value>
+  </data>
+  <data name="Discovery_ErrorBuildSolution" xml:space="preserve">
+    <value>Wenn der Dienst in der aktuellen Projektmappe definiert ist, sollten Sie die Projektmappe erstellen und den Dienstverweis erneut hinzufügen.</value>
+  </data>
+  <data name="ReferenceGroup_MismatchBeginEndBatch" xml:space="preserve">
+    <value>Begin/EndBatch-Aufrufe stimmen nicht überein. "EndBatch" wurde häufiger aufgerufen als "BeginBatch".</value>
+  </data>
+  <data name="SingleFileGenerator_FailedToGenerateTypes_1Arg" xml:space="preserve">
+    <value>Fehler beim Generieren von Code für den Dienstverweis "{0}". Weitere Details entnehmen Sie den anderen Fehler- und Warnmeldungen.</value>
+  </data>
+</root>

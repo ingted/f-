@@ -20,7 +20,7 @@ type IEventLoop =
     
 // An implementation of IEventLoop suitable for the command-line console
 [<AutoSerializable(false)>]
-type internal SimpleEventLoop() = 
+type SimpleEventLoop() = 
     let runSignal = new AutoResetEvent(false)
     let exitSignal = new AutoResetEvent(false)
     let doneSignal = new AutoResetEvent(false)
@@ -65,7 +65,7 @@ type internal SimpleEventLoop() =
                      
 
 
-[<Sealed>]
+//[<Sealed>]
 type InteractiveSession()  = 
     let mutable evLoop = (new SimpleEventLoop() :> IEventLoop)
     let mutable showIDictionary = true

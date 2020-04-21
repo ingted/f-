@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\bin\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.deps.json
+D:\fsharp\artifacts\bin\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.dll
+D:\fsharp\artifacts\bin\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.xml
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\buildproperties.fs
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSDependencyManager.fs
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSDependencyManager.resx
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSDependencyManager.resources
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.fsproj.GenerateResource.cache
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.sourcelink.json
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.InternalsVisibleTo.fs
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.dll
+D:\fsharp\artifacts\obj\FSharp.DependencyManager.Nuget\Proto\netstandard2.0\FSharp.DependencyManager.Nuget.xml

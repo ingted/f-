@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PEVerify</name>
+    </assembly>
+    <members>
+        <member name="M:Roslyn.Test.Utilities.Desktop.CLRHelpers.PeVerify(System.Byte[],System.Boolean)">
+            <summary>
+            Verifies the specified image. Subscribe to <see cref="E:Roslyn.Test.Utilities.Desktop.CLRHelpers.ReflectionOnlyAssemblyResolve"/> to provide a loader for dependent assemblies.
+            </summary>
+        </member>
+        <member name="M:Roslyn.Test.Utilities.Desktop.CLRHelpers.PeVerify(System.String,System.Boolean)">
+            <summary>
+            Verifies the specified file. All dependencies must be on disk next to the file.
+            </summary>
+        </member>
+    </members>
+</doc>

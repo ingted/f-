@@ -1,0 +1,14 @@
+D:\fsharp\artifacts\bin\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.dll
+D:\fsharp\artifacts\bin\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.xml
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\buildproperties.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSInteractiveSettings.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSInteractiveSettings.resx
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSInteractiveSettings.resources
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.fsproj.GenerateResource.cache
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.sourcelink.json
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.InternalsVisibleTo.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.dll
+D:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Proto\net472\FSharp.Compiler.Interactive.Settings.xml

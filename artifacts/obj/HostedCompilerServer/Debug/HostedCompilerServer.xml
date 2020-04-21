@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>HostedCompilerServer</name></assembly>
+<members>
+<member name="M:MLang.Test.HostedCompilerServer.Run">
+<summary>
+ sets up and runs the infinite listen/respond loop  
+</summary>
+</member>
+<member name="T:MLang.Test.HostedCompilerServer">
+<summary>
+ TCP server which listens for message from test code in other processes,
+ and runs hosted compilers in response
+</summary>
+</member>
+<member name="M:MLang.Test.Log.log(System.String)">
+<summary>
+ simple logger
+</summary>
+</member>
+</members>
+</doc>

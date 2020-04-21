@@ -1,0 +1,17 @@
+D:\fsharp\artifacts\bin\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.dll
+D:\fsharp\artifacts\bin\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.xml
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.sourcelink.json
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.AssemblyInfo.cs
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.csproj.CopyComplete
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.dll
+D:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.xml
+E:\fsharp\artifacts\bin\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.dll
+E:\fsharp\artifacts\bin\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.xml
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.csprojAssemblyReference.cache
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.sourcelink.json
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.AssemblyInfo.cs
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.csproj.CopyComplete
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.dll
+E:\fsharp\artifacts\obj\XmlDocAttributeWithLongComment\Debug\net45\XmlDocAttributeWithLongComment.xml

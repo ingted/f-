@@ -1,0 +1,1225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSharp.LanguageService.Base</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager" -->
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.#ctor(Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED,Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow,Microsoft.VisualStudio.FSharp.LanguageService.ISource)">
+            <summary>
+            The CodeWindowManager is constructed by the base LanguageService class when VS calls
+            the IVsLanguageInfo.GetCodeWindowManager method.  You can override CreateCodeWindowManager
+            on your LanguageService if you want to plug in a different CodeWindowManager.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.Close">
+            <summary>Closes all view filters, and the document properties window</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.LanguageService">
+            <summary>Returns the LanguageService object that created this code window manager</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.Source">
+            <summary>returns the Source object associated with the IVsTextLines buffer for this code window</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.GetFilter(Microsoft.VisualStudio.TextManager.Interop.IVsTextView)">
+            <summary>
+            Returns the ViewFilter for the given view or null if no matching filter is found.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.DropDownHelper">
+            <summary>Return the optional TypeAndMemberDropdownBars object for the drop down combos</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.CodeWindow">
+            <summary>Return the IVsCodeWindow associated with this code window manager.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.AddAdornments">
+            <summary>Install the optional TypeAndMemberDropdownBars, and primary and secondary view filters</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.RemoveAdornments">
+            <summary>Remove drop down combos, view filters, and notify the LanguageService that the Source and
+            CodeWindowManager is now closed</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.OnNewView(Microsoft.VisualStudio.TextManager.Interop.IVsTextView)">
+            <summary>Install a new view filter for the given view. This method calls your
+            CreateViewFilter method.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CodeWindowManager.OnSetFocus(Microsoft.VisualStudio.TextManager.Interop.IVsTextView)">
+            <summary>Refresh the document properties</summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars">
+            <summary>
+            Represents the two drop down bars on the top of a text editor window that allow 
+            types and type members to be selected by name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.languageService">
+            <summary>The language service object that created this object and calls its SynchronizeDropdowns method</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.dropDownBar">
+            <summary>The correspoding VS object that represents the two drop down bars. The VS object uses call backs to pull information from
+            this object and makes itself known to this object by calling SetDropdownBar</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.imageList">
+            <summary>The icons that prefix the type names and member signatures</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.textView">
+            <summary>The current text editor window</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.dropDownTypes">
+            <summary>The list of types that appear in the type drop down list.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.dropDownMembers">
+            <summary>The list of types that appear in the member drop down list. </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TypeAndMemberDropdownBars.OnSynchronizeDropdowns(Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED,Microsoft.VisualStudio.TextManager.Interop.IVsTextView,System.Int32,System.Int32,System.Collections.ArrayList,System.Collections.ArrayList,System.Int32@,System.Int32@)">
+            <summary>
+            This method is called to update the drop down bars to match the current contents of the text editor window. 
+            It is called during OnIdle when the caret position changes.  You can provide new drop down members here.
+            It is up to you to sort the ArrayLists if you want them sorted in any particular order.
+            </summary>
+            <param name="languageService">The language service</param>
+            <param name="textView">The editor window</param>
+            <param name="line">The line on which the cursor is now positioned</param>
+            <param name="col">The column on which the cursor is now position</param>
+            <param name="dropDownTypes">The current list of types (you can update this)</param>
+            <param name="dropDownMembers">The current list of members (you can update this)</param>
+            <param name="selectedType">The selected type (you can update this)</param>
+            <param name="selectedMember">The selected member (you can update this)</param>
+            <returns>true if something was updated</returns>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.UIThread.WrappedStacktraceKey">
+            <summary>
+            RunSync puts orignal exception stacktrace to Exception.Data by this key if action throws on UI thread
+            </summary>
+            WrappedStacktraceKey is a string to keep exception serializable.
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.UIThread.JTF">
+            <summary>
+            Local JoinableTaskContext
+            ensuring non-reentrancy.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.UIThread.DoOnUIThread``1(System.Func{``0})">
+            <summary>
+            Performs a callback on the UI thread and blocks until it is done, using the VS mechanism for
+            ensuring non-reentrancy.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.UIThread.DoOnUIThread(System.Action)">
+            <summary>
+            Performs a callback on the UI thread and blocks until it is done, using the VS mechanism for
+            ensuring non-reentrancy.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.EditSpan">
+            <summary>
+            This class encapsulates one atomic edit operation.
+            Add these to an EditArray then when you are ready call ApplyEdits().
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.EditSpan.#ctor(Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.String)">
+            <summary>
+            Construct a new edit span object
+            </summary>
+            <param name="toReplace">The text span to remove from the buffer (can be empty)</param>
+            <param name="insertText">The text to insert in it's place (can be null)</param>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.EditSpan.LineCount">
+            <summary>
+            Returns the number of lines in the new text being inserted.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.EditSpan.LengthOfLastLine">
+            <summary>
+            Returns the length of the last line of text being inserted.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.EditArray">
+            <summary>
+            This class encapsulates a batch edit operation.  The reason this class exists is because
+            performing thousands of tiny edits on a large document can be pretty slow, so the best thing
+            to do is merge the edits into bigger chunks and that is exactly what this class will do
+            for you.  The trick is that when merging edits you need to be careful not to include any 
+            IVsTextLineMarkers in the merged chunks, because editing over the top of the marker
+            will blow it away, which is not what the user wants.  The user wants to keep all their
+            breakpoints and bookmarks, and red and blue squigglies and so on.  So this class also takes
+            care of that.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.EditArray.#ctor(Microsoft.VisualStudio.FSharp.LanguageService.ISource,Microsoft.VisualStudio.TextManager.Interop.IVsTextView,System.Boolean,System.String)">
+            <summary>
+            This constructor takes a view and will use CompoundViewAction to make the updates
+            and it will update the current selection accordingly.
+            <param name="source">The buffer to operate on</param>
+            <param name="view">The text view to use for CompoundViewAction and whose selection you want updated</param>
+            <param name="merge">Whether to attempt to merge edits</param>
+            <param name="description">Name used in compound action</param>
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.EditArray.Count">
+            <summary>
+            Return the number of edits in the array.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.EditArray.Add(Microsoft.VisualStudio.FSharp.LanguageService.EditSpan)">
+            <summary>
+            Add a new atomic edit to the array.  The edits cannot intersect each other.  
+            The spans in each edit must be based on the current state of the buffer, 
+            and not based on post-edit spans.  This EditArray will calculate the
+            post edit spans for you.
+            </summary>
+            <param name="editSpan"></param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.EditArray.GetEnumerator">
+            <summary>Allows enumeration of EditSpan objects</summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SimpleEditorView">
+            <summary>
+            This class View provides an abstract base class for simple editor views
+            that follow the VS simple embedding model.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SimpleEditorView.QueryCommandStatus(System.Guid@,System.UInt32)">
+            <summary>
+            Override this method to provide custom command status, 
+            e.g. (int)OLECMDF.OLECMDF_SUPPORTED | (int)OLECMDF.OLECMDF_ENABLED
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SimpleEditorView.ExecCommand(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Override this method to intercept the IOleCommandTarget::Exec call.
+            </summary>
+            <returns>Usually returns 0 if ok, or OLECMDERR_E_NOTSUPPORTED</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SimpleEditorView.QueryParameterList(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr)">
+            <summary>
+            This method is called when IOleCommandTarget.Exec is called with 
+            nCmdexecopt equal to MAKELONG(OLECMDEXECOPT_SHOWHELP, VSCmdOptQueryParameterList).
+            </summary>
+            <returns>Usually returns 0 if ok, or OLECMDERR_E_NOTSUPPORTED</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SimpleEditorView.QueryStatus(System.Guid@,System.UInt32,Microsoft.VisualStudio.OLE.Interop.OLECMD[],System.IntPtr)">
+            <internalonly/>
+            <summary>
+            IOleCommandTarget implementation
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SimpleEditorView.Exec(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr)">
+            <internalonly/>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.EditorControl">
+            <summary>
+            This class wraps a managed WinForm control and uses that as the editor window.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ExpansionProvider.FindExpansionByShortcut(Microsoft.VisualStudio.TextManager.Interop.IVsTextView,System.String,Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.Boolean,System.String@,System.String@)">
+            <summary>Returns S_OK if match found, S_FALSE if expansion UI is shown, and error otherwise</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ExpansionFunction.#ctor">
+            <summary>You must construct this object with an ExpansionProvider</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ExpansionFunction.GetIntellisenseList">
+            <summary>Override this method if you want intellisense drop support on a list of possible values.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ExpansionFunction.GetArgument(System.Int32)">
+            <summary>
+            Gets the value of the specified argument, resolving any fields referenced in the argument.
+            In the substitution, "$$" is replaced with "$" and any floating '$' signs are left unchanged,
+            for example "$US 23.45" is returned as is.  Only if the two dollar signs enclose a string of
+            letters or digits is this considered a field name (e.g. "$foo123$").  If the field is not found
+            then the unresolved string "$foo" is returned.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.ILanguageServiceTestHelper">
+            <summary>
+            Interface provides inside-VS test hooks for the F# language service.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ILanguageServiceTestHelper.GetSemanticsVersion">
+            <summary>
+            Version number will increment to indicate a change in the semantics of preexisting methods. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequestReason.ParseFile">
+            <summary>
+            This reason is used when we want to trigger only 'parsing' (without type-checking) to 
+            update the untyped AST information (e.g. when a different file is opened). After updating
+            the untyped scope (in F# LS), a 'null' can be returned as the result of 'ExecuteBackgroundRequest'.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.Dispose">
+            <summary>
+            Cleanup the sources, uiShell, shell, preferences and imageList objects
+            and unregister this language service with VS.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.GetLanguagePreferences">
+            It is expected that you will have one static language preferences object
+            for your package.
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.IsRecentScopeSufficientForBackgroundRequest(Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequestReason)">
+            If this returns true we can reuse a recent IntellisenseInfo if its available
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.SetUserContextDirty(System.String)">
+            <summary>
+            Call this method if you want UpdateLanguageContext to be called again.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.LastActiveTextView">
+            <devdoc>
+            Returns the last active IVsTextView that is managed by this language service.
+            </devdoc>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.RecentFullTypeCheckResults">
+            Returns the last active successful fetch of an IntellisenseInfo that is managed by this language service.
+            This is only relevant to the active text view and is cleared each time the text view is switched. If it
+            is null we must make a background request to the language service to get the recent full typecheck results.
+            If a file is dirty, an OnIdle call will kick in to refresh the recent results.
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.IsActive">
+            <devdoc>
+            Return whether or not the last active text view is one of ours or not.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.CreateExpansionFunction(Microsoft.VisualStudio.FSharp.LanguageService.ExpansionProvider,System.String)">
+            If the functionName is supported, return a new IVsExpansionFunction object.
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.DispatchCommand(System.Guid,System.UInt32,System.IntPtr,System.IntPtr)">
+            <summary>Executes the given command if it is enabled and supported using the
+            current SUIHostCommandDispatcher.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.QueryInvalidEncoding(Microsoft.VisualStudio.TextManager.Interop.__VSTFF,System.String@)">
+            Return true if the given encoding information is invalid for your language service
+            Default always returns false.  If you return true, then also return an error
+            message to display to the user.
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguageService_DEPRECATED.Microsoft#VisualStudio#FSharp#LanguageService#ILanguageServiceTestHelper#GetSemanticsVersion">
+            <summary>
+            Version number will increment to indicate a change in the semantics of preexisting methods. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequest_DEPRECATED.ResultTimestamp">
+            File timestamp (ChangeCount) that the results correspond to. This will be different than Timestamp in the case
+            that stale result were used.
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequest_DEPRECATED.Source">
+            <summary>
+            Source that represents the opened file for which the parse request was created. 
+            This can be used for accessing information like file name, line lengths etc.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.GotoDefinitionResult_DEPRECATED">
+            <summary>
+            Represents result returned from scope.Goto
+            If Success = true, then Url\Span should be filled, ErrorDescription will be null
+            If Success = false - then only ErrorDescription will have value, Url and Span will have default values
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.GotoDefinitionResult_DEPRECATED.MakeSuccess(System.String,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <summary>
+            Creates instance of GotoDefinitionResult that will have Success = true
+            </summary>
+            <param name="url">Path to source file</param>
+            <param name="span">Location in source file</param>
+            <returns>New instance of GotoDefinitionResult</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.GotoDefinitionResult_DEPRECATED.MakeError(System.String)">
+            <summary>
+            Creates instance of GotoDefinitionResult that will have Success = false
+            </summary>
+            <param name="errorDescription">Error message</param>
+            <returns>New instance of GotoDefinitionResult</returns>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.PendingRequests_DEPRECATED">
+            <summary>
+            Stores incoming requests
+            Maintains queue using following rules
+            1. Max amount of items in queue = 2
+            2. requests are divided to UI and non-UI
+            3. UI request discards all requests that were enqueued before
+            4. non-UI request replaces old non-UI request that was enqueued before
+            5. if non-UI request is enqueued after UI request -> nothing happens and they will be dequeued subsequently
+            
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.PendingRequests_DEPRECATED.ContainsSimilarRequest(Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequest_DEPRECATED)">
+            <summary>
+            Checks if request queue contains request similar to the given one.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.PendingRequests_DEPRECATED.Dequeue">
+            <summary>
+            Gets request from queue
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.PendingRequests_DEPRECATED.Set(Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequest_DEPRECATED)">
+            <summary>
+            Discards all requests added so far and enqueues specified request.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.PendingRequests_DEPRECATED.Count">
+            for tests only!!!
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink">
+            <summary>
+            AuthoringSink is used to gather information from the parser to help in the following:
+            - error reporting
+            - matching braces (ctrl-])
+            - intellisense: Member Selection, CompleteWord, QuickInfo, MethodTips
+            - management of the autos window in the debugger
+            - breakpoint validation
+            </summary>
+            
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink.BraceMatching">
+            <summary>Use this property to find if your parser should call MatchPair or MatchTriple</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink.MatchPair(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.Int32)">
+            <summary>
+            Whenever a matching pair is parsed, e.g. '{' and '}', this method is called
+            with the text span of both the left and right item. The
+            information is used when a user types "ctrl-]" in VS
+            to find a matching brace and when auto-highlight matching
+            braces is enabled.  A priority can also be given so that multiple overlapping pairs 
+            can be prioritized for brace matching.  The matching pair with the highest priority 
+            (largest integer value) wins.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink.MatchTriple(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.Int32)">
+            <summary>
+            Matching tripples are used to highlight in bold a completed statement.  For example
+            when you type the closing brace on a foreach statement VS highlights in bold the statement
+            that was closed.  The first two source contexts are the beginning and ending of the statement that
+            opens the block (for example, the span of the "foreach(...){" and the third source context
+            is the closing brace for the block (e.g., the "}").  A priority can also be given so that
+            multiple overlapping pairs can be prioritized for brace matching.  
+            The matching pair with the highest priority  (largest integer value) wins.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink.AutoExpression(Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <summary>
+            AutoExpression is in support of IVsLanguageDebugInfo.GetProximityExpressions.
+            It is called for each expression that might be interesting for
+            a user in the "Auto Debugging" window. All names that are
+            set using StartName and QualifyName are already automatically
+            added to the "Auto" window! This means that AutoExpression
+            is rarely used.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink.CodeSpan(Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <summary>
+            CodeSpan is in support of IVsLanguageDebugInfo.ValidateBreakpointLocation.
+            It is called for each region that contains "executable" code.
+            This is used to validate breakpoints. Comments are
+            automatically taken care of based on TokenInfo returned from scanner. 
+            Normally this method is called when a procedure is started/ended.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AuthoringSink.AddError(System.String,System.String,System.String,Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.FSharp.LanguageService.Severity)">
+            <summary>
+            Add an error message. This method also filters out duplicates so you only
+            see the unique errors in the error list window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_VsEnvironmentPackage">
+            <summary>GUID for the environment package.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsNewProjectPseudoFolder">
+            <summary>GUID for the "Visual Studio" pseudo folder in the registry.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_MiscellaneousFilesProject">
+            <summary>GUID for the "Miscellaneous Files" project.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_SolutionItemsProject">
+            <summary>GUID for Solution Items project.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.SID_SVsGeneralOutputWindowPane">
+            <summary>Pseudo service that returns a IID_IVsOutputWindowPane interface of the General output pane in the VS environment.
+            Querying for this service will cause the General output pane to be created if it hasn't yet been created.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.SID_SUIHostCommandDispatcher">
+            <summary>
+            SUIHostCommandDispatcher service returns an object that implements IOleCommandTarget.
+            This object handles command routing for the Environment. Use this service if you need to
+            route a command based on the current selection/state of the Environment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_VsUIHierarchyWindow">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_DefaultEditor">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_ExternalEditor">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_OutWindowGeneralPane">
+            <summary>GUID of the general output pane inside the output window.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_ItemType_PhysicalFile">
+            <summary>Physical file on disk or web (IVsProject::GetMkDocument returns a file path).</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_ItemType_PhysicalFolder">
+            <summary>Physical folder on disk or web (IVsProject::GetMkDocument returns a directory path).</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_ItemType_VirtualFolder">
+            <summary>Non-physical folder (folder is logical and not a physical file system directory).</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_ItemType_SubProject">
+            <summary>A nested hierarchy project.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_SolutionBuilding">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_Debugging">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_Dragging">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_FullScreenMode">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_DesignMode">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_NoSolution">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_SolutionExists">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_EmptySolution">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_SolutionHasSingleProject">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_SolutionHasMultipleProjects">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.UICONTEXT_CodeWindow">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewAll">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewUserTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewShortcutTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewHTMLTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewCompilerTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewCommentTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewCurrentFileTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewCheckedTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsTaskListViewUncheckedTasks">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_VsTaskList">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_VsTaskListPackage">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.SID_SVsToolboxActiveXDataProvider">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_VsDocOutlinePackage">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CLSID_VsCfgProviderEventsHelper">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_COMPlusPage">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_COMClassicPage">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_SolutionPage">
+            <summary></summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSTASKBITMAP">
+            <summary>
+            Specifies options for a bitmap image associated with a task item.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GUID_VsUIHierarchyWindowCmds">
+            <summary>Command Group GUID for commands that only apply to the UIHierarchyWindow.</summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds">
+            <summary>
+            The following commands are special commands that only apply to the UIHierarchyWindow.
+            They are defined as part of the command group GUID: GUID_VsUIHierarchyWindowCmds.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds.UIHWCMDID_RightClick">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds.UIHWCMDID_DoubleClick">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds.UIHWCMDID_EnterKey">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds.UIHWCMDID_StartLabelEdit">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds.UIHWCMDID_CommitLabelEdit">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VsUIHierarchyWindowCmdIds.UIHWCMDID_CancelLabelEdit">
+            <summary></summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID">
+            <summary>
+            These element IDs are the only element IDs that can be used with the selection service.
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_UndoManager">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_WindowFrame">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_DocumentFrame">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_StartupProject">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_PropertyBrowserSID">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_UserContext">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_ResultList">
+            <summary></summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.VSSELELEMID.SEID_LastWindowFrame">
+            <summary></summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT">
+            <devdoc>
+            Helper class for setting the text parameters to OLECMDTEXT structures.
+            </devdoc>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.OLECMDTEXTF">
+            <summary>
+            Flags for the OLE command text
+            </summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.OLECMDTEXTF.OLECMDTEXTF_NONE">
+            <summary>No flag</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.OLECMDTEXTF.OLECMDTEXTF_NAME">
+            <summary>The name of the command is required.</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.OLECMDTEXTF.OLECMDTEXTF_STATUS">
+            <summary>A description of the status is required.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.GetFlags(System.IntPtr)">
+            <summary>
+            Gets the flags of the OLECMDTEXT structure
+            </summary>
+            <param name="pCmdTextInt">The structure to read.</param>
+            <returns>The value of the flags.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.GetText(System.IntPtr)">
+            <devdoc>
+            Accessing the text of this structure is very cumbersome.  Instead, you may
+            use this method to access an integer pointer of the structure.
+            Passing integer versions of this structure is needed because there is no
+            way to tell the common language runtime that there is extra data at the end of the structure.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.OLECMDTEXT.SetText(System.IntPtr,System.String)">
+            <devdoc>
+            Accessing the text of this structure is very cumbersome.  Instead, you may
+            use this method to access an integer pointer of the structure.
+            Passing integer versions of this structure is needed because there is no
+            way to tell the common language runtime that there is extra data at the end of the structure.
+            </devdoc>
+            <summary>
+            Sets the text inside the structure starting from an integer pointer.
+            </summary>
+            <param name="pCmdTextInt">The integer pointer to the position where to set the text.</param>
+            <param name="text">The text to set.</param>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.tagOLECMDF">
+            <devdoc>
+            OLECMDF enums for IOleCommandTarget
+            </devdoc>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.StreamConsts">
+            <devdoc>
+            Constants for stream usage.
+            </devdoc>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.DataStreamFromComStream">
+            <devdoc>
+            This class implements a managed Stream object on top
+            of a COM IStream
+            </devdoc>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.ConnectionPointCookie">
+            <devdoc>
+            Class that encapsulates a connection point cookie for COM event handling.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.ConnectionPointCookie.#ctor(System.Object,System.Object,System.Type)">
+            <devdoc>
+            Creates a connection point to of the given interface type.
+            which will call on a managed code sink that implements that interface.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.ConnectionPointCookie.#ctor(System.Object,System.Object,System.Type,System.Boolean)">
+            <devdoc>
+            Creates a connection point to of the given interface type.
+            which will call on a managed code sink that implements that interface.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GetAbsolutePath(System.String)">
+            <devdoc>
+            This method takes a file URL and converts it to an absolute path.  The trick here is that
+            if there is a '#' in the path, everything after this is treated as a fragment.  So
+            we need to append the fragment to the end of the path.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GetLocalPath(System.String)">
+            <devdoc>
+            This method takes a file URL and converts it to a local path.  The trick here is that
+            if there is a '#' in the path, everything after this is treated as a fragment.  So
+            we need to append the fragment to the end of the path.
+            </devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.IsSamePath(System.String,System.String)">
+            <devdoc>
+            Please use this "approved" method to compare file names.
+            </devdoc>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.ICodeClassBase">
+            --------------------------------------------------------------------------
+             ICodeClassBase:
+            --------------------------------------------------------------------------
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GetFileAttributes(System.String)">
+            <summary>
+            The kernel32 GetFileAttributes function.
+            </summary>
+            <param name="name">The name of the file to get the attributes for.</param>
+            <returns>The attributes of the file.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.PostMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Places a message in the message queue associated with the thread that created the 
+            specified window and then returns without waiting for the thread to process the message. 
+            </summary>
+            <param name="hwnd">Handle to the window whose window procedure is to receive the message.</param>
+            <param name="msg">Specifies the message to be posted.</param>
+            <param name="wparam">Specifies additional message-specific information.</param>
+            <param name="lparam">Specifies additional message-specific information.</param>
+            <returns>Nonzero indicates success. Zero indicates failure.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.SetParent(System.IntPtr,System.IntPtr)">
+            <summary>
+            Changes the parent window of the specified child window.
+            </summary>
+            <param name="hWnd">Handle to the child window.</param>
+            <param name="hWndParent">Handle to the new parent window. If this parameter is NULL, the desktop window becomes the new parent window.</param>
+            <returns>A handle to the previous parent window indicates success. NULL indicates failure.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.SetWindowPos(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Changes the size, position, and z-order of a child, pop-up, or top-level window.
+            </summary>
+            <param name="hWnd">Handle to the window.</param>
+            <param name="hWndInsertAfter">Handle to the window to precede the positioned window in the z-order.</param>
+            <param name="x">Specifies the new position of the left side of the window, in client coordinates.</param>
+            <param name="y">Specifies the new position of the top of the window, in client coordinates.</param>
+            <param name="cx">Specifies the new width of the window, in pixels.</param>
+            <param name="cy">Specifies the new height of the window, in pixels.</param>
+            <param name="flags">Specifies the window sizing and positioning flags.</param>
+            <returns>Nonzero indicates success. Zero indicates failure.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.ShowWindow(System.IntPtr,System.Int32)">
+            <summary>
+            Sets the specified window show state.
+            </summary>
+            <param name="hWnd">Handle to the window.</param>
+            <param name="nCmdShow">Specifies how the window is to be shown.</param>
+            <returns>Nonzero indicates that the window was previously visible. Zero indicates that the window was previously hidden.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GlobalAlloc(System.Int32,System.Int32)">
+            <summary>
+            Allocates the specified number of bytes from the heap.
+            </summary>
+            <param name="uFlags">Memory allocation attributes.</param>
+            <param name="dwBytes">Number of bytes to allocate.</param>
+            <returns>If the function succeeds, the return value is a handle to the newly allocated memory object, NULL otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GlobalReAlloc(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32)">
+            <summary>
+            Changes the size or attributes of a specified global memory object.
+            </summary>
+            <param name="handle">Handle to the global memory object to be reallocated.</param>
+            <param name="bytes">New size of the memory block, in bytes.</param>
+            <param name="flags">Reallocation options.</param>
+            <returns>If the function succeeds, the return value is a handle to the reallocated memory object, NULL otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GlobalLock(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Locks a global memory object and returns a pointer to the first byte of the object's memory block.
+            </summary>
+            <param name="handle">Handle to the global memory object.</param>
+            <returns>If the function succeeds, the return value is a pointer to the first byte of the memory block, NULL otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GlobalUnlock(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Decrements the lock count associated with a memory object.
+            </summary>
+            <param name="handle">Handle to the global memory object.</param>
+            <returns>If the memory object is still locked after decrementing the lock count, the return value is a nonzero value.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GlobalFree(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Frees the specified global memory object and invalidates its handle.
+            </summary>
+            <param name="handle">Handle to the global memory object.</param>
+            <returns>If the function succeeds, the return value is NULL; if it fails the return value is equal to a handle to the global memory object.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.GlobalSize(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Retrieves the current size of the specified global memory object, in bytes.
+            </summary>
+            <param name="handle">Handle to the global memory object.</param>
+            <returns>If the function succeeds, the return value is the size of the specified global memory object, in bytes; it is zero otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemoryW(System.IntPtr,System.String,System.Int32)">
+            <summary>
+            Moves a string to a location in memory.
+            </summary>
+            <param name="pdst">Pointer to the starting address of the move destination.</param>
+            <param name="psrc">The string to be moved</param>
+            <param name="cb">Size of the block of memory to move, in bytes.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemoryW(System.IntPtr,System.Char[],System.Int32)">
+            <summary>
+            Moves an array of char to a location in memory.
+            </summary>
+            <param name="pdst">Pointer to the starting address of the move destination.</param>
+            <param name="psrc">The array to be moved</param>
+            <param name="cb">Size of the block of memory to move, in bytes.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemoryW(System.Text.StringBuilder,System.Runtime.InteropServices.HandleRef,System.Int32)">
+            <summary></summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemoryW(System.Char[],System.Runtime.InteropServices.HandleRef,System.Int32)">
+            <summary></summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemory(System.IntPtr,System.Byte[],System.Int32)">
+            <summary>
+            Moves an array of bytes to a location in memory.
+            </summary>
+            <param name="pdst">Pointer to the starting address of the move destination.</param>
+            <param name="psrc">The array to be moved</param>
+            <param name="cb">Size of the block of memory to move, in bytes.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemory(System.Byte[],System.Runtime.InteropServices.HandleRef,System.Int32)">
+            <summary></summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemory(System.IntPtr,System.Runtime.InteropServices.HandleRef,System.Int32)">
+            <summary></summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.CopyMemory(System.IntPtr,System.String,System.Int32)">
+            <summary></summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.WideCharToMultiByte(System.Int32,System.Int32,System.String,System.Int32,System.Byte[],System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Maps a wide-character string to a new character string.
+            The new character string is not necessarily from a multibyte character set.
+            </summary>
+            <param name="codePage">Specifies the code page used to perform the conversion.</param>
+            <param name="flags">Specifies the handling of unmapped characters.</param>
+            <param name="wideStr">The wide-character string to be converted.</param>
+            <param name="chars">The number of wide characters in the string pointed to by the wideStr parameter.</param>
+            <param name="pOutBytes">Points to the buffer to receive the translated string.</param>
+            <param name="bufferBytes">the size, in bytes, of the buffer pointed to by the pOutBytes parameter.</param>
+            <param name="defaultChar">The character used if a wide character cannot be represented in the specified code page.</param>
+            <param name="pDefaultUsed">Flag that indicates whether a default character was used.</param>
+            <returns>If the function succeeded, the return value is the number of bytes written to the buffer pointed to by pOutBytes; zero otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.NativeMethods.IsSameComObject(System.Object,System.Object)">
+            <summary>
+            Compares two COM objects to see if they represent the same underlying object.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.LanguagePreferences">
+            <summary>
+            LanguagePreferences encapsulates the standard General and Tab settings for a language service
+            and provides a way of getting and setting the values.  It is expected that you
+            will have one global LanguagePreferences created by your package.  The General and Tabs
+            settings are automatically persisted in .vssettings files by the core editor package.
+            All you need to do is register your language under AutomationProperties/TextEditor
+            and specify:
+            <code>
+             YourLanguage = s '%YourLocalizedName%'
+             {
+                val Name = s 'YourLanguage'
+                val Package = s '{F5E7E720-1401-11D1-883B-0000F87579D2}'
+                val ProfileSave = d 1
+                val ResourcePackage = s '%YourPackage%'
+             }
+            </code>
+            Therefore this class hides all it's properties from user setting persistence using
+            DesignerSerializationVisibility.Hidden.  This is so that if you give this object
+            to the Package.ExportSettings method as the AutomationObject then it will only
+            write out your new settings which is what you want, otherwise the General and Tab
+            settings will appear in two places in the .vsssettings file.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.LanguagePreferences.#ctor(System.IServiceProvider,System.Guid,System.String)">
+            <summary>
+            Gets the language preferences.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.LanguagePreferences.Site">
+            <summary>
+            This property is not public for a reason. If it were public it would
+            get called during LoadSettingsFromStorage which will break it.  
+            Instead use GetSite().
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.TokenInfo.Token">
+            <summary>Language Specific</summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.TokenTriggers">
+            <summary>
+            TokenTriggers:
+            If a character has (a) trigger(s) associated with it, it may
+            fire one or both of the following triggers:
+            MemberSelect - a member selection tip window
+            MatchBraces - highlight matching braces
+            or the following trigger:
+            MethodTip - a method tip window
+                
+            The following triggers exist for speed reasons: the (fast) lexer 
+            determines when a (slow) parse might be needed. 
+            The Trigger.MethodTip trigger is subdivided in 4 
+            other triggers. It is the best to be as specific as possible;
+            it is better to return Trigger.ParamStart than Trigger.Param
+            (or Trigger.MethodTip) 
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED">
+            <summary>
+            Source represents one source file and manages the parsing and intellisense on this file
+            and keeping things like the drop down combos in sync with the source and so on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.IsCompletorActive">
+            <devdiv>returns true if either CompletionSet or MethodData is being displayed.</devdiv>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.ReformatSpan(Microsoft.VisualStudio.FSharp.LanguageService.EditArray,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <summary>
+            This method formats the given span using the given EditArray. The default behavior does nothing.  
+            So you need to override this method if you want formatting to work.  
+            An empty input span means reformat the entire document.
+            You also need to turn on Preferences.EnableFormatSelection.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.GetCommentFormat">
+            <summary>Implement this method to provide different comment delimiters.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.CommentLines(Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.String)">
+            <summary>
+            Called from Comment Selection. Default behavior is to insert line style comments
+            at beginning and end of selection. Override to add custome behavior.
+            </summary>
+            <param name="span"></param>
+            <param name="lineComment"></param>
+            <returns>The final span of the commented lines including the comment delimiters</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.CommentBlock(Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.String,System.String)">
+            <summary>
+            Called from Comment Selection. Default behavior is to insert block style comments
+            at beginning and end of selection. Override to add custome behavior.
+            </summary>
+            <returns>The final span of the commented block including the comment delimiters</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.UncommentSpan(Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <summary>
+            Uncomments the given span of text and returns the span of the uncommented block.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.UncommentBlock(Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.String,System.String)">
+            <summary>Uncomments the given block and returns the span of the uncommented block</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.ScanToNonWhitespaceChar(System.Int32)">
+            <summary>
+            Return the column position of 1st non whitespace character on line
+            </summary>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.ColumnToVisiblePosition(System.Int32,System.Int32)">
+            <summary>
+            Return the column position that the user will see given the current
+            tab size setting.  This is the opposite of VisiblePositionToColumn
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.VisiblePositionToColumn(System.Int32,System.Int32)">
+            <summary>
+            Convert a user visible position back to char position in the buffer.
+            This is the opposite of ColumnToVisiblePosition. In this case the 
+            visible position was off the end of the line, it just returns the 
+            column position at the end of the line.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.NormalizeErrorString(System.String)">
+            <summary>
+            Returns normalized form of given string replacing all control chars.
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.NewlineifyErrorString(System.String)">
+            Converts --flaterrors messages back to messages with embedded newlines
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.CheckForRename">
+            <summary>
+            If the file has been renamed then do some cleanup.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceBase_DEPRECATED.TrimSpan(Microsoft.VisualStudio.TextManager.Interop.TextSpan@)">
+            Trim whitespace from the beginning and ending of the given span.
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.CompoundAction">
+            <summary>
+            This class can be used in a using statement to open and close a compound edit action
+            via IVsCompoundAction interface.  Be sure to call Close() at the end of your using
+            statement, otherwise Dispose will call Abort.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.CompoundViewAction">
+            <summary>
+            This class can be used in a using statement to open and close a compound edit action
+            via IVsCompoundAction interface from an IVsTextView.  This allows the view to optimize 
+            it's updates based on edits you are making on the buffer, so it's the preferred way of
+            doing things if you have access to the IVsTextView.  If not, use CompoundAction.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.CompoundViewAction.Dispose">
+            <summary>This method calls Close if you have not already called Close</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.UnsafeNativeMethods.GlobalAlloc(System.Int32,System.Int32)">
+            IDataObject stuff
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.StartsAfterStartOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span starts after the start of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.StartsAfterEndOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span starts after the end of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.StartsBeforeStartOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span starts before the start of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.StartsBeforeEndOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span starts before the end of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.EndsBeforeStartOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span ends before the start of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.EndsBeforeEndOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span starts before the end of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.EndsAfterStartOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span ends after the start of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.EndsAfterEndOf(Microsoft.VisualStudio.TextManager.Interop.TextSpan,Microsoft.VisualStudio.TextManager.Interop.TextSpan)">
+            <devdoc>Returns true if the first span starts after the end of the second span.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.TextSpanHelper.Normalize(Microsoft.VisualStudio.TextManager.Interop.TextSpan@,Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+            <devdoc>Pins the text span to valid line bounds returned from IVsTextLines.</devdoc>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FilePathUtilities.GetFilePath(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+            <summary>
+            Get path for text buffer.
+            </summary>
+            <param name="textLines">The text buffer.</param>
+            <returns>The path of the text buffer.</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FilePathUtilities.GetFilePath(System.IntPtr)">
+            <summary>
+            Get file path for an object that is implementing IVsUserData.
+            </summary>
+            <param name="unknown">Reference to an IUnknown interface.</param>
+            <returns>The file path</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FilePathUtilities.GetFileExtension(System.String)">
+            <summary>This method returns the file extension in lower case, including the "."
+            and trims any blanks or null characters from the string.  Null's can creep in via
+            interop if we get a badly formed BSTR</summary>
+        </member>
+        <member name="F:Microsoft.VisualStudio.FSharp.LanguageService.AbstractPatternMatcher.caseSensitive">
+            <summary>
+            Whether case-sensitive matches are preferred. When set to true, this means that
+            case-sensitive matches may be prefered over a case insensitive one. For example, if the
+            candidate matches the pattern exactly but case insensitively, it will still lose to a
+            case-sensitive camel-case match.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AbstractPatternMatcher.MatchSingleWordPattern(System.String,System.String)">
+            <summary>
+            Determines if a candidate string should matched given the user's pattern. 
+            </summary>
+            <param name="candidate">The string to test.</param>
+            <param name="pattern">The pattern to match against, which may use things like
+            Camel-Cased patterns.</param>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AbstractPatternMatcher.BreakIntoCharacterParts(System.String)">
+            <summary>
+            Breaks an identifier string into constituent parts. Do not call. Internal only for
+            testing purposes.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.AbstractPatternMatcher.BreakIntoWordParts(System.String)">
+            <summary>
+            Breaks an identifier string into constituent parts. Do not call. Internal only for
+            testing purposes.
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter">
+            <summary>
+            ViewFilter provides a default implementation of IVsTextViewFilter providing a
+            handling of the following VS commands:
+            
+            VsCommands.GotoDefn
+            VsCommands.GotoDecl
+            VsCommands.GotoRef
+            VsCommands2K.COMMENT_BLOCK
+            VsCommands2K.UNCOMMENT_BLOCK
+            VsCommands2K.SHOWMEMBERLIST
+            VsCommands2K.COMPLETEWORD
+            VsCommands2K.PARAMINFO
+            VsCommands2K.QUICKINFO
+            VsCommands2K.OUTLN_STOP_HIDING_ALL
+            VsCommands2K.OUTLN_START_AUTOHIDING
+            VsCommands2K.SHOWCONTEXTMENU
+            
+            Most of the work is delegated to the Source object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.CodeWindowManager">
+            <summary>Returnt the CodeWindowManager that created this view filter.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.Source">
+            <summary>Return the Source object encapsulating the text buffer.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.TextTipData">
+            <summary>Get or set the TextTipData object used for displaying tool tips.</summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.TextView">
+            <summary>Return the IVsTextView associated with this filter.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.GetWordExtent(System.Int32,System.Int32,System.UInt32,Microsoft.VisualStudio.TextManager.Interop.TextSpan[])">
+            <summary>Returns the result of Source.GetWordExtent.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.GetDataTipText(Microsoft.VisualStudio.TextManager.Interop.TextSpan[],System.String@)">
+            <summary>
+            If Preferences.EnableQuickInfo is true then this method kicks of a parse with the 
+            reason BackgroundRequestReason.QuickInfo to find information about the current token.  If the
+            parse finds something (returned via the IntellisenseInfo.GetDataTipText) then it is
+            displayed using the TextTipData object.  When the asynchronous parse is finished
+            GetFullDataTipText is called to pop up the tip.
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.QueryCommandStatus(System.Guid@,System.UInt32)">
+            <summary>
+            Override this method to intercept the IOleCommandTarget::QueryStatus call.
+            </summary>
+            <param name="guidCmdGroup"></param>
+            <param name="nCmdId"></param>
+            <returns>Usually returns a combination of OLECMDF flags, for example
+            OLECMDF_ENABLED | OLECMDF_SUPPORTED.  
+            Return E_FAIL if want to delegate to the next command target.
+            </returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.QueryParameterList(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr)">
+            <summary>
+            The parameter list of a command is queried by calling Exec with the LOWORD
+            of nCmdexecopt set to OLECMDEXECOPT_SHOWHELP (instead of the more usual
+            OLECMDEXECOPT_DODEFAULT), the HIWORD of nCmdexecopt set to
+            VSCmdOptQueryParameterList, pvaIn set to NULL, and pvaOut pointing to an
+            empty VARIANT ready to receive the result BSTR.  This should be done only
+            for commands that are marked with the ALLOWPARAMS flags in the command
+            table.        
+            </summary>
+            <returns>Usually returns 0 if ok, or OLECMDERR_E_NOTSUPPORTED</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.HandlePostExec(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr,System.Boolean)">
+            <summary>This method hooks up HandleSmartIndent and Source.OnCommand.  </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.ExecCommand(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Override this method to intercept the IOleCommandTarget::Exec call.
+            </summary>
+            <returns>Usually returns 0 if ok, or OLECMDERR_E_NOTSUPPORTED</returns>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.HandleSmartIndent">
+            Override this method if you want to support smart indenting.
+            This will only be called if Preferences.Indenting == IndentingStyle.Smart which is
+            only available if you set your language service registry key ShowSmartIndent to 1.
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.Microsoft#VisualStudio#OLE#Interop#IOleCommandTarget#QueryStatus(System.Guid@,System.UInt32,Microsoft.VisualStudio.OLE.Interop.OLECMD[],System.IntPtr)">
+            <internalonly/>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.Microsoft#VisualStudio#OLE#Interop#IOleCommandTarget#Exec(System.Guid@,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr)">
+            <internalonly/>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.HandleQuickInfo(System.Int32,System.Int32)">
+            <summary>This method is called to handle the VsCommands2K.QUICKINFO command.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.GetFullDataTipText(System.String,Microsoft.VisualStudio.TextManager.Interop.TextSpan,System.String@)">
+            <summary>This method checks to see if the IVsDebugger is running, and if so, 
+            calls it to get additional information about the current token and returns a combined result.
+            You can return an HRESULT here like TipSuccesses2.TIP_S_NODEFAULTTIP.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.CreateTextTipData">
+            <summary>Creates the TextTipData object and returns it</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.HandleGoto(Microsoft.VisualStudio.VSConstants.VSStd97CmdID,System.Int32,System.Int32)">
+            <summary>Handles VsCommands.GotoDefn, VsCommands.GotoDecl and VsCommands.GotoRef by
+            calling OnSyncGoto on the Source object and opening the text editor on the resulting
+            URL, then scrolling to the resulting span.</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.GetSelection">
+            <summary>Returns the current selection, adjusted to become a positive text span</summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.LanguageService.ViewFilter.CanReformat">
+            <summary>This method returns true if the FormatDocument and FormatSelection commands
+            are to be enabled.  Default returns false if debugging, otherwise it returns
+            the result for Preferences.EnableFormatSelection.</summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.LanguageService.TextTipData">
+            <summary>This class provides a default implementation of IVsTextTipData for
+            use in the IVsTextTipWindow for displaying tool tips.</summary>
+        </member>
+    </members>
+</doc>

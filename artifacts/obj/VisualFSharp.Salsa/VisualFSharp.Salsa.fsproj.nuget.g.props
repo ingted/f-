@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">E:\fsharp\artifacts\obj\VisualFSharp.Salsa\project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Administrator\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.9.3</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)microsoft.visualstudio.editor.implementation\16.1.89\contentFiles\any\net472\Resources\File.ico" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.editor.implementation\16.1.89\contentFiles\any\net472\Resources\File.ico')">
+      <NuGetPackageId>Microsoft.VisualStudio.Editor.Implementation</NuGetPackageId>
+      <NuGetPackageVersion>16.1.89</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>Resources\File.ico</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)microsoft.visualstudio.editor.implementation\16.1.89\contentFiles\any\net472\Resources\Package.ico" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.editor.implementation\16.1.89\contentFiles\any\net472\Resources\Package.ico')">
+      <NuGetPackageId>Microsoft.VisualStudio.Editor.Implementation</NuGetPackageId>
+      <NuGetPackageVersion>16.1.89</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>Resources\Package.ico</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)microsoft.visualstudio.editor.implementation\16.1.89\contentFiles\any\net472\Templates\Editor.vsdir" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.editor.implementation\16.1.89\contentFiles\any\net472\Templates\Editor.vsdir')">
+      <NuGetPackageId>Microsoft.VisualStudio.Editor.Implementation</NuGetPackageId>
+      <NuGetPackageVersion>16.1.89</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Private>False</Private>
+      <Link>Templates\Editor.vsdir</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props" Condition="Exists('$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props')" />
+    <Import Project="$(NuGetPackageRoot)nunit\3.11.0\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.11.0\build\NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgXliffTasks Condition=" '$(PkgXliffTasks)' == '' ">C:\Users\Administrator\.nuget\packages\xlifftasks\1.0.0-beta.19252.1</PkgXliffTasks>
+    <PkgVSSDK_DTE Condition=" '$(PkgVSSDK_DTE)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.dte\7.0.4</PkgVSSDK_DTE>
+    <PkgVSSDK_VSLangProj Condition=" '$(PkgVSSDK_VSLangProj)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.vslangproj\7.0.4</PkgVSSDK_VSLangProj>
+    <PkgVSSDK_VSLangProj_8 Condition=" '$(PkgVSSDK_VSLangProj_8)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.vslangproj.8\8.0.4</PkgVSSDK_VSLangProj_8>
+    <PkgVSSDK_VSHelp Condition=" '$(PkgVSSDK_VSHelp)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.vshelp\7.0.4</PkgVSSDK_VSHelp>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Administrator\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
+    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.common\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Common>
+    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.build.tasks.git\1.0.0-beta2-19367-01</PkgMicrosoft_Build_Tasks_Git>
+    <PkgMicrosoft_SourceLink_Vsts_Git Condition=" '$(PkgMicrosoft_SourceLink_Vsts_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Vsts_Git>
+    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.github\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_GitHub>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.2-beta2</PkgMicrosoft_CodeAnalysis_Analyzers>
+  </PropertyGroup>
+</Project>

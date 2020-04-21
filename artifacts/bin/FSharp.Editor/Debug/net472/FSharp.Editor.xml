@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.Editor</name></assembly>
+<members>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Assert.Exception(System.Exception)">
+<summary>
+ Display a good exception for this error message and then rethrow.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Assert">
+<summary>
+ Assert helpers
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.SymbolLookupKind.Greedy">
+<summary>
+ Position may lay one column outside of symbol range to the right.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.SymbolLookupKind.Precise">
+<summary>
+ Position must lay inside symbol range.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.LexerSymbol.FullIsland">
+<summary>
+ All parts of `LongIdent`
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.LexerSymbol.Ident">
+<summary>
+ Last part of `LongIdent`
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.BuildErrorReporter(Microsoft.FSharp.Core.FSharpOption{Microsoft.VisualStudio.Shell.Interop.IVsLanguageServiceBuildErrorReporter2})">
+<summary>
+ The error list task reporter
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.TargetFrameworkMoniker">
+<summary>
+ target framework moniker
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.ProjectGuid">
+<summary>
+ Project Guid
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.ProjectFileName">
+<summary>
+ The name of the project file.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.LoadTime">
+<summary>
+ timestamp the site was last loaded
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.IsIncompleteTypeCheckEnvironment">
+<summary>
+ False type resolution errors are invalid. This occurs with orphaned source files. The prior 
+ type checking state is unknown. In this case we don&apos;t want to squiggle the type checking files.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.Description">
+<summary>
+ A user-friendly description of the project. Used only for developer/DEBUG tooltips and such.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.CompilationSourceFiles">
+<summary>
+ List of files in the project. In the correct order.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.CompilationReferences">
+<summary>
+ The normalized &apos;-r:&apos; assembly references, without the &apos;-r:&apos;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.CompilationOptions">
+<summary>
+ Flags that the compiler would need to understand how to compile. Includes &apos;-r&apos;
+ options but not source files
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.CompilationBinOutputPath">
+<summary>
+ The &apos;-o:&apos; output bin path, without the &apos;-o:&apos;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.BuildErrorReporter">
+<summary>
+ The error list task reporter
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.AdviseProjectSiteCleaned(System.String,Microsoft.VisualStudio.FSharp.Editor.AdviseProjectSiteChanges)">
+<summary>
+ Register for notifications when project is cleaned/rebuilt (and thus any live TypeProviders should be refreshed)
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.IProjectSite.AdviseProjectSiteChanges(System.String,Microsoft.VisualStudio.FSharp.Editor.AdviseProjectSiteChanges)">
+<summary>
+ Register for notifications for when the above change
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.IProjectSite">
+<summary>
+ Represents known F#-specific information about a project.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.AdviseProjectSiteChanges">
+<summary>
+ Narrow abstraction over the project system.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager.TryGetOptionsForEditingDocumentOrProject(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)">
+<summary>
+ Get the options for a document or project relevant for syntax processing.
+ Quicker then TryGetOptionsForDocumentOrProject as it doesn&apos;t need to recompute the exact project options for a script.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager.TryGetOptionsForDocumentOrProject``1(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)">
+<summary>
+ Get the exact options for a document or project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager.HandleCommandLineChanges(System.String,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CommandLineSourceFile},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CommandLineReference},System.Collections.Immutable.ImmutableArray{System.String})">
+<summary>
+ This handles commandline change notifications from the Dotnet Project-system
+ Prior to VS 15.7 path contained path to project file, post 15.7 contains target binpath
+ binpath is more accurate because a project file can have multiple in memory projects based on configuration
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager.GetCompilationDefinesForEditingDocument(Microsoft.CodeAnalysis.Document)">
+<summary>
+ Get compilation defines relevant for syntax processing.  
+ Quicker then TryGetOptionsForDocumentOrProject as it doesn&apos;t need to recompute the exact project 
+ options for a script.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager.ClearInfoForProject(Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Clear a project from the project table
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager">
+<summary>
+ Exposes FCS FSharpProjectOptions information management as MEF component.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.LegacyProjectWorkspaceMap.SyncLegacyProject(Microsoft.VisualStudio.LanguageServices.ProjectSystem.IWorkspaceProjectContext,Microsoft.VisualStudio.FSharp.Editor.IProjectSite)">
+<summary>
+ Sync the Roslyn information for the project held in &apos;projectContext&apos; to match the information given by &apos;site&apos;.
+ Also sync the info in ProjectInfoManager if necessary.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.IDocumentationBuilder.AppendDocumentationFromProcessedXML(Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,System.String,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Append the given raw XML formatted into the string builder
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.IDocumentationBuilder.AppendDocumentation(Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,System.String,System.String,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Appends text for the given filename and signature into the StringBuilder
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.IDocumentationBuilder">
+<summary>
+ XmlDocumentation builder, using the VS interfaces to build documentation.  An interface is used
+ to allow unit testing to give an alternative implementation which captures the documentation.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.TryNavigateToTextSpan(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.VisualStudio.FSharp.Editor.StatusBar)">
+<summary>
+ Navigate to the positon of the textSpan in the provided document
+ used by quickinfo link navigation when the tooltip contains the correct destination range.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.NavigateToSymbolDefinitionAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.SourceText,FSharp.Compiler.Range.range,Microsoft.VisualStudio.FSharp.Editor.StatusBar)">
+<summary>
+ Find the definition location (implementation file/.fs) of the target symbol
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.NavigateToSymbolDeclarationAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.SourceText,FSharp.Compiler.Range.range,Microsoft.VisualStudio.FSharp.Editor.StatusBar)">
+<summary>
+ Find the declaration location (signature file/.fsi) of the target symbol if possible, fall back to definition 
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.FindSymbolHelper(Microsoft.CodeAnalysis.Document,FSharp.Compiler.Range.range,Microsoft.CodeAnalysis.Text.SourceText,System.Boolean)">
+<summary>
+ Helper function that is used to determine the navigation strategy to apply, can be tuned towards signatures or implementation files.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.FindSymbolDeclarationInFile(FSharp.Compiler.SourceCodeServices.FSharpSymbolUse,System.String,Microsoft.CodeAnalysis.Text.SourceText,FSharp.Compiler.SourceCodeServices.FSharpProjectOptions,System.Int32)">
+<summary>
+ if the symbol is defined in the given file, return its declaration location, otherwise use the targetSymbol to find the first 
+ instance of its presence in the provided source file. The first case is needed to return proper declaration location for
+ recursive type definitions, where the first its usage may not be the declaration.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.FindDefinitionTask(Microsoft.CodeAnalysis.Document,System.Int32,System.Threading.CancellationToken)">
+<summary>
+ Construct a task that will return a navigation target for the implementation definition of the symbol 
+ at the provided position in the document.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.FindDefinitionOfSymbolAtRange(Microsoft.CodeAnalysis.Document,FSharp.Compiler.Range.range,Microsoft.CodeAnalysis.Text.SourceText)">
+<summary>
+ find the definition location (implementation file/.fs) of the target symbol
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.GoToDefinition.FindDeclarationOfSymbolAtRange(Microsoft.CodeAnalysis.Document,FSharp.Compiler.Range.range,Microsoft.CodeAnalysis.Text.SourceText)">
+<summary>
+ find the declaration location (signature file/.fsi) of the target symbol if possible, fall back to definition 
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.StatusBar.Animate">
+<summary>
+ Animated magnifying glass that displays on the status bar while a symbol search is in progress.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpGoToDefinitionService.Microsoft-CodeAnalysis-ExternalAccess-FSharp-Editor-IFSharpGoToDefinitionService-TryGoToDefinition(Microsoft.CodeAnalysis.Document,System.Int32,System.Threading.CancellationToken)">
+<summary>
+ Invoked with Go to Definition.
+ Try to navigate to the definiton of the symbol at the symbolRange in the originDocument
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpGoToDefinitionService.Microsoft-CodeAnalysis-ExternalAccess-FSharp-Editor-IFSharpGoToDefinitionService-FindDefinitionsAsync(Microsoft.CodeAnalysis.Document,System.Int32,System.Threading.CancellationToken)">
+<summary>
+ Invoked with Peek Definition.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.CurrentBufferSnapshot@">
+<summary>
+ Tracks the last used buffer snapshot, should be preferred used in combination with mutex.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.LayoutChangedCts@">
+<summary>
+ Cancellation token source for the layout changed event. Needed to abort previous async-work.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.AddedAdornments@">
+<summary>
+ Tracks the adornments on the layer.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.RecentFirstVsblLineNmbr@">
+<summary>
+ Tracks the recent first + last visible line numbers for adornment layout logic.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.View@">
+<summary>
+ Text view for accessing the adornment layer.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.TrackingSpans@">
+<summary>
+ Caches the current used TrackingSpans per line. One line can contain multiple trackingSpans
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.UiContext@">
+<summary>
+ Saves the ui context to switch context for ui related work.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.RelayoutRequested@">
+ <summary>
+ Enqueing an unit signals to the tagger that all visible line lens must be layouted again,
+ to respect single line changes.
+ </summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.RecentFirstVsblLineNmbr(System.Int32)">
+<summary>
+ Tracks the recent first + last visible line numbers for adornment layout logic.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.LayoutChangedCts(System.Threading.CancellationTokenSource)">
+<summary>
+ Cancellation token source for the layout changed event. Needed to abort previous async-work.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.CurrentBufferSnapshot(Microsoft.VisualStudio.Text.ITextSnapshot)">
+<summary>
+ Tracks the last used buffer snapshot, should be preferred used in combination with mutex.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.View">
+<summary>
+ Text view for accessing the adornment layer.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.UiContext">
+<summary>
+ Saves the ui context to switch context for ui related work.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.TrackingSpans">
+<summary>
+ Caches the current used TrackingSpans per line. One line can contain multiple trackingSpans
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.RelayoutRequested">
+ <summary>
+ Enqueing an unit signals to the tagger that all visible line lens must be layouted again,
+ to respect single line changes.
+ </summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.RecentFirstVsblLineNmbr">
+<summary>
+ Tracks the recent first + last visible line numbers for adornment layout logic.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.LayoutChangedCts">
+<summary>
+ Cancellation token source for the layout changed event. Needed to abort previous async-work.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.CurrentBufferSnapshot">
+<summary>
+ Tracks the last used buffer snapshot, should be preferred used in combination with mutex.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.AddedAdornments">
+<summary>
+ Tracks the adornments on the layer.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.TryGetTSpanStartLine(Microsoft.VisualStudio.Text.ITextSnapshot,Microsoft.VisualStudio.Text.ITrackingSpan)">
+<summary>
+ Helper method which returns the start line number of a tracking span
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.RemoveCodeLens(Microsoft.VisualStudio.Text.ITrackingSpan)">
+<summary>
+ Public non-thread-safe method to remove line lens for a given tracking span.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.GetTrackingSpanStartLine(Microsoft.VisualStudio.Text.ITextSnapshot,Microsoft.VisualStudio.Text.ITrackingSpan)">
+<summary>
+ Helper method which returns the start line number of a tracking span
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.AddTrackingSpan(Microsoft.VisualStudio.Text.ITrackingSpan)">
+<summary>
+ Helper methods which invokes every action which is needed for new trackingSpans
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensDisplayService.AddCodeLens(Microsoft.VisualStudio.Text.ITrackingSpan)">
+<summary>
+ Public non-thread-safe method to add line lens for a given tracking span.
+ Returns an UIElement which can be used to add Ui elements and to remove the line lens later.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.CodeLensGeneralTagger.tagsChangedEvent">
+<summary>
+ The tags changed event to notify if the data for the tags has changed.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensGeneralTagger.LayoutUIElementOnLine(Microsoft.VisualStudio.Text.Editor.IWpfTextView,Microsoft.VisualStudio.Text.Formatting.ITextViewLine,System.Windows.Controls.Grid)">
+<summary>
+ Layouts all stack panels on the line
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeLensGeneralTagger.Microsoft-VisualStudio-Text-Tagging-ITagger`1-GetTags(Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection)">
+<summary>
+ Returns the tags which reserve the correct space for adornments
+ Notice, it&apos;s asumed that the data in the collection is valid.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.CodeLensGeneralTagger">
+<summary>
+ Class which provides support for general code lens
+ Use the methods &lt;code&gt;AddCodeLens&lt;/code&gt; and &lt;code&gt; RemoveCodeLens&lt;/code&gt;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.LineLensDisplayService.LayoutUIElementOnLine(Microsoft.VisualStudio.Text.Editor.IWpfTextView,Microsoft.VisualStudio.Text.Formatting.ITextViewLine,System.Windows.Controls.Grid)">
+<summary>
+ Layouts all stack panels on the line
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.RenameValueToDoubleUnderscore">
+ <summary>Rename '{0}' to '__'</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.GenericParametersHeader">
+ <summary>Generic parameters:</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.ExceptionsHeader">
+ <summary>Exceptions:</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.NavigateToFailed">
+ <summary>Navigate to symbol failed: {0}</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.NavigatingTo">
+ <summary>Navigating to symbol...</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.LocatingSymbol">
+ <summary>Locating the symbol under the caret...</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.CannotNavigateUnknown">
+ <summary>Cannot navigate to the requested location</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.CannotDetermineSymbol">
+ <summary>Cannot determine the symbol under the caret</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.TheValueIsUnused">
+ <summary>The value is unused</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6014">
+ <summary>Formatting</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6013">
+ <summary>CodeLens</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6012">
+ <summary>Advanced</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6011">
+ <summary>Performance</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6010">
+ <summary>Code Fixes</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.AddProjectReference">
+ <summary>Add a project reference to '{0}'</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.AddAssemblyReference">
+ <summary>Add an assembly reference to '{0}'</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6009">
+ <summary>QuickInfo</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR._6008">
+ <summary>IntelliSense</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.UnusedOpens">
+ <summary>Open declaration can be removed.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.RemoveUnusedOpens">
+ <summary>Remove unused open declarations</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.FSharpDisposablesClassificationType">
+ <summary>F# Disposable Types</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.FSharpPropertiesClassificationType">
+ <summary>F# Properties</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.FSharpPrintfFormatClassificationType">
+ <summary>F# Printf Format</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.FSharpMutableVarsClassificationType">
+ <summary>F# Mutable Variables / Reference Cells</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.FSharpFunctionsOrMethodsClassificationType">
+ <summary>F# Functions / Methods</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.NameCanBeSimplified">
+ <summary>Name can be simplified.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.SimplifyName">
+ <summary>Simplify name</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.RenameValueToUnderscore">
+ <summary>Rename '{0}' to '_'</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.PrefixValueNameWithUnderscore">
+ <summary>Prefix '{0}' with underscore</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.ImplementInterfaceWithoutTypeAnnotation">
+ <summary>Implement interface without type annotation</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.ImplementInterface">
+ <summary>Implement interface</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SR.AddNewKeyword">
+ <summary>Add 'new' keyword</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Pervasive.isScriptFile(System.String)">
+<summary>
+ Checks if the file paht ends with &apos;.fsx&apos; or &apos;.fsscript&apos;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Pervasive.isSignatureFile(System.String)">
+<summary>
+ Checks if the filePath ends with &quot;.fsi&quot;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Pervasive.Async.cache``1(Microsoft.FSharp.Control.FSharpAsync{``0})">
+<summary>
+ Creates an asynchronous workflow that runs the asynchronous workflow given as an argument at most once. 
+ When the returned workflow is started for the second time, it reuses the result of the previous execution.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Extensions.Exception.flattenMessage(System.Exception)">
+<summary>
+ Returns a flattened string of the exception&apos;s message and all of its inner exception
+ messages recursively.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Extensions.Option.ofOptionList``1(Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Core.FSharpOption{``0}})">
+<summary>
+ Returns &apos;Some list&apos; if all elements in the list are Some, otherwise None
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Extensions.SourceText.Hash.combine(System.Int32,System.Int32)">
+<summary>
+ (From Roslyn) This is how VB Anonymous Types combine hash values for fields.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Extensions.SourceText.Hash">
+<summary>
+ Ported from Roslyn.Utilities
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Extensions">
+<summary>
+ Type and Module Extensions
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.formattingOptionPageIdString">
+<summary>
+ &quot;9EBEBCE8-A79B-46B0-A8C5-A9818AEED17D&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.advancedSettingsPageIdSring">
+<summary>
+ &quot;9007718C-357A-4327-A193-AB3EC38D7EE8&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.languageServicePerformanceOptionPageIdString">
+<summary>
+ &quot;8FDA964A-263D-4B4E-9560-29897535217C&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.codeLensOptionPageIdString">
+<summary>
+ &quot;00BE7FD9-8145-4A2E-A1BF-3BAF0F4F47DD&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.codeFixesOptionPageIdString">
+<summary>
+ &quot;9A66EB6A-DE52-4169-BC26-36FBD4312FD7&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.quickInfoOptionPageIdString">
+<summary>
+ &quot;1e2b3290-4d67-41ff-a876-6f41f868e28f&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.intelliSenseOptionPageIdString">
+<summary>
+ &quot;9b3c6b8a-754a-461d-9ebe-de1a682d57c1&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Guids.svsSettingsPersistenceManagerIdString">
+<summary>
+ &quot;9B164E40-C3A2-4363-9BC5-EB4039DEF653&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpProviderConstants.SessionCapturingProvider">
+<summary>
+ &quot;Session Capturing Quick Info Source Provider&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpMiscellaneousFilesName">
+<summary>
+ &quot;F# Miscellaneous Files&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpLanguageLongName">
+<summary>
+ &quot;FSharp&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpLanguageServiceCallbackName">
+<summary>
+ &quot;F# Language Service&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpSignatureHelpContentTypeName">
+<summary>
+ &quot;F# Signature Help&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpFileExtension">
+<summary>
+ &quot;.fs&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpContentTypeName">
+<summary>
+ &quot;F#&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.FSharpLanguageName">
+<summary>
+ &quot;F#&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.projectPackageGuidString">
+<summary>
+ &quot;91a04a73-4f2c-4e7c-ad38-c1a68e7da05c&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.languageServiceGuidString">
+<summary>
+ &quot;BC6DD5A5-D4D6-4dab-A00D-A51242DBAF1B&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.fsiPackageGuidString">
+<summary>
+ &quot;871D2A70-12A2-4e42-9440-425DD92A4116&quot; - FSharp Package
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.FSharpConstants.packageGuidString">
+<summary>
+ &quot;871D2A70-12A2-4e42-9440-425DD92A4116&quot;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.OpenDeclarationHelper.insertOpenDeclaration(Microsoft.CodeAnalysis.Text.SourceText,FSharp.Compiler.SourceCodeServices.InsertContext,System.String)">
+ <summary>
+ Inserts open declaration into `SourceText`. 
+ </summary>
+ <param name="sourceText">SourceText.</param>
+ <param name="ctx">Insertion context. Typically returned from tryGetInsertionContext</param>
+ <param name="ns">Namespace to open.</param>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.RoslynHelpers.roslynTag(Internal.Utilities.StructuredFormat.LayoutTag)">
+<summary>
+ maps from `LayoutTag` of the F# Compiler to Roslyn `TextTags` for use in tooltips
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.TryGetDocumentFromFSharpRange(Microsoft.CodeAnalysis.Solution,FSharp.Compiler.Range.range,Microsoft.FSharp.Core.FSharpOption{Microsoft.CodeAnalysis.ProjectId})">
+<summary>
+ Try to retrieve the corresponding Document for the range&apos;s file in the solution
+ and if a projectId is provided, only try to find the document within that project
+ or a project referenced by that project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.TryGetDocumentIdFromFSharpRange(Microsoft.CodeAnalysis.Solution,FSharp.Compiler.Range.range,Microsoft.FSharp.Core.FSharpOption{Microsoft.CodeAnalysis.ProjectId})">
+<summary>
+ Try to retrieve the corresponding DocumentId for the range&apos;s file in the solution
+ and if a projectId is provided, only try to find the document within that project
+ or a project referenced by that project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.GetAllProjectsThisProjectDependsOn(Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Returns all of the projects that this project that directly or transitively depends on
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.GetProjectIdsOfAllProjectReferences(Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Returns the ProjectIds of all of the projects that directly or transitively depends on
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.GetDependentProjectIds(Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Returns the projectIds of all projects within this solution that directly reference the provided project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.GetDependentProjects(Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Returns the projectIds of all projects within this solution that directly reference the provided project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.TryGetProject(Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Try to get a project inside the solution using the project&apos;s id
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.TryGetDocumentFromPath(Microsoft.CodeAnalysis.Solution,System.String)">
+<summary>
+ Try to find the documentId corresponding to the provided filepath within this solution  
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Solution.TryGetDocumentNamed(Microsoft.CodeAnalysis.Solution,System.String)">
+<summary>
+ Try to get a document inside the solution using the document&apos;s name
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Project.GetAllProjectsThisProjectDependsOn(Microsoft.CodeAnalysis.Project)">
+<summary>
+ The list all of the projects that this project directly or transitively depneds on
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Project.GetProjectIdsOfAllProjectsThisProjectDependsOn(Microsoft.CodeAnalysis.Project)">
+<summary>
+ Returns the ProjectIds of all of the projects that this project directly or transitively depneds on
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Project.GetDependentProjects(Microsoft.CodeAnalysis.Project)">
+<summary>
+ Returns all projects within the same solution that directly reference this project.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CodeAnalysisExtensions.Project.GetDependentProjectIds(Microsoft.CodeAnalysis.Project)">
+<summary>
+ Returns the projectIds of all projects within the same solution that directly reference this project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.VsTextLines.GetFileContents(Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer,Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService)">
+<summary>
+ Get the string contents of a given buffer (the current snapshot).
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.VsTextLines.GetFilename(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+<summary>
+ Get the filename of the given buffer (via IVsUserData). Not all buffers have a file. This will be an exception.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.VsTextLines.TextColorState(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+<summary>
+ Get the color state
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.VsTextLines.LineText(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines,System.Int32)">
+<summary>
+ Get the text for a particular line.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.VsTextLines.LengthOfLine(Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer,System.Int32)">
+<summary>
+ Get the length of the given line.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Com">
+<summary>
+ Helper methods for interoperating with COM
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.DefaultTuning.PerDocumentSavedDataSlidingWindow">
+<summary>
+ How long is the per-document data saved before it is eligible for eviction from the cache? 10 seconds.
+ Re-tokenizing is fast so we don&apos;t need to save this data long.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.PerDocumentSavedData">
+<summary>
+ This saves the tokenization data for a file for as long as the DocumentId object is alive.
+ This seems risky - if one single thing leaks a DocumentId (e.g. stores it in some global table of documents 
+ that have been closed), then we leak **all** this associated data, forever.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.SourceLineData">
+<summary>
+ This is the data saved about each line.  It is held strongly while a file is open and 
+ is important for memory performance
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.DraftTokenInfo">
+<summary>
+ An intermediate extraction of information from the token
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.fixupSpan(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextSpan)">
+<summary>
+ Fix invalid span if it appears to have redundant suffix and prefix.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.getSymbolFromSavedTokens(System.String,Microsoft.VisualStudio.FSharp.Editor.Tokenizer.SavedTokenInfo[],Microsoft.CodeAnalysis.Text.LinePosition,System.String,Microsoft.VisualStudio.FSharp.Editor.SymbolLookupKind,System.Boolean)">
+<summary>
+ Returns symbol at a given position.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.getClassifiedSpans(Microsoft.CodeAnalysis.DocumentId,Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},System.Threading.CancellationToken)">
+<summary>
+ Generates a list of Classified Spans for tokens which undergo syntactic classification (i.e., are not typechecked).
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.Editor.Tokenizer.TagMask">
+<summary>
+ This is the information we save for each token in a line for each active document.
+ It is a memory-critical data structure - do not make larger. This used to be ~100 bytes class, is now 8-byte struct
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.SymbolHelpers.getSymbolUsesOfSymbolAtLocationInDocument(Microsoft.CodeAnalysis.Document,System.Int32,Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager,FSharp.Compiler.SourceCodeServices.FSharpChecker,System.String)">
+<summary>
+ Used for local code fixes in a document, e.g. to rename local parameters
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.Provider.cache">
+<summary>
+ Index of assembly name to xml member index.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.Provider.Microsoft-VisualStudio-FSharp-Editor-IDocumentationBuilder-AppendDocumentationFromProcessedXML(Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,System.String,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Append the given processed XML formatted into the string builder
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.Provider.Microsoft-VisualStudio-FSharp-Editor-IDocumentationBuilder-AppendDocumentation(Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,System.String,System.String,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Name of parameter
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.Provider">
+<summary>
+ Provide Xml Documentation             
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.BuildTipText(Microsoft.VisualStudio.FSharp.Editor.IDocumentationBuilder,Microsoft.FSharp.Collections.FSharpList{FSharp.Compiler.SourceCodeServices.FSharpToolTipElement{Internal.Utilities.StructuredFormat.Layout}},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},System.Boolean,System.Boolean,System.Boolean)">
+<summary>
+ Build a data tip text string with xml comments injected.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.AppendXmlComment(Microsoft.VisualStudio.FSharp.Editor.IDocumentationBuilder,Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,Microsoft.VisualStudio.FSharp.Editor.ITaggedTextCollector,FSharp.Compiler.SourceCodeServices.FSharpXmlDoc,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Append an XmlCommnet to the segment.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation.ProcessXml(System.String)">
+<summary>
+ If the XML comment starts with &apos;&lt;&apos; not counting whitespace then treat it as a literal XML comment.
+ Otherwise, escape it and surround it with &lt;summary&gt;&lt;/summary&gt;
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.Editor.XmlDocumentation">
+<summary>
+ Documentation helpers.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CompletionUtils.isIdentifierPartCharacter(System.Char)">
+<summary>
+ Returns true if the Unicode character can be a part of an identifier.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.CompletionUtils.isIdentifierStartCharacter(System.Char)">
+<summary>
+ Defines a set of helper methods to classify Unicode characters.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.FSharpQuickInfo.getQuickInfo(FSharp.Compiler.SourceCodeServices.FSharpChecker,Microsoft.VisualStudio.FSharp.Editor.FSharpProjectOptionsManager,Microsoft.CodeAnalysis.Document,System.Int32,System.Threading.CancellationToken)">
+<summary>
+ Get QuickInfo combined from doccom of Signature and definition
+</summary>
+</member>
+</members>
+</doc>

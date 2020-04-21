@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSharp.UIResources</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.AdvancedOptionsControl">
+            <summary>
+            Interaction logic for AdvancedOptionsControl.xaml
+            </summary>
+            <summary>
+            AdvancedOptionsControl
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.AdvancedOptionsControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.CodeFixesOptionControl">
+            <summary>
+            Interaction logic for CodeFixesOptionControl.xaml
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.CodeFixesOptionControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.CodeLensOptionControl">
+            <summary>
+            Interaction logic for CodeLensOptionPage.xaml
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.CodeLensOptionControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.FormattingOptionsControl">
+            <summary>
+            Interaction logic for FormattingOptionsControl.xaml
+            </summary>
+            <summary>
+            FormattingOptionsControl
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.FormattingOptionsControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.IntelliSenseOptionControl">
+            <summary>
+            Interaction logic for IntelliSenseOptionControl.xaml
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.IntelliSenseOptionControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.LanguageServicePerformanceOptionControl">
+            <summary>
+            Interaction logic for LanguageServicePerformanceOptionControl.xaml
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.LanguageServicePerformanceOptionControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.NavStyles">
+            <summary>
+            Interaction logic for NavStyles.xaml
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.NavStyles.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.QuickInfoOptionControl">
+            <summary>
+            Interaction logic for UserControl1.xaml
+            </summary>
+        </member>
+        <member name="M:Microsoft.VisualStudio.FSharp.UIResources.QuickInfoOptionControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.VisualStudio.FSharp.UIResources.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Always_place_opens_at_top_level">
+            <summary>
+              Looks up a localized string similar to Always place open statements at the top level.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Block_Structure">
+            <summary>
+              Looks up a localized string similar to Block Structure Guides.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Code_Fixes">
+            <summary>
+              Looks up a localized string similar to Code Fixes.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.CodeLens">
+            <summary>
+              Looks up a localized string similar to CodeLens.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.CodeLens_Prefix">
+            <summary>
+              Looks up a localized string similar to Annotation prefix.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.CodeLens_Replace_LineLens">
+            <summary>
+              Looks up a localized string similar to Show annotations to the right instead of above the line.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.CodeLens_Switch">
+            <summary>
+              Looks up a localized string similar to Enable CodeLens (Experimental).
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.CodeLens_UseColors">
+            <summary>
+              Looks up a localized string similar to Use colors in annotations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Completion_Lists">
+            <summary>
+              Looks up a localized string similar to Completion Lists.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Dash_underline">
+            <summary>
+              Looks up a localized string similar to D_ash underline.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Diagnostics">
+            <summary>
+              Looks up a localized string similar to Diagnostics.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Dot_underline">
+            <summary>
+              Looks up a localized string similar to D_ot underline.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Enable_in_memory_cross_project_references">
+            <summary>
+              Looks up a localized string similar to _Enable in-memory cross project references.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Enable_Stale_IntelliSense_Results">
+            <summary>
+              Looks up a localized string similar to Enable stale data for IntelliSense features.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Enter_key_always">
+            <summary>
+              Looks up a localized string similar to Always add new line on enter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Enter_key_never">
+            <summary>
+              Looks up a localized string similar to Never add new line on enter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Enter_key_only">
+            <summary>
+              Looks up a localized string similar to Only add new line on enter after end of fully typed word.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Enter_Key_Rule">
+            <summary>
+              Looks up a localized string similar to Enter key behavior.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Format_on_paste">
+            <summary>
+              Looks up a localized string similar to Re-format indentation on paste.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.IntelliSense_Performance">
+            <summary>
+              Looks up a localized string similar to IntelliSense Performance Options.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Language_Service_Performance">
+            <summary>
+              Looks up a localized string similar to Performance.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Navigation_links">
+            <summary>
+              Looks up a localized string similar to Navigation links.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Outlining">
+            <summary>
+              Looks up a localized string similar to Outlining.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Project_check_cache_size">
+            <summary>
+              Looks up a localized string similar to Number of projects whose data is cached in memory.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Project_Performance">
+            <summary>
+              Looks up a localized string similar to F# Project and Caching Performance Options.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Show_all_symbols">
+            <summary>
+              Looks up a localized string similar to Show s_ymbols in unopened namespaces.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Show_completion_list_after_a_character_is_deleted">
+            <summary>
+              Looks up a localized string similar to Show completion list after a character is _deleted.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Show_completion_list_after_a_character_is_typed">
+            <summary>
+              Looks up a localized string similar to _Show completion list after a character is typed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Show_guides">
+            <summary>
+              Looks up a localized string similar to Show structure guidelines for F# code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Show_navigation_links_as">
+            <summary>
+              Looks up a localized string similar to S_how navigation links as.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Show_Outlining">
+            <summary>
+              Looks up a localized string similar to Show outlining and collapsible nodes for F# code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Simplify_name_code_fix">
+            <summary>
+              Looks up a localized string similar to Simplify names (remove unnecessary qualifiers).
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Solid_underline">
+            <summary>
+              Looks up a localized string similar to _Solid underline.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Suggest_names_for_errors_code_fix">
+            <summary>
+              Looks up a localized string similar to Suggest names for unresolved identifiers.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Text_hover">
+            <summary>
+              Looks up a localized string similar to Text hover.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Time_until_stale_completion">
+            <summary>
+              Looks up a localized string similar to Time until stale results are used (in milliseconds).
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Tooltip_in_memory_cross_project_references">
+            <summary>
+              Looks up a localized string similar to In-memory cross-project references store project-level data in memory to allow IDE features to work across projects..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Tooltip_project_check_cache_size">
+            <summary>
+              Looks up a localized string similar to Project data is cached for IDE features. Higher values use more memory because more projects are cached. Tuning this value should not affect small or medium-sized solutions..
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Unused_declaration_code_fix">
+            <summary>
+              Looks up a localized string similar to Analyze and suggest fixes for unused values.
+            </summary>
+        </member>
+        <member name="P:Microsoft.VisualStudio.FSharp.UIResources.Strings.Unused_opens_code_fix">
+            <summary>
+              Looks up a localized string similar to Remove unused open statements.
+            </summary>
+        </member>
+    </members>
+</doc>

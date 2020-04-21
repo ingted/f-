@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.LanguageService</name></assembly>
+<members>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Assert.Exception(System.Exception)">
+<summary>
+ Display a good exception for this error message and then rethrow.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.Assert">
+<summary>
+ Assert helpers
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorableItem_DEPRECATED">
+<summary>
+ Implements IVsColorableItem and IVsMergeableUIItem, for colored text items
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.GetTokenInformationAt(Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState,System.Int32,System.Int32)">
+<summary>
+ Provide token information for the token at the given line and column (3rd variation)
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.GetTokenInfoAt(Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState,System.Int32,System.Int32,System.String,System.Int32)">
+<summary>
+ Provide token information for the token at the given line and column (2nd variation - allows caller to get token info if an additional string were to be inserted)
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.GetTokenInfoAt(Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState,System.Int32,System.Int32)">
+<summary>
+ Provide token information for the token at the given line and column
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.GetStateAtEndOfLine(System.Int32,System.Int32,System.IntPtr,System.Int32)">
+<summary>
+Get the state at the end of the given line.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.GetStartState(Microsoft.FSharp.Core.byref{System.Int32,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+<summary>
+ Start state at the beginning of parsing a file.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.GetLineInfo(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines,System.Int32,Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState)">
+<summary>
+ Ultimately called by GetWordExtent in Source.cs in the C# code.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.ColorizeLine(System.Int32,System.Int32,System.IntPtr,System.Int32,System.UInt32[])">
+<summary>
+ Colorize a line of text. Resulting per-character attributes are stored into attrs
+ Return value is tokenization state at the start of the next line.
+
+ This is the core entry-point to all our colorization: VS calls this when it wants color information.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED.CloseColorizer">
+<summary>
+ Close the colorizer. Is supposed to result in TextBuffers being released.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED">
+<summary>
+ Implement the MPF Colorizer functionality.
+   onClose is a method to call when shutting down the colorizer.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpScanner_DEPRECATED.SetLineText(System.String)">
+<summary>
+ Start tokenizing a line
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpScanner_DEPRECATED.SetExtraColorizations(System.ValueTuple{FSharp.Compiler.Range.range,FSharp.Compiler.SourceCodeServices.SemanticClassificationType}[])">
+<summary>
+ Adjust the set of extra colorizations and return a sorted list of affected lines.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpScanner_DEPRECATED.ScanTokenWithDetails(Microsoft.FSharp.Core.FSharpRef{FSharp.Compiler.SourceCodeServices.FSharpTokenizerLexState})">
+<summary>
+ Scan a token from a line. This should only be used in cases where color information is irrelevant.
+ Used by GetFullLineInfo (and only thus in a small workaroud in GetDeclarations) and GetTokenInformationAt (thus GetF1KeywordString).
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpScanner_DEPRECATED.ScanTokenAndProvideInfoAboutIt``1(``0,Microsoft.VisualStudio.FSharp.LanguageService.TokenInfo,Microsoft.FSharp.Core.FSharpRef{FSharp.Compiler.SourceCodeServices.FSharpTokenizerLexState})">
+<summary>
+ Scan a token from a line and write information about it into the tokeninfo object.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.FSharpScanner_DEPRECATED">
+<summary>
+ A single scanner object which can be used to scan different lines of text.
+ Each time a scan of new line of text is started the makeLineTokenizer function is called.
+
+ An instance of this is stored in the IVsUserData for the IVsTextLines buffer
+ and retrieved using languageServiceState.GetColorizer(IVsTextLines).
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.BuildErrorReporter(Microsoft.FSharp.Core.FSharpOption{Microsoft.VisualStudio.Shell.Interop.IVsLanguageServiceBuildErrorReporter2})">
+<summary>
+ The error list task reporter
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.TargetFrameworkMoniker">
+<summary>
+ target framework moniker
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.ProjectGuid">
+<summary>
+ Project Guid
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.ProjectFileName">
+<summary>
+ The name of the project file.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.LoadTime">
+<summary>
+ timestamp the site was last loaded
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.IsIncompleteTypeCheckEnvironment">
+<summary>
+ False type resolution errors are invalid. This occurs with orphaned source files. The prior 
+ type checking state is unknown. In this case we don&apos;t want to squiggle the type checking files.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.Description">
+<summary>
+ A user-friendly description of the project. Used only for developer/DEBUG tooltips and such.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.CompilationSourceFiles">
+<summary>
+ List of files in the project. In the correct order.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.CompilationReferences">
+<summary>
+ The normalized &apos;-r:&apos; assembly references, without the &apos;-r:&apos;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.CompilationOptions">
+<summary>
+ Flags that the compiler would need to understand how to compile. Includes &apos;-r&apos;
+ options but not source files
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.CompilationBinOutputPath">
+<summary>
+ The &apos;-o:&apos; output bin path, without the &apos;-o:&apos;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.BuildErrorReporter">
+<summary>
+ The error list task reporter
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.AdviseProjectSiteCleaned(System.String,Microsoft.VisualStudio.FSharp.LanguageService.AdviseProjectSiteChanges)">
+<summary>
+ Register for notifications when project is cleaned/rebuilt (and thus any live TypeProviders should be refreshed)
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite.AdviseProjectSiteChanges(System.String,Microsoft.VisualStudio.FSharp.LanguageService.AdviseProjectSiteChanges)">
+<summary>
+ Register for notifications for when the above change
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite">
+<summary>
+ Represents known F#-specific information about a project.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.AdviseProjectSiteChanges">
+<summary>
+ Narrow abstraction over the project system.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSource_DEPRECATED.Microsoft-VisualStudio-Shell-Interop-IVsFileChangeEvents-FilesChanged(System.UInt32,System.String[],System.UInt32[])">
+<summary>
+ Hook file change events.  It&apos;s not clear that this implementation is ever utilized, since
+ the implementation on FSharpSourceTestable_DEPRECATED is used instead.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSource_DEPRECATED">
+<summary>
+ Implements ISource, IVsTextLinesEvents, IVsHiddenTextClient, IVsUserDataEvents etc. via FSharpSourceBase_DEPRECATED by filling in the remaining functionality 
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpSourceTestable_DEPRECATED.Microsoft-VisualStudio-FSharp-LanguageService-IFSharpSource_DEPRECATED-SetDependencyFiles(System.String[])">
+<summary>
+ returns true if the set of dependency files we&apos;re watching changes, false otherwise (except that it always returns false on the first call to this method on this object)
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.ProjectSite(Microsoft.FSharp.Core.FSharpOption{Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite})">
+<summary>
+ Store a ProjectSite for obtaining a task provider
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.DirtyTime(System.Int32)">
+<summary>
+ Timestamp of the last change
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.ChangeCount(System.Int32)">
+<summary>
+ Number of most recent change to this file.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.ProjectSite">
+<summary>
+ Store a ProjectSite for obtaining a task provider
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.IsClosed">
+<summary>
+ Whether or not this source is closed.
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.DirtyTime">
+<summary>
+ Timestamp of the last change
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.ChangeCount">
+<summary>
+ Number of most recent change to this file.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.SetDependencyFiles(System.String[])">
+<summary>
+ Specify the files that should trigger a rebuild for the project behind this source
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED.RecolorizeWholeFile">
+<summary>
+ Request colorization of the whole source file
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.IDocumentationBuilder_DEPRECATED.AppendDocumentationFromProcessedXML(Microsoft.VisualStudio.FSharp.LanguageService.ITaggedTextCollector_DEPRECATED,System.String,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Append the given raw XML formatted into the string builder
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.IDocumentationBuilder_DEPRECATED.AppendDocumentation(Microsoft.VisualStudio.FSharp.LanguageService.ITaggedTextCollector_DEPRECATED,System.String,System.String,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Appends text for the given filename and signature into the StringBuilder
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.IDocumentationBuilder_DEPRECATED">
+<summary>
+ XmlDocumentation builder, using the VS interfaces to build documentation.  An interface is used
+ to allow unit testing to give an alternative implementation which captures the documentation.
+</summary>
+</member>
+<member name="F:Microsoft.VisualStudio.FSharp.LanguageService.FSharpIntellisenseInfo_DEPRECATED.methodList">
+<summary>
+ A service that will provide Xml Content
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpIntellisenseInfo_DEPRECATED.IsReasonRequiringSyncParse(Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequestReason)">
+<summary>
+ Determine whether to force the use a synchronous parse 
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpIntellisenseInfo_DEPRECATED.GetMethodListForAMethodTip">
+<summary>
+ Get methods for parameter info
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpIntellisenseInfo_DEPRECATED.GetDeclarations(Microsoft.VisualStudio.Text.ITextSnapshot,System.Int32,System.Int32,Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequestReason)">
+<summary>
+ Implements the corresponding abstract member from IntellisenseInfo in MPF.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.FSharpIntellisenseInfo_DEPRECATED.GetDataTipText(System.Int32,System.Int32)">
+<summary>
+ Implements the corresponding abstract member from IntellisenseInfo in MPF.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.GotoDefinitionFailed_NotSourceCode">
+ <summary>Cannot navigate to definition. Source code is not available.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.GotoDefinitionFailed_NoTypecheckInfo">
+ <summary>Cannot navigate to definition. Type check information is not available, please try later.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.GotoDefinitionFailed_ProvidedType">
+ <summary>Cannot navigate to the provided type '{0}'.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.GotoDefinitionFailed_ProvidedMember">
+ <summary>Cannot navigate to the provided member '{0}'.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.GotoDefinitionFailed_NotIdentifier">
+ <summary>Cannot navigate to definition. Cursor is not on identifier.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.GotoDefinitionFailed_Generic">
+ <summary>Cannot navigate to definition.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.IntelliSenseLoading">
+ <summary>Loading...</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.ExceptionsHeader">
+ <summary>Exceptions:</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Strings.StillBuildingContentCache">
+ <summary>(The documentation cache is still being constructed. Please try again in a few seconds.)</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.LanguageServiceConstants.FSharpLanguageServiceCallbackName">
+<summary>
+ &quot;F# Language Service&quot;
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.LanguageService.LanguageServiceConstants.FSharpLanguageName">
+<summary>
+ &quot;F#&quot;
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.Error">
+<summary>
+ Error messages 
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextLines.GetFileContents(Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer,Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService)">
+<summary>
+ Get the string contents of a given buffer (the current snapshot).
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextLines.GetFilename(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+<summary>
+ Get the filename of the given buffer (via IVsUserData). Not all buffers have a file. This will be an exception.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextLines.TextColorState(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+<summary>
+ Get the color state
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextLines.LineText(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines,System.Int32)">
+<summary>
+ Get the text for a particular line.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextLines.LengthOfLine(Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer,System.Int32)">
+<summary>
+ Get the length of the given line.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.VsTextLines">
+<summary>
+ Isolate IVsTextLines as much as possible to ease transition into new editor architecture
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsColorState.RecolorizeLines(Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState,System.Int32,System.Int32)">
+<summary>
+ Recolorize the given lines
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.VsColorState">
+<summary>
+ Isolate IVsColorState as much as possible to ease transition into new editor architecture
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextView.Buffer(Microsoft.VisualStudio.TextManager.Interop.IVsTextView)">
+<summary>
+ Get the buffer for this view.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextView.LayeredTextView(Microsoft.VisualStudio.TextManager.Interop.IVsTextView)">
+<summary>
+ Get the layered view
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextView.GetScrollInfo(Microsoft.VisualStudio.TextManager.Interop.IVsTextView,System.Int32)">
+<summary>
+ Get the scroll info
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.VsTextView">
+<summary>
+ Isolate IVsTextView as much as possible to ease transition into new editor architecture
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextColorState.GetColorStateAtStartOfLine(Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState,System.Int32)">
+<summary>
+ May trigger a recolorization.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextColorState.ReColorizeLines(Microsoft.VisualStudio.TextManager.Interop.IVsTextColorState,System.Int32,System.Int32)">
+<summary>
+ Recolorize the given lines
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.VsTextColorState">
+<summary>
+ Isolate IVsTextColorState as much as possible to ease transition into new editor architecture
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsTextManager.GetActiveView(Microsoft.VisualStudio.TextManager.Interop.IVsTextManager,System.Boolean,Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer)">
+<summary>
+ Get the current active view
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.VsTextManager">
+<summary>
+ Isolate VsTextManager as much as possible to ease transition into new editor architecture
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.flatten(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)">
+<summary>
+ Flatten starting at the root of the hierarchy
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.flattenChild(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ Flatten the hierarchy starting at a particular item and return all itemids
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.children(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ All the children itemids ov the given item
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.ownerkey(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ Owner key string that identifies the project GUID of the owning project.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.projectDirectory(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ Get the projectDirectory for a particular item, return empty string if none
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.name(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ Get the name for a particular item, return empty string if none
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.typeName(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ Get the typename for a particular item, return empty string if none
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy.filenameOrEmpty(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32)">
+<summary>
+ Get the path+filename for a particular item, return empty string if none
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.VsHierarchy">
+<summary>
+ Methods for dealing with IVsHierarchy
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.Com">
+<summary>
+ Helper methods for interoperating with COM                
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.ColorStateLookup_DEPRECATED">
+<summary>
+ Maintain a two-way lookup of lexstate to colorstate
+ In practice this table will be quite small. All of F# only uses 38 distinct LexStates.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.Source.CreateSourceTestable_DEPRECATED(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.String},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Boolean},Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx,Microsoft.VisualStudio.FSharp.LanguageService.IDependencyFileChangeNotify_DEPRECATED)">
+<summary>
+ This is the ideal implementation of the Source concept abstracted from MLS.  
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.ProjectSitesAndFiles.ProjectSiteOfSingleFile(System.String)">
+<summary>
+ Construct a project site for a single file. May be a single file project (for scripts) or an orphan project site (for everything else).
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.ProjectSitesAndFiles.GetProjectOptionsForProjectSite(System.Boolean,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpOption{FSharp.Compiler.SourceCodeServices.FSharpProjectOptions}},Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite,System.IServiceProvider,Microsoft.FSharp.Core.FSharpOption{Microsoft.CodeAnalysis.ProjectId},System.String,Microsoft.FSharp.Core.FSharpOption{System.Object},Microsoft.FSharp.Core.FSharpOption{Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable},System.Boolean)">
+<summary>
+ Create project options for this project site.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.ProjectSitesAndFiles.CreateProjectSiteForScript(System.String,System.String[],FSharp.Compiler.SourceCodeServices.FSharpProjectOptions)">
+<summary>
+ Create project site for these project options
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.ProjectSitesAndFiles">
+<summary>
+ Information about projects, open files and other active artifacts in visual studio.
+ Keeps track of the relationship between IVsTextLines buffers, IFSharpSource_DEPRECATED objects, IProjectSite objects and FSharpProjectOptions
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable.TryGetOptionsForProject(Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Get the options for a project
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable.SetOptionsWithProjectId(Microsoft.CodeAnalysis.ProjectId,System.String[],System.String[],System.String[])">
+<summary>
+ Store the command line options for a projectId
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable.GetCommandLineOptionsWithProjectId(Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Given a projectId return the most recent set of command line options for it
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable.ClearInfoForProject(Microsoft.CodeAnalysis.ProjectId)">
+<summary>
+ Clear a project from the project table
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable.AddOrUpdateProject(Microsoft.CodeAnalysis.ProjectId,Microsoft.FSharp.Core.FSharpFunc{System.Boolean,System.Tuple{Microsoft.CodeAnalysis.ProjectId[],FSharp.Compiler.SourceCodeServices.FSharpParsingOptions,Microsoft.FSharp.Core.FSharpOption{Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite},FSharp.Compiler.SourceCodeServices.FSharpProjectOptions}})">
+<summary>
+ Add or update a project in the project table
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.FSharpProjectOptionsTable">
+<summary>
+ Manage Storage of FSharpProjectOptions the options for a project
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.ProjectSiteOfSingleFile">
+<summary>
+ An orphan file project is a .fs, .ml, .fsi, .mli that is not associated with a .fsproj.
+ By design, these are never going to typecheck because there is no affiliated references.
+ We show many squiggles in this case because they&apos;re not particularly informational. 
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.ProjectSiteOfScriptFile">
+<summary>
+ Convert from FSharpProjectOptions into IProjectSite.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.Refreshable`1">
+<summary>
+ A value and a function to recompute/refresh the value.  The function is passed a flag indicating if a refresh is happening.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.SiteProvider.IHaveCheckOptions">
+<summary>
+ An additional interface that an IProjectSite object can implement to indicate it has an FSharpProjectOptions 
+ already available, so we don&apos;t have to recreate it
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.XmlDocumentation.BuildTipText_DEPRECATED(Microsoft.VisualStudio.FSharp.LanguageService.IDocumentationBuilder_DEPRECATED,Microsoft.FSharp.Collections.FSharpList{FSharp.Compiler.SourceCodeServices.FSharpToolTipElement{Internal.Utilities.StructuredFormat.Layout}},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Internal.Utilities.StructuredFormat.TaggedText,Microsoft.FSharp.Core.Unit},System.Boolean,System.Boolean,System.Boolean)">
+<summary>
+ Build a data tip text string with xml comments injected.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.XmlDocumentation.AppendXmlComment_DEPRECATED(Microsoft.VisualStudio.FSharp.LanguageService.IDocumentationBuilder_DEPRECATED,Microsoft.VisualStudio.FSharp.LanguageService.ITaggedTextCollector_DEPRECATED,FSharp.Compiler.SourceCodeServices.FSharpXmlDoc,System.Boolean,System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Append an XmlCommnet to the segment.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.LanguageService.XmlDocumentation.ProcessXml(System.String)">
+<summary>
+ If the XML comment starts with &apos;&lt;&apos; not counting whitespace then treat it as a literal XML comment.
+ Otherwise, escape it and surround it with &lt;summary&gt;&lt;/summary&gt;
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.LanguageService.XmlDocumentation">
+<summary>
+ Documentation helpers.
+</summary>
+</member>
+</members>
+</doc>

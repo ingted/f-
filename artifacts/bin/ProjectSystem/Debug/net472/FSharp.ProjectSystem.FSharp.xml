@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.ProjectSystem.FSharp</name></assembly>
+<members>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.MSBuildUtilities.SyncWithHierarchy(Microsoft.VisualStudio.FSharp.ProjectSystem.FileNode)">
+<summary>
+ Move a file node to its correct place in the build project.
+ Its correct place is defined by where it sits in the hierarchy relative
+ to other files.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.MSBuildUtilities.MoveFolderUpHelper(System.String,Microsoft.Build.Construction.ProjectItemElement,Microsoft.VisualStudio.FSharp.ProjectSystem.ProjectNode)">
+<summary>
+ Move &lt;Folder&gt; and all its subitems up one &quot;solution hierarchy&quot; slot in the list of items.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.MSBuildUtilities.MoveFolderDownHelper(System.String,Microsoft.Build.Construction.ProjectItemElement,Microsoft.VisualStudio.FSharp.ProjectSystem.ProjectNode)">
+<summary>
+ Move &lt;Folder&gt; and all its subitems down one &quot;solution hierarchy&quot; slot in the list of items.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.MSBuildUtilities.FindLast(Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode,Microsoft.VisualStudio.FSharp.ProjectSystem.ProjectNode)">
+<summary>
+ Given a HierarchyNode, compute the last BuildItem if we want to move something after it
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.MSBuildUtilities.FindFirst(Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode,Microsoft.VisualStudio.FSharp.ProjectSystem.ProjectNode)">
+<summary>
+ Given a HierarchyNode, compute the first BuildItem if we want to move something before it
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.LangConfigFile.EnsureHasBindingRedirects(System.String,System.Boolean)">
+<summary>
+ Updates list of binding redirects to the config file. Content of list is governed by the major version of target framework.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpReferenceContainerNode">
+<summary>
+ Reference container node for FSharp references.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectReferenceNode.HasFormItems">
+ <returns>true if a fsharpfilenode with subtype Form is found</returns>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectReferenceNode.GetProjectType(System.Guid)">
+ <param name="projectGuid">Project instance guid.</param>
+ <returns>The project type string</returns>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectReferenceNode">
+<summary>
+ Knows about special requirements for project to project references
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.SubType(System.String)">
+<summary>
+ Returns the SubType of an FSharp FileNode. It is 
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.SubType">
+<summary>
+ Returns the SubType of an FSharp FileNode. It is 
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.IsFormSubType">
+<summary>
+ Returns bool indicating whether this node is of subtype &quot;Form&quot;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.QueryStatusOnNode(System.Guid,System.UInt32,System.IntPtr,Microsoft.FSharp.Core.byref{Microsoft.VisualStudio.FSharp.ProjectSystem.QueryStatusResult,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+<summary>
+ Handles the menuitems
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.MoveToBottomOfGroup(Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode)">
+<summary>
+ Move the node to the bottom of its subfolder within the Solution Explorer.
+ If its directory hierarchy does not exist, create it.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.MoveTo(Microsoft.VisualStudio.FSharp.ProjectSystem.InsertionLocation,Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode,Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode)">
+<summary>
+ Move a node to above/below the &apos;target node&apos; in the hierarchy.
+ If it is not valid for the node to be directly below the &apos;target node&apos;,
+ a warning dialog will be shown.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.MoveLastToBelow(Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode,Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode)">
+<summary>
+ In solution explorer, move the last of my siblings to just below me, return the moved FSharpFileNode
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.MoveLastToAbove(Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode,Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode)">
+<summary>
+ In solution explorer, move the last of my siblings to just above me, return the moved FSharpFileNode
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode.DoDefaultAction">
+<summary>
+ Open a file depending on the SubType property associated with the file item in the project file
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpFileNode">
+<summary>
+ Represents most (non-reference) nodes in the solution hierarchy of an F# project (e.g. foo.fs, bar.fsi, app.config)
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.VSProject">
+<summary>
+ Get the VSProject corresponding to this project
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.OutputFileName">
+<summary>
+ Returns the outputfilename based on the output type
+</summary>
+</member>
+<member name="P:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.ImageIndex">
+<summary>
+ Since we appended the F# images to the base image list in the ctor,
+ this should be the offset in the ImageList of the F# project icon.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.GetPriorityProjectDesignerPages">
+<summary>
+ Returns the property pages in a specific order        
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.GetFormatList(Microsoft.FSharp.Core.byref{System.String,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+<summary>
+ Creates the format list for the open file dialog
+ &lt;param name=&quot;formatlist&quot;&gt;The formatlist to return&lt;/param&gt;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.GetCurrentFrameworkName">
+<summary>
+ Provide mapping from our browse objects and automation objects to our CATIDs
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.GetConfigurationIndependentPropertyPages">
+<summary>
+ Overriding to provide project general property page
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.GetConfigurationDependentPropertyPages">
+<summary>
+ Returns the configuration dependent property pages.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.CreateServices(System.Type)">
+<summary>
+ Creates the services exposed by this project.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.CreateFileNode(Microsoft.VisualStudio.FSharp.ProjectSystem.ProjectElement,System.Nullable{System.UInt32})">
+<summary>
+ Create a file node based on an msbuild item.
+ &lt;param name=&quot;item&quot;&gt;The msbuild item to be analyzed&lt;/param&gt;
+ &lt;returns&gt;FSharpFileNode&lt;/returns&gt;
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.CompareNodes(Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode,Microsoft.VisualStudio.FSharp.ProjectSystem.HierarchyNode)">
+ <summary>
+ Used to sort nodes in the hierarchy.
+ </summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.AddProjectReference">
+<summary>
+ This overrides the base class method to show the VS 2005 style Add reference dialog. The ProjectNode implementation
+ shows the VS 2003 style Add Reference dialog.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectNode.AddFileFromTemplate(System.String,System.String)">
+ <param name="source">Full path to template file</param>
+ <param name="target">Full path to destination file</param>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.ProjectSystem.WAFSharpProjectFactory">
+<summary>
+ This class is a &apos;fake&apos; project factory that is used by WAP to register WAP specific information about
+ FSharp projects.
+</summary>
+</member>
+<member name="T:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectFactory">
+<summary>
+ Factory for creating our editor, creates FSharp Projects
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectPackage.getProductID(Microsoft.FSharp.Core.byref{System.String,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+ <param name="pbstrPID">Out parameter to which to assign the version number</param>
+ <returns>HRESULT, indicating success or failure</returns>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectPackage.getProductDetails(Microsoft.FSharp.Core.byref{System.String,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+ <param name="pbstrProductDetails">Out parameter to which to assign the description of the package</param>
+ <returns>HRESULT, indicating success or failure</returns>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectPackage.getOfficialName(Microsoft.FSharp.Core.byref{System.String,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+ <param name="pbstrName">Out parameter to which to assign the product name</param>
+ <returns>HRESULT, indicating success or failure</returns>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectPackage.getIdIcoLogoForAboutbox(Microsoft.FSharp.Core.byref{System.UInt32,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+ <param name="pIdIco">The resource id corresponding to the icon to display on the Help About dialog</param>
+ <returns>HRESULT, indicating success or failure</returns>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectPackage.getIdBmpSplash(Microsoft.FSharp.Core.byref{System.UInt32,Microsoft.FSharp.Core.ByRefKinds.InOut})">
+<summary>
+ This method is called during Devenv /Setup to get the bitmap to
+ display on the splash screen for this package.
+ This method may be deprecated - IdIcoLogoForAboutbox should now be called instead
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpProjectPackage.GetResourceString(System.String)">
+ <param name="resourceName">Resource to load</param>
+ <returns>String loaded for the specified resource</returns>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.FileCannotBePlacedMultipleFiles">
+ <summary>The '{0}' folder cannot be moved as it already exists in the Solution Explorer in a different location</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.FileCannotBePlacedDifferentSubtree">
+ <summary>The file is in a different subtree</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.FileCannotBePlacedBodyBelow">
+ <summary>The file '{0}' cannot be placed below '{1}' in the Solution Explorer.\n\n{2}.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.FileCannotBePlacedBodyAbove">
+ <summary>The file '{0}' cannot be placed above '{1}' in the Solution Explorer.\n\n{2}.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.UpdatingSolutionConfiguration">
+ <summary>Updating solution configuration...</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ComputingSourcesAndFlags">
+ <summary>Updating compilation sources and flags...</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.FSharpCoreVersionIsNotLegacyCompatible">
+ <summary>Referencing this version of FSharp.Core will cause your project to be incompatible with older versions of Visual Studio.  Do you want to continue?</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.AddReferenceAssemblyPageDialogNoItemsText">
+ <summary>All of the Framework assemblies are already referenced. Please use the Object Browser to explore the references in the Framework.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.AddReferenceAssemblyPageDialogRetargetingText">
+ <summary>The project will be retargeted, and its targeted frameworks will be reduced.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.Dev11SupportsOnlySilverlight5">
+ <summary>F# projects in the current version of Visual Studio support only Silverlight 5.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.AddReferenceDialogTitle_Dev11">
+ <summary>Reference Manager - {0}</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6007">
+ <summary>Visual F# Items</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6006">
+ <summary>Enable or disable Type Providers</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6005">
+ <summary>Change path and command line arguments passed to the F# Interactive</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.AddReferenceDialogTitle">
+ <summary>Add Reference</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.NeedReloadToChangeTargetFx">
+ <summary>Changing the Target Framework requires that the current project be closed and then reopened.\nAny unsaved changes within the project will be automatically saved.\n\nChanging Target Framework may require manual modification of project files in order to build.\n\nAre you sure you want to change the Target Framework for this project?</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.TemplateNotFound">
+ <summary>Template file not found: {0}</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.PropertyDefaultNamespace">
+ <summary>Default Namespace:\nThe string for the default namespace must be a valid identifier</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectRenderFolderMultiple">
+ <summary>The project '{0}' could not be opened because opening it would cause a folder to be rendered multiple times in the solution explorer. One such problematic item is '{1}'. To open this project in Visual Studio, first edit the project file and fix the problem.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.InvalidTargetFrameworkVersion">
+ <summary>Invalid TargetFrameworkVersion number</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.InvalidRunPostBuildEvent">
+ <summary>Invalid RunPostBuildEvent value</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.InvalidOutputType">
+ <summary>Invalid OutputType value</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProductRegistryName">
+ <summary>Microsoft Visual F#</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._9027">
+ <summary>F# Interactive</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._9001">
+ <summary>Visual F# Tools {{FSProductVersion}} for F# {{FSLanguageVersion}}</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProductName">
+ <summary>Microsoft Visual F# Tools</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProductID">
+ <summary>1.0</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._9002">
+ <summary>Microsoft Visual F# Tools {{FSProductVersion}} for F# {{FSLanguageVersion}}</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProductDetails">
+ <summary>Microsoft Visual F# Tools {{FSProductVersion}} for F# {{FSLanguageVersion}}</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._7001">
+ <summary>Customizes the environment to maximize code editor screen space and improve the visibility of F# commands and tool windows.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._7000">
+ <summary>Visual F#</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6003">
+ <summary>Visual F# Files (*.fs,*.fsi,*.fsx,*.fsscript);*.fs,*.fsi,*.fsx,*.fsscript</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6002">
+ <summary>F# Project Files (*.fsproj);*.fsproj</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6001">
+ <summary>F# Interactive</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._6000">
+ <summary>F# Tools</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5054">
+ <summary>A file for storing resources</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5053">
+ <summary>Resources File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5052">
+ <summary>A project for creating an F# library (.dll) that can run on .NET Framework 4.5, Windows Store, Windows Phone 8.1, Windows Phone Silverlight 8, Xamarin.iOS, Xamarin.Android and Xamarin.iOS(Classic).  Profile 259</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5051">
+ <summary>Portable Library (.NET 4.5, Windows Store, Windows Phone 8.1, Windows Phone Silverlight 8, Xamarin)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5050">
+ <summary>A project for creating an F# library (.dll) that can run on .NET Framework 4.5, Windows Store, Windows Phone 8 Silverlight, Xamarin.iOS, Xamarin.Android and Xamarin.iOS(Classic).  Profile 78</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5049">
+ <summary>Portable Library (.NET 4.5, Windows Store, Windows Phone 8 Silverlight, Xamarin)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5048">
+ <summary>A project for creating an F# library (.dll) that can run on .NET Framework 4.5, Windows Store, Xamarin.iOS, Xamarin.Android and Xamarin.iOS(Classic).  Profile 7</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5047">
+ <summary>Portable Library (.NET 4.5, Windows Store, Xamarin)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5046">
+ <summary>A project item for consuming a Web Service using WsdlService type provider.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5045">
+ <summary>WSDL Service Connection (type provider)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5044">
+ <summary>A project item for using the SqlEntityConnection (Entity Data Model) type provider to generate types and consume data in a live SQL database.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5043">
+ <summary>SQL Database Connection (LINQ to Entities, type provider)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5042">
+ <summary>A project item for using the SqlDataConnection (LINQ to SQL) type provider to generate types and consume data in a live SQL database.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5041">
+ <summary>SQL Database Connection (LINQ to SQL, type provider)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5040">
+ <summary>A project item for consuming a .NET Managed Resources File (Resx) using ResxFile type provider.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5038">
+ <summary>A project item for consuming a Open Data Protocol (OData) web service using ODataService type provider.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5037">
+ <summary>OData Service Connection (LINQ, type provider)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5036">
+ <summary>Data</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5035">
+ <summary>A project for creating an F# library (.dll) that can run on .NET Framework 4.5, Windows Store, Silverlight 5, Xamarin.iOS, Xamarin.Android and Xamarin.iOS(Classic).  Profile 47</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5034">
+ <summary>Portable Library (.NET 4.5, Windows Store, Silverlight 5, Xamarin)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5033">
+ <summary>A blank XML file</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5032">
+ <summary>XML File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5031">
+ <summary>An empty text file</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5030">
+ <summary>Text File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5029">
+ <summary>A blank F# signature file (.fsi)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5028">
+ <summary>Signature File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5027">
+ <summary>A blank F# script file (.fsx)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5026">
+ <summary>Script File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5025">
+ <summary>A blank F# source file (.fs)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5024">
+ <summary>Source File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5023">
+ <summary>A file for storing application configuration and settings values</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5022">
+ <summary>Application Configuration File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5021">
+ <summary>A project for creating an F# Silverlight library</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5020">
+ <summary>Silverlight Library</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5019">
+ <summary>A tutorial project providing a walkthrough of the F# language</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5018">
+ <summary>Tutorial (.NET Framework)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5017">
+ <summary>A project for creating an F# library</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5016">
+ <summary>Library (.NET Framework)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5015">
+ <summary>A project for creating a command-line application</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5014">
+ <summary>Console Application (.NET Framework)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5013">
+ <summary>File.fs</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5012">
+ <summary>A blank F# source file (.fs)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5011">
+ <summary>F# Source File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5009">
+ <summary>Silverlight</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5008">
+ <summary>Windows</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5007">
+ <summary>General</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5006">
+ <summary>Code</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5005">
+ <summary>FSharp Text Editor</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5003">
+ <summary>Script.fsx</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5002">
+ <summary>A blank F# script file (.fsx)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._5001">
+ <summary>F# Script File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4200">
+ <summary>Resources\FSharpInteractive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4103">
+ <summary>Resources\FSXFile.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4102">
+ <summary>Resources\FSIFile.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4101">
+ <summary>Resources\FSFile.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4100">
+ <summary>Resources\ProjectNode.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4018">
+ <summary>Resources\FSharpTestLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4017">
+ <summary>Resources\FSharpResources.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4016">
+ <summary>Resources\Data_Entity.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4015">
+ <summary>Resources\Data_LinQToSQL.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4014">
+ <summary>Resources\Data_Source.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4013">
+ <summary>Resources\FSharpSilverLIghtClassLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4012">
+ <summary>Resources\Resource_Bitmap.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4011">
+ <summary>Resources\Data_XML.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4010">
+ <summary>Resources\Local_AppConfig.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4009">
+ <summary>Resources\Utility_Text.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4008">
+ <summary>Resources\FSharpEmptyProject_32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4007">
+ <summary>Resources\FSharpSignature.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4006">
+ <summary>Resources\FSharpScriptFile.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4005">
+ <summary>Resources\FSharpCodeFile_32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4004">
+ <summary>Resources\FSharpTutorial.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4003">
+ <summary>Resources\FSharpScript.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4002">
+ <summary>Resources\FSharpLibrary.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4001">
+ <summary>Resources\FSharpApplication_32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._4000">
+ <summary>Resources\FSharpWindowsApplication.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._400">
+ <summary>Resources\FSharpAboutBox.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._300">
+ <summary>Resources\FSharpSplashScreenIcon.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._3">
+ <summary></summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._2">
+ <summary></summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR._1">
+ <summary></summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.Build">
+ <summary>Build</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.OtherFlagsDescription">
+ <summary>Other compiler flags</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.OtherFlags">
+ <summary>Other Flags</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ComponentFileExtensionFilter">
+ <summary>Component File (*.dll;*.exe)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectFileExtensionFilter">
+ <summary>F# Project File (*.fsproj)</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.TargetPlatformLocationDescription">
+ <summary>The location of the target platform</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.TargetPlatformLocation">
+ <summary>Target Platform Location</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.TargetPlatformDescription">
+ <summary>The version of the Common Language Runtime to use for output assembly</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.TargetPlatform">
+ <summary>Target Platform</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.OutputFileDescription">
+ <summary>The name of the project's primary output file.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.OutputFile">
+ <summary>Output File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectFolderDescription">
+ <summary>The absolute location of the project.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectFolder">
+ <summary>Project Folder</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectFileDescription">
+ <summary>The name of the file containing build, configuration, and other information about the project.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectFile">
+ <summary>Project File</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.Project">
+ <summary>Project</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ApplicationIconDescription">
+ <summary>Sets the .ico file to use as your application icon.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ApplicationIcon">
+ <summary>Application Icon</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.StartupObjectDescription">
+ <summary>The name of the class that contains the static Main method that you want called when you launch your application.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.StartupObject">
+ <summary>Startup Object</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.DefaultNamespaceDescription">
+ <summary>Specifies the default namespace for added items, such as classes, that are added via the Add New Item Dialog Box.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.DefaultNamespace">
+ <summary>Default Namespace</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.OutputTypeDescription">
+ <summary>The type of application to build.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.OutputType">
+ <summary>Output Type</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.AssemblyNameDescription">
+ <summary>The name of the output file that will hold assembly metadata.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.AssemblyName">
+ <summary>Assembly Name</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.GeneralCaption">
+ <summary>General</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.Application">
+ <summary>Application</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.FSharpSR.ProjectReferenceError2">
+ <summary>You must build the target project before it can be referenced.</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.Helpers.GetService``1(System.IServiceProvider)">
+<summary>
+ Like GetService2, but where the service and interface types are identical
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.Helpers.TryGetService``1(System.IServiceProvider)">
+<summary>
+ Like TryGetService2, but where the service and interface types are identical
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.Helpers.TryGetService2``2(System.IServiceProvider)">
+<summary>
+ A helper to get ther service &apos;service at interface &apos;intf from the given service provider
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.ProjectSystem.VSHiveUtilities.GetExtendedPropertyPages(Microsoft.Win32.RegistryKey)">
+<summary>
+ For a given sub-hive, check to see if a 3rd party has specified any
+ custom/extended property pages.
+ Generally, we&apos;ll find the property page GUIDs in the following locations:
+ HKLM\SOFTWARE\Microsoft\VisualStudio\&lt;VS_VERSION&gt;\&lt;guidFSharpProjectFactoryStringWithCurlies&gt;\ConfigPropertyPages
+ HKLM\SOFTWARE\Microsoft\VisualStudio\&lt;VS_VERSION&gt;\&lt;guidFSharpProjectFactoryStringWithCurlies&gt;\CommonPropertyPages
+ HKLM\SOFTWARE\Microsoft\VisualStudio\&lt;VS_VERSION&gt;\&lt;guidFSharpProjectFactoryStringWithCurlies&gt;\PriorityPropertyPages
+</summary>
+</member>
+</members>
+</doc>

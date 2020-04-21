@@ -1,0 +1,12 @@
+D:\fsharp\artifacts\bin\FSharp.Core\Proto\net45\FSharp.Core.dll
+D:\fsharp\artifacts\bin\FSharp.Core\Proto\net45\FSharp.Core.xml
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\buildproperties.fs
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSCore.fs
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSCore.resources
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.fsproj.GenerateResource.cache
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.sourcelink.json
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.dll
+D:\fsharp\artifacts\obj\FSharp.Core\Proto\net45\FSharp.Core.xml

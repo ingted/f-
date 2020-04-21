@@ -10,7 +10,7 @@ open System.Collections.Generic
 /// When this fix flag is true, this byte is converted to a char using the System.Console.InputEncoding.
 /// This is a code-around for bug://1345.
 /// Fixes to System.Console.ReadKey may break this code around, hence the option here.
-module internal ConsoleOptions =
+module ConsoleOptions =
 
   let readKeyFixup (c:char) =
       // Assumes the c:char is actually a byte in the System.Console.InputEncoding.
@@ -26,10 +26,10 @@ module internal ConsoleOptions =
         assert("readKeyFixHook: given char is outside the 0..255 byte range" = "")
         c
 
-type internal Style = Prompt | Out | Error
+type Style = Prompt | Out | Error
 
 /// Class managing the command History.
-type internal History() =
+type History() =
     let list  = new List<string>()
     let mutable current  = 0
 
@@ -64,14 +64,14 @@ type internal History() =
 
 /// List of available optionsCache
 
-type internal Options() =
+type Options() =
     inherit History()
     let mutable root = ""
     member x.Root with get() = root and set(v) = (root <- v)
 
 /// Cursor position management
 
-module internal Utils =
+module Utils =
 
     open System
     open System.Reflection
@@ -118,8 +118,8 @@ module internal Utils =
             | None          -> failwith "Internal Error: cannot bind to method"
             | Some methInfo -> methInfo
 
-[<Sealed>]
-type internal Cursor =
+
+type Cursor =
     static member ResetTo(top,left) =
         Utils.guard(fun () ->
            Console.CursorTop <- min top (Console.BufferHeight - 1)
@@ -130,7 +130,7 @@ type internal Cursor =
         let left = inset + position % (Console.BufferWidth - inset)
         Cursor.ResetTo(top,left)
 
-type internal Anchor =
+type Anchor =
     {top:int; left:int}
     static member Current(inset) = {top=Console.CursorTop;left= max inset Console.CursorLeft}
     static member Top(inset) = {top = 0; left = inset}
@@ -142,7 +142,7 @@ type internal Anchor =
 
 
 
-type internal ReadLineConsole() =
+type ReadLineConsole() =
     let history = new History()
     let mutable complete : (string option * string -> seq<string>) = fun (_s1,_s2) -> Seq.empty
     member x.SetCompletionFunction f = complete <- f

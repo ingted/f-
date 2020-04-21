@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "fsi": {
+      "commandName": "Project",
+      "commandLineArgs": "/langversion:preview"
+    }
+  }
+}

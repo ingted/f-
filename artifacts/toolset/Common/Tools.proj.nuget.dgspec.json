@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\1.0.0-beta.20215.5\\tools\\Tools.proj": {}
+  },
+  "projects": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\1.0.0-beta.20215.5\\tools\\Tools.proj": {
+      "version": "4.7.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\1.0.0-beta.20215.5\\tools\\Tools.proj",
+        "projectName": "Tools",
+        "projectPath": "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.dotnet.arcade.sdk\\1.0.0-beta.20215.5\\tools\\Tools.proj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages",
+        "outputPath": "E:\\fsharp\\artifacts\\toolset\\Common\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\fsharp\\NuGet.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/interactive-window/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-master-nightly/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
+          "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
+          "https://myget.org/F/vs-devcore/api/v3/index.json": {},
+          "https://myget.org/F/vs-editor/api/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vs-impl/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vssdk/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {},
+          "https://www.myget.org/F/fsharp-daily/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "MicroBuild.Core": {
+              "target": "Package",
+              "version": "[0.2.0, )",
+              "autoReferenced": true
+            },
+            "MicroBuild.Core.Sentinel": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.DiaSymReader.Pdb2Pdb": {
+              "target": "Package",
+              "version": "[1.1.0-beta2-20115-01, )",
+              "autoReferenced": true
+            },
+            "Microsoft.DotNet.Build.Tasks.VisualStudio": {
+              "target": "Package",
+              "version": "[1.0.0-beta.20215.5, )",
+              "autoReferenced": true
+            },
+            "Microsoft.DotNet.NuGetRepack.Tasks": {
+              "target": "Package",
+              "version": "[1.0.0-beta.20215.5, )",
+              "autoReferenced": true
+            },
+            "Microsoft.DotNet.SignTool": {
+              "target": "Package",
+              "version": "[1.0.0-beta.20215.5, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SymbolUploader.Build.Task": {
+              "target": "Package",
+              "version": "[1.0.0-beta-64414-01, )",
+              "autoReferenced": true
+            },
+            "sn": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "vswhere": {
+              "target": "Package",
+              "version": "[2.6.7, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "E:\\fsharp\\.dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

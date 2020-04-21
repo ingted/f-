@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\bin\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.dll
+D:\fsharp\artifacts\bin\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.xml
+D:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.sourcelink.json
+D:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.AssemblyInfo.cs
+D:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.csproj.CopyComplete
+D:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.dll
+D:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.xml
+E:\fsharp\artifacts\bin\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.dll
+E:\fsharp\artifacts\bin\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.xml
+E:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.sourcelink.json
+E:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.AssemblyInfo.cs
+E:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.csproj.CopyComplete
+E:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.dll
+E:\fsharp\artifacts\obj\XmlDocAttributeWithEmptyComment\Debug\net45\XmlDocAttributeWithEmptyComment.xml

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information. -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddSvcRefDlg_DefaultDialogTitle" xml:space="preserve">
+    <value>Přidat odkaz na službu</value>
+    <comment>Title for the "Add Service Reference" dialog</comment>
+  </data>
+  <data name="CodeGenerator_UnableToGetCodeDomProvider" xml:space="preserve">
+    <value>Nepovedlo se najít generátor kódu (CodeDomProvider).</value>
+  </data>
+  <data name="Configuration_CantSaveTemporaryConfigurations" xml:space="preserve">
+    <value>Konfigurace se nedá uložit. Ujistěte se prosím, že konfigurační soubor existuje a že se dá upravovat.</value>
+  </data>
+  <data name="Configuration_IVsProjectSpecialFilesNotSupported" xml:space="preserve">
+    <value>Aktuální projekt konfigurační soubory nepodporuje.</value>
+  </data>
+  <data name="AddSvcRefDlg_NoServicesFoundInSolution" xml:space="preserve">
+    <value>V řešení se nenašly žádné služby.</value>
+  </data>
+  <data name="AddSvcRefDlg_ErrorOnOK" xml:space="preserve">
+    <value>Při stahování metadat z dané adresy došlo k chybě. Zkontrolujte prosím, jestli jste zadali platnou adresu.</value>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFoundAtUrl_2Args" xml:space="preserve">
+    <value>Na adrese {1} se našly služby ({0}).</value>
+    <comment>{0} = count, {1} = URL where the services were found</comment>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFoundInSolution_1Arg" xml:space="preserve">
+    <value>V řešení se našly služby ({0}).</value>
+    <comment>{0} = # of services</comment>
+  </data>
+  <data name="Configuration_OnlyRootItemIdSupported" xml:space="preserve">
+    <value>Je možné přistupovat jenom k výchozímu (ITEMID_ROOT) konfiguračnímu souboru.</value>
+  </data>
+  <data name="ReferenceGroup_InvalidNamespace" xml:space="preserve">
+    <value>{0} není platným oborem názvů pro odkaz na službu.</value>
+  </data>
+  <data name="ReferenceGroup_NamespaceConflictsOther" xml:space="preserve">
+    <value>Nedá se vytvořit odkaz na službu s oborem názvů {0}, protože tento název už používá existující odkaz na službu, složka nebo soubor.</value>
+  </data>
+  <data name="ReferenceGroup_AddMultipleReference" xml:space="preserve">
+    <value>Nedá se přidat nový odkaz. Jeden nebo víc odkazů už existuje, nebo sekce Metadata v souboru .svcmap není prázdná. Upravte prosím soubor .svcmap a smažte všechny položky v sekci Metadata.</value>
+  </data>
+  <data name="ReferenceGroup_NamespaceCantBeEmpty" xml:space="preserve">
+    <value>Pro tento odkaz na službu se musí zadat obor názvů.</value>
+  </data>
+  <data name="ReferenceGroup_InvalidName" xml:space="preserve">
+    <value>{0} není platným názvem pro odkaz na službu.</value>
+  </data>
+  <data name="ReferenceGroup_NameCantBeEmpty" xml:space="preserve">
+    <value>Prázdný řetězec není platným názvem referenční skupiny.</value>
+  </data>
+  <data name="ReferenceGroup_NameConflictsOther" xml:space="preserve">
+    <value>Nepovedlo se vytvořit referenční skupinu {0}, protože tento název už používá existující referenční skupina, složka nebo soubor.</value>
+  </data>
+  <data name="ReferenceGroup_NameCantStartEndWithSpace" xml:space="preserve">
+    <value>Nedá se vytvořit referenční skupina s oborem názvů nebo názvem začínajícím nebo končícím prázdnými znaky.</value>
+  </data>
+  <data name="ReferenceGroup_NotFoundThroughPath" xml:space="preserve">
+    <value>Soubor .svcmap se nepovedlo najít. Možná je přesunutý nebo smazaný. Abyste mohli vygenerovat nový soubor .svcmap, smažte odkaz na službu a potom ho znovu přidejte.</value>
+  </data>
+  <data name="ReferenceGroup_NotSupportedInCurrentProject" xml:space="preserve">
+    <value>Aktuální projekt nepodporuje odkazy na služby. Aby se dala zapnout podpora Windows Communication Foundation, změňte cílovou verzi rozhraní Microsoft .NET Framework.</value>
+  </data>
+  <data name="ReferenceGroup_DeleteFailedConfigurationError" xml:space="preserve">
+    <value>Konfiguraci odkazu na službu nejde z následujícího důvodu smazat: {0}</value>
+  </data>
+  <data name="ReferenceGroup_UpdateFailedConfigurationError" xml:space="preserve">
+    <value>Konfiguraci odkazu na službu nejde z následujícího důvodu aktualizovat: {0}</value>
+  </data>
+  <data name="ReferenceGroup_AddFailedConfigurationError" xml:space="preserve">
+    <value>Konfiguraci odkazu na službu nejde z následujícího důvodu přidat: {0}</value>
+  </data>
+  <data name="AddSvcRefDlg_NothingSelectedOnGo" xml:space="preserve">
+    <value>Zadejte prosím adresu služby.</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_DiscoverUrl_1Arg" xml:space="preserve">
+    <value>Při pokusu o nalezení služeb na adrese {0} došlo k chybě.</value>
+    <comment>{0} = a URL path</comment>
+  </data>
+  <data name="AddSvcRefDlg_Error_ServicesInSolution" xml:space="preserve">
+    <value>Při hledání služeb v řešení došlo k chybě.</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_StartService_1Arg1" xml:space="preserve">
+    <value>Při pokusu o spuštění služeb na adrese {0} došlo k chybě.</value>
+    <comment>{0} = a URL path</comment>
+  </data>
+  <data name="AddSvcRefDlg_PleaseWait" xml:space="preserve">
+    <value>Počkejte, dokud se nestáhnou informace o službě, nebo klikněte na Zastavit.</value>
+  </data>
+  <data name="ReferenceGroup_FailedToGetReferencedAssembliesFromProject" xml:space="preserve">
+    <value>Ze systému projektů se nedala získat odkazovaná sestavení.</value>
+  </data>
+  <data name="ReferenceGroup_SvcMapFileIsMissing" xml:space="preserve">
+    <value>Odkaz na službu je neplatný, protože se nepovedlo najít soubor .svcmap ({0}). Možná je přesunutý, smazaný nebo vyloučený z projektu. Aby se dal vygenerovat nový soubor .svcmap, smažte odkaz na službu a potom ho znovu přidejte.</value>
+  </data>
+  <data name="ReferenceGroup_SvcMapFileBadFormat" xml:space="preserve">
+    <value>Odkaz na službu je neplatný. Soubor .svcmap ({0}) se nepovedlo načíst. Může být poškozený nebo ve špatném formátu: {1}</value>
+  </data>
+  <data name="AddSvcRegDlg_ShowErrorDetails" xml:space="preserve">
+    <value>(Podrobnosti)</value>
+    <comment>This is the text for a link to additional error information.</comment>
+  </data>
+  <data name="AddSvcRefDlg_OPSelectContract" xml:space="preserve">
+    <value>Pro zobrazení operací služby vyberte její kontrakt.</value>
+    <comment>This is the message displayed when user selects non-cotract nodes.</comment>
+  </data>
+  <data name="CSRDlg_Title" xml:space="preserve">
+    <value>Nastavení odkazu na službu</value>
+  </data>
+  <data name="CSRDlg_CustomType" xml:space="preserve">
+    <value>( Vlastní )</value>
+  </data>
+  <data name="CSRDlg_AssemblyNotFoundError" xml:space="preserve">
+    <value>Sestavení {0} se nedá najít.</value>
+  </data>
+  <data name="CSRDlg_NullURL" xml:space="preserve">
+    <value>Adresa by měla být platná, neprázdná adresa URL.</value>
+    <comment>Error message to display when user enters empty URL in the address change text box</comment>
+  </data>
+  <data name="AddSvcRefDlg_ServicesFound_1Arg" xml:space="preserve">
+    <value>Nalezené služby ({0})</value>
+    <comment>{0} = count</comment>
+  </data>
+  <data name="Err_UserCancelled" xml:space="preserve">
+    <value>Operace se zrušila.</value>
+  </data>
+  <data name="UpdateDialog_Title_1Arg" xml:space="preserve">
+    <value>Aktualizuje se odkaz na službu {0}.</value>
+  </data>
+  <data name="Status_UpdateComplete" xml:space="preserve">
+    <value>Aktualizace referencí na službu je dokončená.</value>
+  </data>
+  <data name="Status_GeneratingProxy" xml:space="preserve">
+    <value>Generuje se klientský kód odkazu na službu...</value>
+  </data>
+  <data name="Status_GeneratingProxyComplete" xml:space="preserve">
+    <value>Generování klientského kódu odkazu na službu se dokončilo.</value>
+  </data>
+  <data name="Status_StartUpdate_1Arg" xml:space="preserve">
+    <value>Aktualizuje se odkaz na službu {0}...</value>
+  </data>
+  <data name="Status_UpdatingConfig" xml:space="preserve">
+    <value>Aktualizuje se konfigurace...</value>
+  </data>
+  <data name="Status_UpdatingConfigComplete" xml:space="preserve">
+    <value>Aktualizace konfigurace se dokončila.</value>
+  </data>
+  <data name="Status_UpdateCancelled" xml:space="preserve">
+    <value>Aktualizace referencí na službu se zrušila.</value>
+  </data>
+  <data name="Status_UpdateFailed" xml:space="preserve">
+    <value>Aktualizace referencí na službu selhala.</value>
+  </data>
+  <data name="Status_AddServiceComplete" xml:space="preserve">
+    <value>Přidání odkazu na službu se dokončilo.</value>
+  </data>
+  <data name="Status_AddServiceFailed" xml:space="preserve">
+    <value>Přidání odkazu na službu selhalo.</value>
+  </data>
+  <data name="Status_StartAddService_1Arg" xml:space="preserve">
+    <value>Vytváří se nový odkaz na službu do {0}...</value>
+    <comment>{0}=URL</comment>
+  </data>
+  <data name="CSRDlg_NoAssemblySelected" xml:space="preserve">
+    <value>Nevybrali jste žádné sestavení.</value>
+  </data>
+  <data name="ReferenceGroup_AsyncOpPending" xml:space="preserve">
+    <value>Dokud probíhá asynchronní operace, požadovaná operace není platná.</value>
+  </data>
+  <data name="CSRDlg_MultipleURL" xml:space="preserve">
+    <value>Víc adres (upravitelné v souboru .svcmap)</value>
+  </data>
+  <data name="AddSvcRefDlg_ContractsFoundAtUrl_2Args" xml:space="preserve">
+    <value>Na adrese {1} se našly kontrakty ({0}).</value>
+    <comment>{0} = count, {1} = URL where the contracts were found</comment>
+  </data>
+  <data name="AddSvcRefDlg_Error_CantCreateTempFile" xml:space="preserve">
+    <value>Nedá se vytvořit dočasný konfigurační soubor pro stažení informací o službě.</value>
+  </data>
+  <data name="ConfigurationFileOpenedInIncompatibleEditor" xml:space="preserve">
+    <value>Soubor je už otevřený v nekompatibilním editoru.</value>
+  </data>
+  <data name="Status_DownloadingMetadata" xml:space="preserve">
+    <value>Stahují se informace o službě...</value>
+  </data>
+  <data name="AddSvcRefDlg_Error_ExistingRefGroupNotSupported" xml:space="preserve">
+    <value>Aktuální verze softwaru nepodporuje přidávání odkazů na služby do existující skupiny odkazů na služby.</value>
+  </data>
+  <data name="Discovery_ErrorBuildSolution" xml:space="preserve">
+    <value>Pokud je odkaz na službu v aktuálním řešení definovaný, pokuste se prosím řešení sestavit a odkaz na službu přidat znovu.</value>
+  </data>
+  <data name="ReferenceGroup_MismatchBeginEndBatch" xml:space="preserve">
+    <value>Volání Begin/EndBatch se neshodují. EndBatch jste zavolali víckrát než BeginBatch.</value>
+  </data>
+  <data name="SingleFileGenerator_FailedToGenerateTypes_1Arg" xml:space="preserve">
+    <value>Generování kódu pro odkaz na službu {0} selhalo. Podrobnosti najdete v ostatních chybových zprávách a upozorněních.</value>
+  </data>
+</root>

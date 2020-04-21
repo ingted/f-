@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>VisualFSharp.UnitTests</name></assembly>
+<members>
+<member name="M:Internal.Utilities.Collections.MruCache`3.TryGetAny(`0,`1)">
+<summary>
+ Get the value for the given key or &lt;c&gt;None&lt;/c&gt; if not still valid.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.MruCache`3.TryGet(`0,`1)">
+<summary>
+ Get the value for the given key or None, but only if entry is still valid
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.MruCache`3.Set(`0,`1,`2)">
+<summary>
+ Set the given key. 
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.MruCache`3.Resize(`0,System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Resize
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.MruCache`3.RemoveAnySimilar(`0,`1)">
+<summary>
+ Remove the given value from the mru cache.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.MruCache`3.ContainsSimilarKey(`0,`1)">
+<summary>
+ Get the similar (subsumable) value for the given key or &lt;c&gt;None&lt;/c&gt; if not already available.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.MruCache`3.Clear(`0)">
+<summary>
+ Clear out the cache.
+</summary>
+</member>
+<member name="T:Internal.Utilities.Collections.MruCache`3">
+<summary>
+ Simple priority caching for a small number of key/value associations.
+ This cache may age-out results that have been Set by the caller.
+ Because of this, the caller must be able to tolerate values 
+ that aren&apos;t what was originally passed to the Set function.     
+
+ Concurrency: This collection is thread-safe, though concurrent use may result in different
+ threads seeing different live sets of cached items, and may result in the onDiscard action
+ being called multiple times. In practice this means the collection is only safe for concurrent
+ access if there is no discard action to execute.
+
+  - areSimilar: Keep at most once association for two similar keys (as given by areSimilar)
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.TryPeekKeyValue(`0,`1)">
+<summary>
+ Lookup the value without making it the most recent.
+ Returns the original key value because the areSame function
+ may have unified two different keys.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.TryGetKeyValue(`0,`1)">
+<summary>
+ Lookup a value and make it the most recent.
+ Returns the original key value because the areSame function
+ may have unified two different keys.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.TryGet(`0,`1)">
+<summary>
+ Lookup a value and make it the most recent. Return &lt;c&gt;None&lt;/c&gt; if it wasn&apos;t there.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.Resize(`0,System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Resize
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.Remove(`0,`1)">
+<summary>
+ Remove the given value from the collection.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.Put(`0,`1,`2)">
+<summary>
+ Add an element to the collection. Make it the most recent.
+</summary>
+</member>
+<member name="M:Internal.Utilities.Collections.AgedLookup`3.Clear(`0)">
+<summary>
+ Remove all elements.
+</summary>
+</member>
+<member name="T:Internal.Utilities.Collections.AgedLookup`3">
+<summary>
+ Simple aging lookup table. When a member is accessed it&apos;s
+ moved to the top of the list and when there are too many elements
+ the least-recently-accessed element falls of the end.  
+
+  - areSimilar: Keep at most once association for two similar keys (as given by areSimilar)
+</summary>
+</member>
+<member name="P:Internal.Utilities.FSharpEnvironment.FSharpBannerVersion">
+<summary>
+ The F# version reported in the banner
+</summary>
+</member>
+<member name="M:Internal.Utilities.FSharpEnvironment.Option.ofString(System.String)">
+<summary>
+ Convert string into Option string where null and String.Empty result in None
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.TfsSubmitSpecificFiles(System.String[],System.String)">
+<summary>
+ Submit a specific set of checked out files to Tfs.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.RoboCopyMirror(System.String,System.String)">
+<summary>
+ Use robocopy to mirror a directory from one place to another
+ NOTE: This command will delete files at the destination if they don&apos;t exist at the source
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.Zip(System.String,System.String[])">
+<summary>
+ Zip some files
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnWithStatisticsExpectCode``1(System.Int32,System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,UnitTests.TestLib.Utils.Spawn.ProcessResults})">
+<summary>
+ Execute a command and expect a particular result code. Return the processor statistics.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnToTextLines``1(System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.Tuple{System.Int32,System.String[]}})">
+<summary>
+ Execute the command a return an array of textlines for the output and error.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnReturnExitCode``1(System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.Int32})">
+<summary>
+ Execute the command and return the exit code
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnExpectCode``1(System.Int32,System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Execute a command and expect a particular result code
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.Spawn``1(System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Execute a command
+</summary>
+</member>
+<member name="P:UnitTests.TestLib.Utils.Spawn.showSpawnedCommands">
+<summary>
+ Set this flag to true to see spawned commands.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.FilesystemHelpers.DoWithTempFile``1(System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,``0})">
+<summary>
+ Create a temporary filename, invoke callback with that filename, then clean up temp file.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.FilesystemHelpers.NewTempDirectory(System.String)">
+<summary>
+ Create a new temporary directory.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.AddDisabledWarning">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.AddDisabledWarning
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.CreateNamedSingleFileProject">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.CreateNamedSingleFileProject
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.CreateSingleFileProject">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.CreateSingleFileProject
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.SetProjectDefines">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.SetProjectDefines
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.AddAssemblyReferenceEx">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.AddAssemblyReferenceEx
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.AddAssemblyReference">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.AddAssemblyReference
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.Cleanup">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.Cleanup
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.CloseSolution">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.CloseSolution
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Salsa.HiddenFunctions.CreateSolution">
+<summary>
+ this function should not be called from the global namespace
+ if you really need it - use qualified form: GlobalFunctions.CreateSolution
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.LanguageService.LanguageServiceBaseTests.TearDown">
+<summary>
+ Called per test
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.LanguageService.LanguageServiceBaseTests.Setup">
+<summary>
+ Called per test
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.LanguageService.LanguageServiceBaseTests.Init">
+<summary>
+ Called per test run
+</summary>
+</member>
+<member name="T:UnitTests.TestLib.LanguageService.LanguageServiceBaseTests">
+<summary>
+ These are the driver tests. They&apos;re parameterized on
+ various functions that abstract actions over vs.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.ProjectSystem.TheTests.Setup">
+<summary>
+ Called per test
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.ProjectSystem.TheTests.MakeProjectAndDo(Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},System.String,Microsoft.FSharp.Core.FSharpFunc{UnitTests.TestLib.ProjectSystem.UnitTestingFSharpProjectNode,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Create a project with the given &quot;compileItems&quot; and &quot;other&quot;, then 
+ call &quot;f&quot; on that project while the project file still exists on disk.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.ProjectSystem.TheTests.MakeProject(Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},System.String)">
+<summary>
+ Create a project with the given &quot;compileItems&quot; and &quot;other&quot;.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.ProjectSystem.TheTests.AssertMatches(System.Text.RegularExpressions.Regex,System.String)">
+<summary>
+ helpers
+</summary>
+</member>
+<member name="T:UnitTests.TestLib.ProjectSystem.LanguageServiceExtension.ProjectSystemTestFlavour">
+<summary>
+ A test flavour - this layers additional behaviour over the BuiltMSBuildTestFlavour
+ to exercise the unit-testable versions of the classes in FSharp.ProjectSystem.FSharp.  
+ For example, when a CreateProject call is made, a UnitTestingFSharpProjectNode is 
+ created (in addition to the actions performed via the MSBuild layer).
+</summary>
+</member>
+<member name="M:FSharp.Compiler.Service.Tests.Common.tupsZ(FSharp.Compiler.Range.range)">
+<summary>
+ Extract range info  and convert to zero-based line  - please don&apos;t use this one any more
+</summary>
+</member>
+<member name="M:FSharp.Compiler.Service.Tests.Common.tups(FSharp.Compiler.Range.range)">
+<summary>
+ Extract range info 
+</summary>
+</member>
+<member name="M:Tests.Build.Setup">
+<summary>
+ Called per test
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.aaZeroElementVector">
+<summary>
+ Test case of zero elements in a vector
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.ToScalar">
+<summary>
+ Convert a vector to a scalar
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.StampScan">
+<summary>
+ Test that stamp works
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.StampMap">
+<summary>
+ Test that stamp works
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.StampDemultiplex">
+<summary>
+ Test that stamp works
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.Setup">
+<summary>
+ Called per test
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.ScanLeft">
+<summary>
+ Test that ScanLeft works.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.Scalar">
+<summary>
+ Test that a simple scalar action works.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.MultiplexTransitionUp">
+<summary>
+ Here, we want a multiplex to increase the number of items processed.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.HiddenOutputGroup">
+<summary>
+ In this bug, the desired output is between other outputs.
+ The getExprById function couldn&apos;t find it.            
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.EmptyBuildIsNop">
+<summary>
+ Empty build should just be a NOP.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.DemultiplexScanLeft">
+<summary>
+ Test that Demultiplex followed by ScanLeft works
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.Can cancel Eval">
+<summary>
+ Check a cancellation
+</summary>
+</member>
+<member name="M:Tests.LanguageService.IncrementalBuild.AssemblyReferenceModel">
+<summary>
+ This test replicates the data flow of the assembly reference model. It includes several concepts 
+ that were new at the time: Scalars, Invalidation, Disposal
+</summary>
+</member>
+<member name="M:Tests.LanguageService.General.UsingMSBuild.TokenInfo.TriggerClasses">
+<summary>
+ Verifies that token info returns correct trigger classes 
+ - this is used in MPF for triggering various intellisense features
+</summary>
+</member>
+<member name="M:Tests.LanguageService.General.UsingMSBuild.ProjectSystem.FilesOutsideProjectDirectoryBecomeLinkedFiles">
+<summary>
+ FEATURE: (Project System only) Adding a file outside the project directory creates a link
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.WithNonExistentDll">
+<summary>
+ BUG: Referencing a non-existent DLL caused an assert.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.TopLevelIdentifier.AfterPartialToken1">
+<summary>
+ Intellisense at the top level (after a partial token). All matches should be shown even if there is a unique match
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.ShowSetAsModuleAndType">
+<summary>
+ Tests whether we&apos;re correctly showing both type and module when they have the same name
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.SequenceExpressions.SequenceExprWithWhileLoopSystematic">
+<summary>
+ Incrementally enter a seq{ .. while ...} loop and check for availability of intellisense etc.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.QueryExpression.CtrlSpaceSystematic2">
+<summary>
+ This is the case where (*TYPING*) nothing has been typed yet and we invoke the completion list
+ This is a known failure right now for some of the example files above.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.QueryExpression.CtrlSpaceSystematic1">
+<summary>
+ This is the case where at (*TYPING*) we first type 1...N-1 characters of the target custom operation and then invoke the completion list, and we check that the completion list contains the custom operation
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.QueryAndOtherExpressions.WordByWordSystematicJoinQueryOnSingleLine">
+<summary>
+ Incrementally enter query with a &apos;join&apos; and check for availability of quick info, auto completion and dot completion 
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.QueryAndOtherExpressions.WordByWordSystematicJoinQueryOnMultipleLine">
+<summary>
+ This is a sanity check that the multiple-line case is much the same as the single-line cae
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.PrimTypeAndFunc">
+<summary>
+ There was a bug (2584) that IntelliSense should treat &apos;int&apos; as a type instead of treating it as a function
+ However, this is now deprecated behavior. We want the user to use &apos;System.Int32&apos; and 
+ we generally prefer information from name resolution (aslo see 4405)
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.OfSystemWindows">
+<summary>
+ In this bug there was an exception if the user pressed dot after a long identifier
+ that was unknown.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.OfSeveralModuleMembers">
+<summary>
+ FEATURE: The user will see appropriate glyphs in the autocompletion list.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.MatchStatement.Clause.AfterLetBinds.Bug1603">
+<summary>
+ This is related to Bug1605--since the file couldn&apos;t parse there was no information to provide the autocompletion list.    
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.InString">
+<summary>
+ No intellisense in comments/strings!
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.Identifier.OnWhiteSpace.AtTopLevel">
+<summary>
+ Intellisense at the top level (on white space)
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.FlagsAndSettings.Bug1969">
+<summary>
+ In this bug, a bogus flag caused the rest of flag parsing to be ignored.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.EmptyFile.Dot.Bug1115">
+<summary>
+ intellisense on DOT
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.DotOff.String">
+<summary>
+ Dotting off a string literal should work.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.DotOff.Parenthesized.Expr">
+<summary>
+ Wrong intellisense for array              
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.DotOff.ArraySliceNotation1">
+<summary>
+ Wrong intellisense for array
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.DotOff.ArrayIndexerNotation">
+<summary>
+ Wrong intellisense for array
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.CompletionForAndBang_BaseLine4">
+<summary>
+ Without closing &apos;)&apos;
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.CompletionForAndBang_BaseLine3">
+<summary>
+ Without closing &apos;}&apos;
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.BasicLocalMemberList">
+<summary>
+ FEATURE: Pressing dot (.) after an local variable will produce an Intellisense list of members the user may select.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.AtNamespaceDot">
+<summary>
+ FEATURE: The user may type namespace followed by dot and see a completion list containing members of that namespace.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.AfterUpdateProjectPlatform">
+<summary>
+ FEATURE: Updating the active project platform influences the language service
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.AfterUpdateProjectConfiguration">
+<summary>
+ FEATURE: Updating the active project configuration influences the language service
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.AfterMethod.Overloaded.Bug2296">
+<summary>
+ Testing autocomplete after a dot directly following overloaded method call
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.AfterMethod.Bug2296">
+<summary>
+ Testing autocomplete after a dot directly following method call
+</summary>
+</member>
+<member name="M:Tests.LanguageService.AutoCompletion.UsingMSBuild.AfterAssemblyReferenceAdded">
+<summary>
+ FEATURE: References added to the project bring corresponding new .NET and F# items into scope.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Vector.ToScalar``1(System.String,FSharp.Compiler.IncrementalBuild.Vector{``0})">
+<summary>
+ Convert from vector to a scalar
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.SolutionGotoDefinitionTestWithSimpleFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String}})">
+<summary>
+ exp = (&lt;expected line&gt;, &lt;expected identifier&gt;) option
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinitionTestWithSimpleFile(System.String,Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String}})">
+<summary>
+ exp = (&lt;expected line&gt;, &lt;expected identifier&gt;) option
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinitionTestWithLib(System.String,Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String}})">
+<summary>
+ exp = (&lt;identifier where cursor ought to be&gt;, &lt;name of file that&apos;s expected&gt;) option
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinitionCheckResultAgainstAnotherFile(Salsa.Salsa.OpenProject,Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String}},Microsoft.VisualStudio.FSharp.LanguageService.GotoDefinitionResult_DEPRECATED)">
+<summary>
+ exp = (&lt;identifier where cursor ought to be&gt;, &lt;name of file that&apos;s expected&gt;) option
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinitionCheckResultAgainst(Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String,System.String}},Salsa.Salsa.OpenFile,Microsoft.VisualStudio.FSharp.LanguageService.GotoDefinitionResult_DEPRECATED)">
+<summary>
+ exp  = (&lt;identifier where cursor ought to be&gt;, &lt;whole line where cursor ought to be&gt;, &lt;name of file that&apos;s expected&gt;) option
+ file = &lt;file to gotodefinition in&gt;
+ act  = &lt;the result of the GotoDefinition call&gt;
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.UnitOfMeasure.Bug193064">
+<summary>
+ Verify the GotoDefinition on UoM yield does NOT jump out error dialog, 
+ will do nothing in automation lab machine or GTD SI.fs on dev machine with enlistment.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.PairPat">
+<summary>
+ let f p = match p with (#y, z) -&gt; $y
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.OrPatRight">
+<summary>
+ let f x = match x with | Suc x | $x -&gt; x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.OrPatLeft">
+<summary>
+ let f x = match x with | Suc $x | x -&gt; x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.LotsOfFsUse">
+<summary>
+ let f = () in let f = function #f -&gt; $f in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.LotsOfFsPat">
+<summary>
+ let f = () in let f = function $f -&gt; f in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.LotsOfFsFunc">
+<summary>
+ let f = () in let $f = function f -&gt; f in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.LambdaMultBindBody">
+<summary>
+ fun x $x -&gt; x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.LambdaMultBind2">
+<summary>
+ fun x $x -&gt; x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.LambdaMultBind1">
+<summary>
+ fun $x x -&gt; x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.InStringFails">
+<summary>
+ let x = &quot;$x&quot;
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.InMultiLineStringFails">
+<summary>
+ let x = &quot;hello
+          $x
+         &quot;
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.ConsPatWhenClauseInWhenRhsXs">
+<summary>
+ fun xs -&gt; match xs with x :: #xs when xs &lt;&gt; [] -&gt; x :: $xs
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.ConsPatWhenClauseInWhenRhsX">
+<summary>
+ fun xs -&gt; match xs with #x :: xs when xs &lt;&gt; [] -&gt; $x :: xs
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.ConsPatWhenClauseInWhen">
+<summary>
+ fun xs -&gt; match xs with x :: #xs when $xs &lt;&gt; [] -&gt; x :: xs
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.ConsPat">
+<summary>
+ let f xs = match xs with | #x :: xs -&gt; $x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.AsPatRHS">
+<summary>
+ let foo = () in let f (_ as #foo) = $foo in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.AsPatLHS">
+<summary>
+ let foo = () in let f (_ as $foo) = foo in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Tricky.AndPat">
+<summary>
+ let f x = match x with | Suc #y &amp; z -&gt; $y
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Polymorph.NotLeftmost">
+<summary>
+ let a = () in let id (x : &apos;a) : &apos;$a = x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Polymorph.Leftmost">
+<summary>
+ let a = () in let id (x : &apos;$a) : &apos;a = x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Module.QualifiedModule">
+<summary>
+ module #Too = foo = ()
+ $Too.foo
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Module.QualifiedMember">
+<summary>
+ module Too = #foo = ()
+ Too.$foo
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Module.Open">
+<summary>
+ module #Too = foo = ()
+ module Bar = open $Too
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Module.DefModname">
+<summary>
+ module $Too = let foo = ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Module.DefMember">
+<summary>
+ module Too = $foo = ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.UnitTypeTypenameDef">
+<summary>
+ type $One = One
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.UnitTypeTypename">
+<summary>
+ type #One = One
+ let f (_ : $One) = One
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.UnitTypeConsDef">
+<summary>
+ type One = $One
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.UnitTypeCons">
+<summary>
+ type One = #One
+ let f (_ : One) = $One
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.RecordTypenameDef">
+<summary>
+ type $MyRec = { myX : int ; myY : int }
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.RecordField2Use">
+<summary>
+ type MyRec = { myX : int ; #myY : int }
+ let rDefault = { myX = 2 ; $myY = 3 }
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.RecordField2Def">
+<summary>
+ type MyRec = { myX : int ; $myY : int }
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.RecordField1UseInWith">
+<summary>
+ type MyRec = { #myX : int ; myY : int }
+ let rDefault = { myX = 2 ; myY = 3 }
+ let _ = { rDefault with $myX = 7 }
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.RecordField1Use">
+<summary>
+ type MyRec = { #myX : int ; myY : int }
+ let rDefault = { $myX = 2 ; myY = 3 }
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.RecordField1Def">
+<summary>
+ type MyRec = { $myX : int ; myY : int }
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NullType">
+<summary>
+ type #Zero =
+ let f (_ : $Zero) = 0
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NatTypeTypenameDef">
+<summary>
+ type $Nat = Suc of Nat | Zro
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NatTypeConsArg">
+<summary>
+ type #Nat = Suc of $Nat | Zro
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NatPatZro">
+<summary>
+ type Nat = Suc of Nat | #Zro
+ fun m -&gt; match m with | $Zro -&gt; () | _ -&gt; ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NatPatSucVarUse">
+<summary>
+ let rec plus m n = match m with | Zro -&gt; n | Suc #m -&gt; Suc (plus $m n)
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NatPatSucOuterVarUse">
+<summary>
+ let rec plus m n = match m with | Zro -&gt; n | Suc #m -&gt; Suc (plus $m n)
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Datatype.NatPatSuc">
+<summary>
+ type Nat = $Suc of Nat | Zro
+ fun m -&gt; match m with | Zro -&gt; () | $Suc _ -&gt; ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.TrivialLetRHSToRight">
+<summary>
+ let #x = () in x$
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.TrivialLetRHS">
+<summary>
+ let #x = () in $x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.TrivialLetLHS">
+<summary>
+ let $x = () in x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.Operator">
+<summary>
+ let #(+) x _ = x in 2 $+ 3
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.NestedLetWithXRecParam">
+<summary>
+ let x = () in let rec x = fun #y -&gt; x $y in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.NestedLetWithXRec">
+<summary>
+ let x = () in let rec #x = fun y -&gt; $x y in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.NestedLetWithXIsX">
+<summary>
+ let #x = () in let x = $x in ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.NestedLetWithSameNameRHS">
+<summary>
+ let x = () in let #x = () in $x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.NestedLetWithSameNameLHSOuter">
+<summary>
+ let $x = () in let x = () in x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.Binding.NestedLetWithSameNameLHSInner">
+<summary>
+ let x = () in let $x = () in x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.ActivePat.PatUseValue">
+<summary>
+ let patval = (|Even|Odd|) (*loc-61b*)
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.ActivePat.PatUse">
+<summary>
+ type Parity = Even | Odd
+ let (|#Even|Odd|) x = if x % 0 = 0 then Even else Odd
+ let foo x =
+   match x with
+   | $Even -&gt; 1
+   | Odd  -&gt; 0
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.ActivePat.ConsDefRhs">
+<summary>
+ type Parity = Even | Odd
+ let (|#Even|Odd|) x = if x % 0 = 0 then $Even else Odd
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Simple.ActivePat.ConsDefLHS">
+<summary>
+ type Parity = Even | Odd
+ let (|$Even|Odd|) x = if x % 0 = 0 then Even else Odd
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.ThisDef">
+<summary>
+ type Class () =
+   member #c$.Method () = ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.StaticMethodInvocation">
+<summary>
+ type Class () =
+   static member #Foo () = ()
+ Class.Foo$ ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.StaticMethodDef">
+<summary>
+ type Class () =
+   static member #Foo$ () = ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.ShadowThisMethodInvocation">
+<summary>
+ type Class () =
+   member #c.Method () = ()
+ type Class&apos; () =
+   member c.Method () =
+     let c = Class ()
+     c.Method$ ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.ShadowThis">
+<summary>
+ type Class () =
+   member c.Method () = ()
+ type Class&apos; () =
+   member c.Method () =
+     let #c = Class ()
+     c$.Method ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.MethodToMethodForward">
+<summary>
+ type Class () =
+   member c.Method1 ()  = c.Method2$ ()
+   member #c.Method2 () = c.Method1 ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.MethodSelfInvocation">
+<summary>
+ type Class () =
+   member c.Method# () = c.Method$ ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.MethodInvocation">
+<summary>
+ type Class () =
+   member #Method () = ()
+ let c = Class ()
+ c.Method$ ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.ILMethodDef">
+<summary>
+ type Class () =
+   member c.#Method$ () = ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.ConstructorUse">
+<summary>
+ type #Class () =
+   member Method () = ()
+ let c = Class$ ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.ObjectOriented.ClassNameDef">
+<summary>
+ type #Class$ () =
+   member c.Method () = ()
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.InsideClass.Bug3176">
+<summary>
+ let #x = () in $x
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GotoDefinition.Abbreviation.Bug193064">
+<summary>
+ GotoDef on abbreviation
+</summary>
+</member>
+<member name="M:Tests.LanguageService.GotoDefinition.UsingMSBuild.GetCompleteIdTest(System.Boolean,System.String,Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ takes a string with a `$` representing the cursor position, gets the
+ GotoDefinition identifier at that position and compares against expected
+ result
+</summary>
+</member>
+<member name="M:Tests.LanguageService.ParameterInfo.UsingMSBuild.Single.InString">
+<summary>
+ No intellisense in comments/strings!
+</summary>
+</member>
+<member name="M:Tests.LanguageService.ParameterInfo.UsingMSBuild.Single.InComment">
+<summary>
+ No intellisense in comments/strings!
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.StringLiteralWithIdentifierLookALikes.Bug2360_A">
+<summary>
+ Hovering over a literal string should not show data tips for variable names that appear in the string
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Regression.StringLiteralWithIdentifierLookALikes.Bug2360_B">
+<summary>
+ Hovering over a literal string should not show data tips for variable names that appear in the string
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Regression.CompListItemInfo.Bug5694">
+<summary>
+ BUG: intelisense on &quot;self&quot; parameter in implicit ctor classes is wrong
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Regression.Class.Printing.FSharp.Classes.Bug4624">
+<summary>
+ Bug 4624: Check the order in which members are printed, F# classes
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Regression.Class.Printing.CSharp.Classes.Only..Bug4592">
+<summary>
+ Bug 4592: Check that ctors are displayed from C# classes, i.e. the &quot;new&quot; lines below.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Regression.Class.Printing.CSharp.Classes.Bug4624">
+<summary>
+ Bug 4624: Check the order in which members are printed, C# classes
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Regression.Bug1605">
+<summary>
+ In this bug, the EOF token was reached before the parser could close the (, with, and let
+ The fix--at the point in time it was fixed--was to modify the parser to send a limitted number
+ of additional EOF tokens to allow the recovery code to proceed up the change of productions
+ in the grammar.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.OrphanFs.BaselineIntellisenseStillWorks">
+<summary>
+ Even though we don&apos;t show squiggles, some types will still be known. For example, System.String.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.Basic">
+<summary>
+ FEATURE: User may hover over a type or identifier and get basic information about it in a tooltip.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.AtEndOfLine">
+<summary>
+ Quickinfo was throwing an exception when the mouse was over the end of a line.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.AssertMemberDataTipContainsInOrder(Microsoft.FSharp.Collections.FSharpList{System.String},System.String,System.String,Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Complete a member completion and confirm that its data tip contains the fragments
+ in rhsContainsOrder
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.AcrossMultipleFiles">
+<summary>
+ FEATURE: Intellisense information from types in earlier files in the project is available in subsequent files.        
+</summary>
+</member>
+<member name="M:Tests.LanguageService.QuickInfo.UsingMSBuild.AcrossLinkedFiles">
+<summary>
+ FEATURE: Linked files work
+</summary>
+</member>
+<member name="F:Tests.LanguageService.Script.UsingMSBuild.AssertSquiggleIsErrorContaining">
+<summary>
+ Assert that a given squiggle is an Error (or warning) containing the given text        
+</summary>
+</member>
+<member name="F:Tests.LanguageService.Script.UsingMSBuild.AssertSquiggleIsErrorNotContaining">
+<summary>
+ Assert that a given squiggle is an Error (or warning) containing the given text        
+</summary>
+</member>
+<member name="F:Tests.LanguageService.Script.UsingMSBuild.AssertSquiggleIsWarningContaining">
+<summary>
+ Assert that a given squiggle is an Error (or warning) containing the given text        
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.UnclosedHashReference.Case1">
+<summary>
+ There was a problem where an unclosed reference picked up the text of the reference on the next line.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.UnclosedHashLoad">
+<summary>
+ There was a problem where an unclosed reference picked up the text of the reference on the next line.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.SyntheticTokens">
+<summary>
+ There was a problem in which synthetic tokens like #load were causing asserts
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.Squiggles.ShowInFsxFiles">
+<summary>
+ There was a problem with Salsa that caused squiggles not to be shown for .fsx files.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.ShouldBeAbleToReference30Assemblies.Bug2050">
+<summary>
+ There was a problem where an unclosed reference picked up the text of the reference on the next line.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.NoError.HashR.DllWithNoPath">
+<summary>
+ FEATURE: #r in .fsx to a .dll name works.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.NoError.HashLoad.Simple">
+<summary>
+ FEATURE: #load in an .fsx file will include that file in the &apos;build&apos; of the .fsx.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.NoError.AutomaticImportsForFsxFiles">
+<summary>
+ FEATURE: .fsx files have automatic imports of certain system assemblies.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.InvalidMetaCommandFilenames">
+<summary>
+ Try out some bogus file names in #r, #I and #load.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.INTERACTIVEIsDefinedInFsxFiles">
+<summary>
+ FEATURE: .fsx files have INTERACTIVE #defined
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.HashReferenceAgainstStrongName">
+<summary>
+ FEATURE: #reference against a strong name should work.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.HashReferenceAgainstNonAssemblyExe">
+<summary>
+ FEATURE: #reference against a non-assembly .EXE gives a reasonable error message
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.HashR_QuickInfo.ShowFilenameOfResolvedAssembly">
+<summary>
+ FEATURE: Hovering over a resolved #r file will show a data tip with the fully qualified path to that file.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.HashR.Removed">
+<summary>
+ FEATURE: Removing a #r into a file will cause it to no longer be seen by intellisense.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.HashR.AddedIn">
+<summary>
+ FEATURE: Typing a #r into a file will cause it to be recognized by intellisense.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.HashDirectivesAreErrors.InNonScriptFiles.Case1">
+<summary>
+ FEATURE: #r, #I, #load are all errors when running under the language service
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.Hash.RProperSquiggleForNonExistentFile">
+<summary>
+ Regression test for FSharp1.0:4861 - #r to non-existent file causes the first line to be squiggled
+ There was a problem with Salsa that caused squiggles not to be shown for .fsx files.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.Hash.RDoesNotExist.Bug3325">
+<summary>
+ Nonexistent hash. There was a problem with Salsa that caused squiggles not to be shown for .fsx files.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.BugAllowExplicitReferenceToMsCorlib">
+<summary>
+ In this bug, multiple references to mscorlib .dll were causing problem in load closure
+</summary>
+</member>
+<member name="M:Tests.LanguageService.Script.UsingMSBuild.Fsx.Bug2530FsiObject">
+<summary>
+ FEATURE: There is a global fsi module that should be in scope for script files.        
+</summary>
+</member>
+<member name="M:Tests.LanguageService.ErrorList.UsingMSBuild.FlagsAndSettings.ErrorsInFlagsDisplayed">
+<summary>
+ FEATURE: Errors in flags are sent in Error list.
+</summary>
+</member>
+<member name="M:Tests.LanguageService.ErrorRecovery.UsingMSBuild.ErrorRecovery.5878_1">
+<summary>
+ In this bug, the Module. at the very end of the file was treated as if it were in the scope
+ of Module rather than right after it. This check just makes sure we can see a data tip because
+ Module is available.
+</summary>
+</member>
+<member name="M:Tests.ProjectSystem.References.CreateDummyTestProjectBuildItAndDo(Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Create a dummy project named &apos;Test&apos;, build it, and then call k with the full path to the resulting exe
+</summary>
+</member>
+<member name="M:VisualFSharp.UnitTests.Roslyn.FSharpProject.GetCaretPosition">
+<summary>
+ Strips cursor information from each file and returns the name and cursor position of the last file to specify it.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Regression_Bug1596">
+<summary>
+ BUG: The comment used to be colored in black.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_KeywordsWithStrings(System.String,System.String)">
+<summary>
+ Bug 2076 - String literals were causing the endif stack information to be discarded
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_Keywords(System.String,System.String)">
+<summary>
+ FEATURE: Preprocessor keywords #light\#if\#else\#endif are colored with the PreprocessorKeyword color.
+ FEATURE: All code in the inactive side of #if\#else\#endif is colored with with InactiveCode color.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_InFsxFile_StartOfMarker(System.String,System.String)">
+<summary>
+ FEATURE: Hash commands in .fsx files are colorized in PreprocessorKeyword color    
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_InFsxFile_EndOfMarker(System.String,System.String)">
+<summary>
+ FEATURE: Hash commands in .fsx files are colorized in PreprocessorKeyword color    
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_InFsFile_StartOfMarker(System.String,System.String)">
+<summary>
+ FEATURE: Script-specific hash commands do not show up in blue in .fs files.  
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_InFsFile_EndOfMarker(System.String,System.String)">
+<summary>
+ FEATURE: Script-specific hash commands do not show up in blue in .fs files. 
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_DirectivesInString">
+<summary>
+ #else / #endif in multiline strings is ignored
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_AfterPreprocessorBlockWithDefines(System.String,System.String)">
+<summary>
+ FEATURE: Code inside #if\#else\#endif blocks is colored with InactiveCodeColor depending on defines. This works for nested #if blocks as well.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocessor_AfterPreprocessorBlock(System.String,System.String)">
+<summary>
+ FEATURE: Code inside #if\#else\#endif blocks is colored with InactiveCodeColor depending on defines. This works for nested #if blocks as well.
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Preprocesso_ExtendedIfGrammar_Basic01">
+<summary>
+ FEATURE: Preprocessor extended grammar basic check.
+ FEATURE:  More extensive grammar test is done in compiler unit tests
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.PredefinedIdentifier_SOURCE_DIRECTORY">
+<summary>
+ Regression for 3609 - Colorizer: __SOURCE__ and others colorized as a string
+</summary>
+</member>
+<member name="M:Microsoft.VisualStudio.FSharp.Editor.Tests.Roslyn.SyntacticClassificationServiceTests.Comment_AfterCommentBlock(System.String,System.String)">
+<summary>
+ FEATURE: Nested (* *) comments are allowed and will be colorized with CommentColor. Only the final *) causes the comment to close.
+</summary>
+</member>
+</members>
+</doc>

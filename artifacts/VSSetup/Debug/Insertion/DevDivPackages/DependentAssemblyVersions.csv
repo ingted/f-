@@ -1,0 +1,15 @@
+FSharp.Build,10.8.1.0
+FSharp.Compiler.Interactive.Settings,10.8.1.0
+FSharp.Compiler.Private,10.8.1.0
+FSharp.Compiler.Server.Shared,10.8.1.0
+FSharp.Core,4.7.0.0
+FSharp.Data.TypeProviders,4.3.0.0
+FSharp.Editor,16.5.0.0
+FSharp.LanguageService.Base,16.5.0.0
+FSharp.LanguageService,16.5.0.0
+FSharp.PatternMatcher,16.5.0.0
+FSharp.ProjectSystem.Base,16.5.0.0
+FSharp.ProjectSystem.FSharp,16.5.0.0
+FSharp.ProjectSystem.PropertyPages,16.5.0.0
+FSharp.UIResources,16.5.0.0
+FSharp.VS.FSI,16.5.0.0

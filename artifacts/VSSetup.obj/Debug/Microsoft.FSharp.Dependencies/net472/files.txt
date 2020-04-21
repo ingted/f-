@@ -1,0 +1,6 @@
+D:\fsharp\setup\shims\Microsoft.FSharp.Shim.targets
+D:\fsharp\setup\shims\Microsoft.Portable.FSharp.Shim.targets
+D:\fsharp\setup\shims\Microsoft.FSharp.NetSdk.Shim.targets
+D:\fsharp\setup\shims\Microsoft.FSharp.Overrides.NetSdk.Shim.targets
+D:\fsharp\setup\shims\Microsoft.FSharp.NetSdk.Shim.props
+D:\fsharp\setup\Swix\Microsoft.FSharp.Dependencies\fsharp.bat

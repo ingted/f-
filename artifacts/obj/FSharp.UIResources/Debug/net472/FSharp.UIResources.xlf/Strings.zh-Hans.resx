@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Always_place_opens_at_top_level" xml:space="preserve">
+    <value>始终在顶层放置 open 语句</value>
+  </data>
+  <data name="CodeLens" xml:space="preserve">
+    <value>CodeLens</value>
+  </data>
+  <data name="CodeLens_Replace_LineLens" xml:space="preserve">
+    <value>在行右侧而非上方显示批注</value>
+  </data>
+  <data name="CodeLens_Switch" xml:space="preserve">
+    <value>启用 CodeLens (试验)</value>
+  </data>
+  <data name="CodeLens_Prefix" xml:space="preserve">
+    <value>批注前缀</value>
+  </data>
+  <data name="CodeLens_UseColors" xml:space="preserve">
+    <value>在批注中使用颜色</value>
+  </data>
+  <data name="Code_Fixes" xml:space="preserve">
+    <value>代码修补程序</value>
+  </data>
+  <data name="Completion_Lists" xml:space="preserve">
+    <value>完成列表</value>
+  </data>
+  <data name="Language_Service_Performance" xml:space="preserve">
+    <value>性能</value>
+  </data>
+  <data name="Dash_underline" xml:space="preserve">
+    <value>短线下划线(_A)</value>
+  </data>
+  <data name="Dot_underline" xml:space="preserve">
+    <value>点下划线(_O)</value>
+  </data>
+  <data name="Navigation_links" xml:space="preserve">
+    <value>导航链接</value>
+  </data>
+  <data name="Show_all_symbols" xml:space="preserve">
+    <value>显示未打开的命名空间中的符号(_Y)</value>
+  </data>
+  <data name="Show_completion_list_after_a_character_is_deleted" xml:space="preserve">
+    <value>删除字符后显示完成列表(_D)</value>
+  </data>
+  <data name="Show_completion_list_after_a_character_is_typed" xml:space="preserve">
+    <value>键入字符后显示完成列表(_S)</value>
+  </data>
+  <data name="Enable_in_memory_cross_project_references" xml:space="preserve">
+    <value>启用内存中跨项目引用(_E)</value>
+  </data>
+  <data name="Project_check_cache_size" xml:space="preserve">
+    <value>内存中缓存了其数据的项目数</value>
+  </data>
+  <data name="Show_navigation_links_as" xml:space="preserve">
+    <value>导航链接显示方式(_H)</value>
+  </data>
+  <data name="Simplify_name_code_fix" xml:space="preserve">
+    <value>简化名称(删除不必要的限定符)</value>
+  </data>
+  <data name="Solid_underline" xml:space="preserve">
+    <value>实线下划线(_S)</value>
+  </data>
+  <data name="Unused_opens_code_fix" xml:space="preserve">
+    <value>删除未使用的 open 语句</value>
+  </data>
+  <data name="Unused_declaration_code_fix" xml:space="preserve">
+    <value>分析未使用的值并建议相应的修补程序</value>
+  </data>
+  <data name="Block_Structure" xml:space="preserve">
+    <value>块结构指南</value>
+  </data>
+  <data name="Show_guides" xml:space="preserve">
+    <value>显示 F# 代码的结构指南</value>
+  </data>
+  <data name="Outlining" xml:space="preserve">
+    <value>大纲</value>
+  </data>
+  <data name="Show_Outlining" xml:space="preserve">
+    <value>显示 F# 代码的大纲显示节点和可折叠节点</value>
+  </data>
+  <data name="Time_until_stale_completion" xml:space="preserve">
+    <value>使用过时结果前等待的时间(以毫秒计)</value>
+  </data>
+  <data name="IntelliSense_Performance" xml:space="preserve">
+    <value>IntelliSense 性能选项</value>
+  </data>
+  <data name="Project_Performance" xml:space="preserve">
+    <value>F# 项目和缓存性能选项</value>
+  </data>
+  <data name="Enable_Stale_IntelliSense_Results" xml:space="preserve">
+    <value>针对 IntelliSense 功能启用过时数据</value>
+  </data>
+  <data name="Tooltip_in_memory_cross_project_references" xml:space="preserve">
+    <value>内存中跨项目引用将项目级数据存储在内存中，让 IDE 功能能够跨项目工作。</value>
+  </data>
+  <data name="Tooltip_project_check_cache_size" xml:space="preserve">
+    <value>针对 IDE 功能缓存项目数据。值越大，缓存的项目越多，因此使用的内存越多。调整此值不应影响小型或中型解决方案。</value>
+  </data>
+  <data name="Enter_key_always" xml:space="preserve">
+    <value>始终在点击回车时时添加新行</value>
+  </data>
+  <data name="Enter_key_never" xml:space="preserve">
+    <value>永远不要在点击回车后添加新行</value>
+  </data>
+  <data name="Enter_key_only" xml:space="preserve">
+    <value>只在键入完整的单词后点击回车后才添加新行</value>
+  </data>
+  <data name="Enter_Key_Rule" xml:space="preserve">
+    <value>回车键的行为</value>
+  </data>
+  <data name="Format_on_paste" xml:space="preserve">
+    <value>粘贴时重新设置缩进格式</value>
+  </data>
+  <data name="Suggest_names_for_errors_code_fix" xml:space="preserve">
+    <value>为未解析标识符建议名称</value>
+  </data>
+  <data name="Text_hover" xml:space="preserve">
+    <value>文本悬停</value>
+  </data>
+  <data name="Diagnostics" xml:space="preserve">
+    <value>诊断</value>
+  </data>
+</root>

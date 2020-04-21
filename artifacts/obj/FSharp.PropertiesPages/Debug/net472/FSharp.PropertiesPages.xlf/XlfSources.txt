@@ -1,0 +1,13 @@
+PropertyPages\ApplicationPropPage.resx
+PropertyPages\ApplicationPropPageBase.resx
+PropertyPages\BuildEventCommandLineDialog.resx
+PropertyPages\BuildEventsPropPage.resx
+PropertyPages\BuildPropPage.resx
+PropertyPages\DebugPropPage.resx
+PropertyPages\FSharpApplicationPropPage.resx
+PropertyPages\ReferencePathsPropPage.resx
+Resources\Microsoft.VisualStudio.Editors.Designer.resx
+Resources\MyExtensibilityRes.resx
+Resources\WCF.resx
+PropertyPages\PropPageHostDialog.resx
+PropertyPages\PropPageUserControlBase.resx

@@ -1,0 +1,1 @@
+Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\InteractiveDependencyManager.resx

@@ -1,0 +1,25 @@
+{
+  "manifestVersion": "1.1",
+  "info": {
+    "id": "Microsoft.FSharp.Dependencies,version=42.42.42.4242424"
+  },
+  "packages": [
+    {
+      "id": "Microsoft.FSharp.Dependencies",
+      "version": "42.42.42.4242424",
+      "type": "Vsix",
+      "payloads": [
+        {
+          "fileName": "Microsoft.FSharp.Dependencies.vsix",
+          "size": 4948
+        }
+      ],
+      "installSizes": {
+        "targetDrive": 3013
+      },
+      "dependencies": {
+        "Microsoft.FSharp.SDK": "42.42.42.4242424"
+      }
+    }
+  ]
+}

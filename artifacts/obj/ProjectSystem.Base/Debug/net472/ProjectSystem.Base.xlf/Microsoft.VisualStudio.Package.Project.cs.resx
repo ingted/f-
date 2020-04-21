@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information. -->
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddToNullProjectError" xml:space="preserve">
+    <value>Přidání souboru {0} do projektu se nepovedlo, protože projekt neexistuje.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Upřesnit</value>
+    <comment>Project Property Page Caption</comment>
+  </data>
+  <data name="ReferenceCouldNotBeAdded" xml:space="preserve">
+    <value>Odkaz na {0} se nedal přidat.</value>
+    <comment>ReferenceCouldNotBeAdded error message</comment>
+  </data>
+  <data name="ReferenceAlreadyExists" xml:space="preserve">
+    <value>Odkaz na {0} se nedal přidat. Odkaz na komponentu {1} už v projektu existuje.</value>
+    <comment>ReferenceAlreadyExists error message</comment>
+  </data>
+  <data name="ReferenceWithAssemblyNameAlreadyExists" xml:space="preserve">
+    <value>Odkaz na {0} (s názvem sestavení {1}) se nedal přidat. Odkaz na komponentu {2} se stejným názvem sestavení už v projektu existuje.</value>
+    <comment>ReferenceAlreadyExists error message</comment>
+  </data>
+  <data name="AttributeLoad" xml:space="preserve">
+    <value>Nejde nahrát atribut {0} ze souboru projektu {1}.</value>
+  </data>
+  <data name="BuildAction" xml:space="preserve">
+    <value>Akce sestavení</value>
+    <comment>Project Build Property Name</comment>
+  </data>
+  <data name="BuildActionDescription" xml:space="preserve">
+    <value>Jaký je vztah souboru k procesu sestavení a nasazení</value>
+    <comment>Project Build Property Description</comment>
+  </data>
+  <data name="BuildVerbosity" xml:space="preserve">
+    <value>Podrobnosti</value>
+  </data>
+  <data name="BuildVerbosityDescription" xml:space="preserve">
+    <value>Určete, kolik informací je zahrnuto ve výstupu sestavení</value>
+  </data>
+  <data name="cli1" xml:space="preserve">
+    <value>Rozhraní kompatibilní se standardem ECMA-335 pro rozhraní CLI (musí být zadané umístění)</value>
+    <comment>Target platform drop down option</comment>
+  </data>
+  <data name="Compile" xml:space="preserve">
+    <value>Kompilovat</value>
+    <comment>Build Action - drop down option</comment>
+  </data>
+  <data name="ConfirmExtensionChange" xml:space="preserve">
+    <value>Pokud změníte příponu souboru, může se stát, že bude soubor nepoužitelný. Opravdu ji chcete změnit?</value>
+  </data>
+  <data name="CannotAddFileThatIsOpenInEditor" xml:space="preserve">
+    <value>Soubor s názvem {0} už existuje a je otevřený v editoru. Položce, kterou přidáváte, dejte jedinečný název, nebo nejdřív odstraňte stávající položku.</value>
+  </data>
+  <data name="CanNotSaveFileNotOpeneInEditor" xml:space="preserve">
+    <value>Soubor {0} se nedá uložit, protože není otevřený v editoru.</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Obsah</value>
+    <comment>Build Action - drop down option</comment>
+  </data>
+  <data name="CopyToLocal" xml:space="preserve">
+    <value>Kopírovat místně</value>
+    <comment>File property</comment>
+  </data>
+  <data name="CopyToLocalDescription" xml:space="preserve">
+    <value>Určuje, jestli se odkaz zkopíruje do výstupního adresáře.</value>
+  </data>
+  <data name="Detailed" xml:space="preserve">
+    <value>Podrobný</value>
+  </data>
+  <data name="Diagnostic" xml:space="preserve">
+    <value>Diagnostický</value>
+  </data>
+  <data name="DirectoryExistError" xml:space="preserve">
+    <value>Adresář už existuje.</value>
+  </data>
+  <data name="EditorViewError" xml:space="preserve">
+    <value>Chyba při otevírání zadaného zobrazení {0} pomocí editoru {1}</value>
+  </data>
+  <data name="EmbeddedResource" xml:space="preserve">
+    <value>Vložený prostředek</value>
+    <comment>Build Action - drop down option</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="ErrorInvalidFileName" xml:space="preserve">
+    <value>Soubory a složky nemůžou:
+– Být prázdnými řetězci
+– Být systémem rezervovanými názvy včetně CON, AUX, PRN, COM1 nebo LPT2
+– Obsahovat jenom tečku (.)
+– Obsahovat jakýkoli z následujících znaků: / ? : &amp;  \ * " &lt; &gt; | # %</value>
+  </data>
+  <data name="ErrorInvalidProjectName" xml:space="preserve">
+    <value>Poskytnutý název je neplatným názvem projektu.</value>
+  </data>
+  <data name="ErrorMsBuildRegistration" xml:space="preserve">
+    <value>Cesta k MSBuild se v registru nenašla. Tento problém odstraníte přeinstalací.</value>
+  </data>
+  <data name="ErrorSaving" xml:space="preserve">
+    <value>Chyba při ukládání souboru</value>
+  </data>
+  <data name="Exe" xml:space="preserve">
+    <value>Konzolová aplikace</value>
+  </data>
+  <data name="ExpectedObjectOfType" xml:space="preserve">
+    <value>Očekává se objekt typu {0}.</value>
+  </data>
+  <data name="FailedToRetrieveProperties" xml:space="preserve">
+    <value>Chyba při získání vlastnosti msbuild {0} ze souboru projektu</value>
+    <comment>The exception message thrown when getting a property from msbuild fails.</comment>
+  </data>
+  <data name="FileAlreadyExists" xml:space="preserve">
+    <value>Soubor se stejným názvem {0} už existuje. Chcete ho přepsat?</value>
+  </data>
+  <data name="FileAlreadyExistsAndCannotBeRenamed" xml:space="preserve">
+    <value>Soubor se stejným názvem {0} už existuje.</value>
+  </data>
+  <data name="FileAlreadyExistsCaption" xml:space="preserve">
+    <value>Cílový soubor existuje.</value>
+  </data>
+  <data name="FileAlreadyInProject" xml:space="preserve">
+    <value>Soubor s tímto názvem už je součástí projektu. Chcete ho přepsat?</value>
+  </data>
+  <data name="FileAlreadyInProjectCaption" xml:space="preserve">
+    <value>Cílový soubor existuje.</value>
+  </data>
+  <data name="FileCannotBeRenamedToAnExistingFile" xml:space="preserve">
+    <value>Soubor nebo složka s názvem {0} už na disku v tomto umístění existuje. Zvolte prosím jiný název.</value>
+  </data>
+  <data name="FileCopyError" xml:space="preserve">
+    <value>Chyba při kopírování souboru</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Název souboru</value>
+  </data>
+  <data name="FileNameCannotContainALeadingPeriod" xml:space="preserve">
+    <value>Názvy souborů a složek nemůžou obsahovat na první pozici tečku.</value>
+  </data>
+  <data name="FileNameDescription" xml:space="preserve">
+    <value>Jméno souboru nebo složky</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Název složky</value>
+  </data>
+  <data name="FolderNameDescription" xml:space="preserve">
+    <value>Název této složky</value>
+  </data>
+  <data name="FullPath" xml:space="preserve">
+    <value>Úplná cesta</value>
+  </data>
+  <data name="FullPathDescription" xml:space="preserve">
+    <value>Umístění souboru</value>
+  </data>
+  <data name="ItemDoesNotExistInProjectDirectory" xml:space="preserve">
+    <value>Položka {0} v adresáři projektu neexistuje. Pravděpodobně je přesunutá, přejmenovaná nebo smazaná.</value>
+  </data>
+  <data name="LinkedItemsAreNotSupported" xml:space="preserve">
+    <value>Soubor {0} nejde uložit mimo adresář projektu. Propojené položky nejsou podporované.</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Knihovna tříd</value>
+  </data>
+  <data name="Minimal" xml:space="preserve">
+    <value>minimální</value>
+  </data>
+  <data name="Misc" xml:space="preserve">
+    <value>Různé</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>žádné</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normální</value>
+  </data>
+  <data name="PasteFailed" xml:space="preserve">
+    <value>Položka není dostupná nebo je porušená, a proto se nedá vložit.</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Projekt</value>
+  </data>
+  <data name="ProjectContainsCircularReferences" xml:space="preserve">
+    <value>Odkaz na knihovnu {0} se nedá přidat. Přidání tohoto projektu jako odkazu způsobí kruhovou závislost. </value>
+  </data>
+  <data name="ProjectFile" xml:space="preserve">
+    <value>Soubor projektu</value>
+  </data>
+  <data name="ProjectFileDescription" xml:space="preserve">
+    <value>Název souboru, který obsahuje sestavení, konfiguraci a informace o projektu</value>
+  </data>
+  <data name="ProjectFolder" xml:space="preserve">
+    <value>Složka projektu</value>
+  </data>
+  <data name="ProjectFolderDescription" xml:space="preserve">
+    <value>Absolutní umístění projektu</value>
+  </data>
+  <data name="Quiet" xml:space="preserve">
+    <value>Žádný</value>
+  </data>
+  <data name="RefName" xml:space="preserve">
+    <value>(Název)</value>
+  </data>
+  <data name="ReferencesNodeName" xml:space="preserve">
+    <value>Odkazy</value>
+  </data>
+  <data name="RefNameDescription" xml:space="preserve">
+    <value>Zobrazit název odkazu</value>
+  </data>
+  <data name="RenameFolder" xml:space="preserve">
+    <value>Chyba přejmenování adresáře. {0}</value>
+  </data>
+  <data name="RTL" xml:space="preserve">
+    <value>RTL_False</value>
+  </data>
+  <data name="SaveCaption" xml:space="preserve">
+    <value>Uložit?</value>
+  </data>
+  <data name="SaveModifiedDocuments" xml:space="preserve">
+    <value>Chcete uložit změněné dokumenty?</value>
+  </data>
+  <data name="SaveOfProjectFileOutsideCurrentDirectory" xml:space="preserve">
+    <value>Soubor projektu se dá uložit jenom do umístění projektu {0}.</value>
+  </data>
+  <data name="StandardEditorViewError" xml:space="preserve">
+    <value>Chyba při otevírání zadaného zobrazení {0} pomocí standardního editoru</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>Adresa URL</value>
+  </data>
+  <data name="UseOfDeletedItemError" xml:space="preserve">
+    <value>Pokoušíte se použít položku, která už je smazaná nebo neexistuje.</value>
+  </data>
+  <data name="v1" xml:space="preserve">
+    <value>Microsoft .Net Framework v1.0</value>
+  </data>
+  <data name="v11" xml:space="preserve">
+    <value>Microsoft .Net Framework v1.1</value>
+  </data>
+  <data name="v2" xml:space="preserve">
+    <value>Microsoft .Net Framework v2.0</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Upozornění</value>
+  </data>
+  <data name="WinExe" xml:space="preserve">
+    <value>Aplikace systému Windows</value>
+  </data>
+  <data name="InvalidAutomationObject" xml:space="preserve">
+    <value>Automatizační objekt je neplatný.</value>
+  </data>
+  <data name="CancelQueryEdit" xml:space="preserve">
+    <value>Příkaz se nedá dokončit, protože soubor {0}, který je potřeba upravit, nejde změnit. Pokud je soubor součástí správy zdrojových kódů, rezervujte ho; pokud má soubor na disku označení jen pro čtení, můžete změnit jeho atributy.</value>
+    <comment>MsgBox</comment>
+  </data>
+  <data name="ParameterMustBeAValidGuid" xml:space="preserve">
+    <value>Parametr musí být platný identifikátor GUID.</value>
+    <comment>Error message in the ArgumentException for a  parameter that is not a valid guid.</comment>
+  </data>
+  <data name="InvalidLoggerType" xml:space="preserve">
+    <value>Neplatný typ protokolovacího nástroje\nOčekávaný: {0}\nPřijatý: {1}</value>
+    <comment>Error message thrown for when an  invalid logger type is set.</comment>
+  </data>
+  <data name="InvalidParameter" xml:space="preserve">
+    <value>InvalidParameter</value>
+    <comment>Generic error message for invalid parameters.</comment>
+  </data>
+  <data name="ParameterCannotBeNullOrEmpty" xml:space="preserve">
+    <value>ParameterCannotBeNullOEmpty</value>
+    <comment>Error message for string parameters that cannot be null or empty.</comment>
+  </data>
+  <data name="ParameterMustBeAValidItemId" xml:space="preserve">
+    <value>Parametr musí být platný identifikátor položky.</value>
+    <comment>Error message thrown when an invalid item id is retrieved.</comment>
+  </data>
+  <data name="FileProperties" xml:space="preserve">
+    <value>Vlastnosti souboru</value>
+  </data>
+  <data name="FolderProperties" xml:space="preserve">
+    <value>Vlastnosti složky</value>
+  </data>
+  <data name="ProjectProperties" xml:space="preserve">
+    <value>Vlastnosti projektu</value>
+  </data>
+  <data name="ReferenceProperties" xml:space="preserve">
+    <value>Vlastnosti odkazu</value>
+  </data>
+  <data name="FileOrFolderAlreadyExists" xml:space="preserve">
+    <value>Soubor nebo složka s názvem {0} už na disku v tomto umístění existuje. Zvolte prosím jiný název.</value>
+  </data>
+  <data name="FolderCannotBeRenamed" xml:space="preserve">
+    <value>Tuto složku nejde přejmenovat na {0}, protože už existuje na disku.\n\nJen prázdné složky jde přejmenovat na existující složky. Tato složka obsahuje soubory na disku.</value>
+  </data>
+  <data name="BuildCaption" xml:space="preserve">
+    <value>Sestavení</value>
+  </data>
+  <data name="OutputPath" xml:space="preserve">
+    <value>Výstupní cesta</value>
+  </data>
+  <data name="OutputPathDescription" xml:space="preserve">
+    <value>Cesta k primárnímu výstupu</value>
+  </data>
+  <data name="PathTooLong" xml:space="preserve">
+    <value>Úplná cesta k souboru {0} přesahuje maximální počet znaků povolených systémem souborů.</value>
+  </data>
+  <data name="CustomTool" xml:space="preserve">
+    <value>Vlastní nástroj</value>
+  </data>
+  <data name="CustomToolDescription" xml:space="preserve">
+    <value>Určuje nástroj, který transformuje soubor v okamžiku návrhu a vloží výstup této transformace do jiného souboru. Například k souboru DataSet (.xsd) se dodává výchozí vlastní nástroj.</value>
+  </data>
+  <data name="CustomToolNamespace" xml:space="preserve">
+    <value>Obor názvů vlastního nástroje</value>
+  </data>
+  <data name="CustomToolNamespaceDescription" xml:space="preserve">
+    <value>Obor názvů, do kterého se umístí výstup vlastního nástroje</value>
+  </data>
+  <data name="OutputBuilt" xml:space="preserve">
+    <value>Primární výstup</value>
+  </data>
+  <data name="OutputContentFiles" xml:space="preserve">
+    <value>Soubory obsahu</value>
+  </data>
+  <data name="OutputDocumentation" xml:space="preserve">
+    <value>Soubory dokumentace</value>
+  </data>
+  <data name="OutputLocalizedResourceDlls" xml:space="preserve">
+    <value>Lokalizované prostředky</value>
+  </data>
+  <data name="OutputSourceFiles" xml:space="preserve">
+    <value>Zdrojové soubory</value>
+  </data>
+  <data name="OutputSymbols" xml:space="preserve">
+    <value>Symboly ladění</value>
+  </data>
+  <data name="OutputXmlSerializer" xml:space="preserve">
+    <value>XML serializace sestavení</value>
+  </data>
+  <data name="OutputBuiltDescription" xml:space="preserve">
+    <value>Obsahuje knihovnu DLL nebo soubor EXE sestavený podle projektu.</value>
+  </data>
+  <data name="OutputContentFilesDescription" xml:space="preserve">
+    <value>Obsahuje všechny soubory obsahů projektu.</value>
+  </data>
+  <data name="OutputDocumentationDescription" xml:space="preserve">
+    <value>Obsahuje soubory dokumentace XML pro projekt.</value>
+  </data>
+  <data name="OutputLocalizedResourceDllsDescription" xml:space="preserve">
+    <value>Obsahuje satelitní sestavení pro prostředky jednotlivých jazykových verzí.</value>
+  </data>
+  <data name="OutputSourceFilesDescription" xml:space="preserve">
+    <value>Obsahuje všechny zdrojové soubory projektu.</value>
+  </data>
+  <data name="OutputSymbolsDescription" xml:space="preserve">
+    <value>Obsahuje soubory ladění pro projekt.</value>
+  </data>
+  <data name="OutputXmlSerializerDescription" xml:space="preserve">
+    <value>Obsahuje XML serializaci sestavení pro projekt.</value>
+  </data>
+  <data name="QueryReloadNestedProject" xml:space="preserve">
+    <value>Soubor projektu {0} se změnil mimo Visual Studio. Chcete projekt znovu načíst?</value>
+  </data>
+  <data name="NestedProjectFailedToReload" xml:space="preserve">
+    <value>Při pokusu znovu načíst vnořený projekt došlo k chybě.</value>
+  </data>
+  <data name="FileOrFolderCannotBeFound" xml:space="preserve">
+    <value>Položka {0} se na disku nedá najít. Je buď přejmenovaná, smazaná, nebo přesunutá do nového umístění.</value>
+  </data>
+  <data name="ErrorReferenceCouldNotBeAdded" xml:space="preserve">
+    <value>Odkaz na soubor {0} se nepovedlo přidat. Zkontrolujte, jestli je soubor dostupný a jedná se o platné sestavení nebo komponentu COM.</value>
+  </data>
+  <data name="DetailsImport" xml:space="preserve">
+    <value>V souboru projektu {0} se našel Import souboru {1}. Tento soubor není registrovaný jako soubor bezpečný pro import a může obsahovat škodlivé cíle a úkoly. Pokud se tento importovaný soubor skutečně považuje za bezpečný, dá se zaregistrovat zápisem do klíče registru {2}.</value>
+  </data>
+  <data name="DetailsUserImport" xml:space="preserve">
+    <value>V uživatelském souboru projektu {0} je položka Import souboru {1}. Veškeré importy v uživatelských souborech projektu se považují za nebezpečné.</value>
+  </data>
+  <data name="DetailsItem" xml:space="preserve">
+    <value>V souboru projektu {0} se našla jedna nebo víc položek s názvem {1}. Tyto položky by se do souboru projektu obvykle neměly zadávat. Můžou změnit způsob, jakým se provádějí cíle a úkoly během načítání projektu, a to může mít škodlivé účinky.</value>
+  </data>
+  <data name="DetailsProperty" xml:space="preserve">
+    <value>V souboru projektu {0} se našla vlastnost s názvem {1}. Tato vlastnost by se do souboru projektu obvykle neměla zadávat. Její hodnota může změnit způsob, jakým se provádějí cíle a úkoly během načítání projektu, a to může mít škodlivé účinky.</value>
+  </data>
+  <data name="DetailsUsingTask" xml:space="preserve">
+    <value>V souboru projektu {0} se našla značka UsingTask, která registruje úlohu {1}. Značky UsingTask v souboru projektu mají přednost před těmi, které jsou v importovaných souborech .TARGETS, takže se dají použít k provádění libovolného kódu v jinak nezměněném procesu sestavení.</value>
+  </data>
+  <data name="DetailsTarget" xml:space="preserve">
+    <value>V souboru projektu {0} se našel Target s názvem {1}. Úkoly v rámci tohoto cíle můžou obsahovat libovolný kód a můžou se provést hned po načtení projektu v prostředí IDE.</value>
+  </data>
+  <data name="DetailsItemLocation" xml:space="preserve">
+    <value>V souboru projektu {0} je položka odkazující na soubor {1}. Protože je tento soubor umístěný v systémovém adresáři, kořenovém adresáři nebo sdílené síťové složce, může být zápis do tohoto souboru nebezpečný.</value>
+  </data>
+  <data name="ProjectLocationNotTrusted" xml:space="preserve">
+    <value>Umístění projektu není důvěryhodné:{0}{0}{1}{0}{0}Spuštění aplikace může v případě pokusu o provedení akce, která vyžaduje úplný vztah důvěryhodnosti, způsobit bezpečnostní výjimky.{0}{0}Pokud chcete ignorovat toto upozornění a pokračovat, stiskněte OK.</value>
+  </data>
+  <data name="BuildEventError" xml:space="preserve">
+    <value>Během události BuildBegin se vyvolala výjimka\n{0}</value>
+  </data>
+  <data name="CopyAlways" xml:space="preserve">
+    <value>Kopírovat vždycky</value>
+    <comment>CopyToOutputDirectory - drop down option</comment>
+  </data>
+  <data name="CopyToOutputDirectory" xml:space="preserve">
+    <value>Kopírovat do výstupního adresáře</value>
+  </data>
+  <data name="CopyToOutputDirectoryDescription" xml:space="preserve">
+    <value>Určuje zdrojový soubor, který se zkopíruje do výstupního adresáře.</value>
+  </data>
+  <data name="CopyIfNewer" xml:space="preserve">
+    <value>Kopírovat, pokud je novější</value>
+    <comment>CopyToOutputDirectory - drop down option</comment>
+  </data>
+  <data name="DoNotCopy" xml:space="preserve">
+    <value>Nekopírovat</value>
+    <comment>CopyToOutputDirectory - drop down option</comment>
+  </data>
+  <data name="SpecificVersion" xml:space="preserve">
+    <value>Specifická verze</value>
+  </data>
+  <data name="SpecificVersionDescription" xml:space="preserve">
+    <value>Určuje, jestli je tento odkaz na určitou konkrétní verzi sestavení.</value>
+  </data>
+  <data name="NoZeroImpactProjects" xml:space="preserve">
+    <value>Microsoft Visual F# nepodporuje projekty s nulovým dopadem. Pokud chcete z této šablony projektu vytvořit projekt F#, přejděte buď do nabídky Visual Studia Nástroje, Možnosti..., Projekty a řešení, Obecné a zaškrtněte políčko Uložit nové projekty při vytvoření, nebo v části &lt;TemplateData&gt; souboru .vstemplate této šablony projektu zadejte &lt;PromptForSaveOnCreation&gt;true&lt;/PromptForSaveOnCreation&gt; a potom to zkuste znovu.</value>
+  </data>
+  <data name="NoWildcardsInProject" xml:space="preserve">
+    <value>Projekt {0} jazyka F# nelze otevřít. \nTento projekt používá ve specifikaci položky zástupné znaky: \n{2} pro položku typu {1}.\n\nZástupné znaky nejsou v projektech jazyka F# momentálně podporované.</value>
+  </data>
+  <data name="CannotAddItemToProjectWithWildcards" xml:space="preserve">
+    <value>Do projektu {0} jazyka F# nelze přidat soubor {3}. \nTento projekt používá ve specifikaci položky zástupné znaky: \n{2} pro položku typu {1}.\n\nZástupné znaky nejsou v projektech jazyka F# momentálně podporované.</value>
+  </data>
+  <data name="UpgradeCannotOpenProjectFileForEdit" xml:space="preserve">
+    <value>Soubor projektu se nedá otevřít pro úpravy.</value>
+  </data>
+  <data name="UpgradeNoNeedToUpgradeAfterCheckout" xml:space="preserve">
+    <value>Soubor projektu se zaregistroval a už je upgradovaný.</value>
+  </data>
+  <data name="CannotStartLibraries" xml:space="preserve">
+    <value>Projekt s výstupním typem Knihovna tříd se nedá spustit přímo.\n\nAbyste tento projekt mohli ladit, přidejte do tohoto řešení spustitelný projekt, který bude odkazovat na projekt knihovny. Nastavte spustitelný projekt jako projekt, který se spouští.</value>
+  </data>
+  <data name="InvalidOutputPath" xml:space="preserve">
+    <value>Zadaná cesta není platnou výstupní cestou.</value>
+  </data>
+  <data name="ProjectRefOnlyExeOrDll" xml:space="preserve">
+    <value>Na projekt {0} se nedá odkazovat. Aby to šlo, musí mít sestavení příponu dll nebo exe.</value>
+  </data>
+  <data name="CannotBuildWhenBuildInProgress" xml:space="preserve">
+    <value>Sestavení se spustit nedá, protože už probíhá jiné sestavení.</value>
+  </data>
+  <data name="WorkingDirectoryNotExists" xml:space="preserve">
+    <value>Pracovní adresář neexistuje:\n{0}.</value>
+  </data>
+  <data name="ProjectReferencesDifferentFramework" xml:space="preserve">
+    <value>Odkaz na knihovnu {0} se nedá přidat. Tento projekt je cílený na jiné rozhraní ({2}) než aktuální projekt ({1}).</value>
+  </data>
+  <data name="CannotLoadUnknownTargetFrameworkProject" xml:space="preserve">
+    <value>Projekt {0} je zaměřený na {1}. Cílová verze architektury .NET Framework ale na tomto počítači není nainstalovaná.</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>F#</value>
+  </data>
+  <data name="ProjectReferencesHigherVersionWarning" xml:space="preserve">
+    <value>Odkazovaný projekt {0} je cílený na vyšší verzi rozhraní .NET Framework ({1}), než je aktuální verze cílové architektury tohoto projektu ({2}). Pokud se budou typy ze sestavení mimo verzi cílové architektury tohoto projektu používat kdekoliv ve struktuře závislostí projektů, může to vést k chybám sestavení.</value>
+  </data>
+  <data name="ProjectConversionNotRequired" xml:space="preserve">
+    <value>Soubor projektu nevyžaduje převod.</value>
+  </data>
+  <data name="ConversionNotRequired" xml:space="preserve">
+    <value>Nejsou potřebné žádné konverze.</value>
+  </data>
+  <data name="ErrorMakingProjectBackup" xml:space="preserve">
+    <value>Chyba při vytváření zálohy souboru projektu: {0}</value>
+  </data>
+  <data name="ProjectBackupSuccessful" xml:space="preserve">
+    <value>Soubor projektu se úspěšně zálohoval jako {0}.</value>
+  </data>
+  <data name="BackupNameConflict" xml:space="preserve">
+    <value>Konflikt názvu záložního souboru. Přejmenujte soubor na: {0}</value>
+  </data>
+  <data name="ProjectContainsLinkedFile" xml:space="preserve">
+    <value>Zálohovaný projekt se možná nesestaví. Projekt obsahuje propojený soubor: {0}</value>
+  </data>
+  <data name="ErrorMakingBackup" xml:space="preserve">
+    <value>Soubor se nepovedlo zálohovat jako {0}.</value>
+  </data>
+  <data name="BackupSuccessful" xml:space="preserve">
+    <value>Soubor se úspěšně zálohoval jako {0}.</value>
+  </data>
+  <data name="Identity" xml:space="preserve">
+    <value>Identita</value>
+  </data>
+  <data name="IdentityDescription" xml:space="preserve">
+    <value>Identita zabezpečení odkazovaného sestavení</value>
+  </data>
+  <data name="Path" xml:space="preserve">
+    <value>Cesta</value>
+  </data>
+  <data name="PathDescription" xml:space="preserve">
+    <value>Umístění odkazovaného souboru</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>VERSION</value>
+  </data>
+  <data name="CopyOf" xml:space="preserve">
+    <value>Kopie {0}</value>
+  </data>
+  <data name="CopyOf2" xml:space="preserve">
+    <value>Kopie ({0}) z {1}</value>
+  </data>
+</root>

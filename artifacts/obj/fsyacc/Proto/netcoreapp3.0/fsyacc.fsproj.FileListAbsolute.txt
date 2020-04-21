@@ -1,0 +1,13 @@
+D:\fsharp\artifacts\bin\fsyacc\Proto\netcoreapp3.0\fsyacc.exe
+D:\fsharp\artifacts\bin\fsyacc\Proto\netcoreapp3.0\fsyacc.deps.json
+D:\fsharp\artifacts\bin\fsyacc\Proto\netcoreapp3.0\fsyacc.runtimeconfig.json
+D:\fsharp\artifacts\bin\fsyacc\Proto\netcoreapp3.0\fsyacc.runtimeconfig.dev.json
+D:\fsharp\artifacts\bin\fsyacc\Proto\netcoreapp3.0\fsyacc.dll
+D:\fsharp\artifacts\bin\fsyacc\Proto\netcoreapp3.0\fsyacc.xml
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\buildproperties.fs
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\fsyacc.sourcelink.json
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\fsyacc.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\fsyacc.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\fsyacc.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\fsyacc.dll
+D:\fsharp\artifacts\obj\fsyacc\Proto\netcoreapp3.0\fsyacc.xml

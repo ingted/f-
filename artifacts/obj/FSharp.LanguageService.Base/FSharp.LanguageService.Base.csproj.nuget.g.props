@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">E:\fsharp\artifacts\obj\FSharp.LanguageService.Base\project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Administrator\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.9.3</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props" Condition="Exists('$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.vssdk.buildtools\16.5.2044\build\Microsoft.VSSDK.BuildTools.props" Condition="Exists('$(NuGetPackageRoot)microsoft.vssdk.buildtools\16.5.2044\build\Microsoft.VSSDK.BuildTools.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgXliffTasks Condition=" '$(PkgXliffTasks)' == '' ">C:\Users\Administrator\.nuget\packages\xlifftasks\1.0.0-beta.19252.1</PkgXliffTasks>
+    <PkgVSSDK_DTE Condition=" '$(PkgVSSDK_DTE)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.dte\7.0.4</PkgVSSDK_DTE>
+    <PkgVSSDK_VSLangProj Condition=" '$(PkgVSSDK_VSLangProj)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.vslangproj\7.0.4</PkgVSSDK_VSLangProj>
+    <PkgVSSDK_VSLangProj_8 Condition=" '$(PkgVSSDK_VSLangProj_8)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.vslangproj.8\8.0.4</PkgVSSDK_VSLangProj_8>
+    <PkgVSSDK_VSHelp Condition=" '$(PkgVSSDK_VSHelp)' == '' ">C:\Users\Administrator\.nuget\packages\vssdk.vshelp\7.0.4</PkgVSSDK_VSHelp>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Administrator\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
+    <PkgMicrosoft_VisualStudio_Threading_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_Threading_Analyzers)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.visualstudio.threading.analyzers\15.8.122</PkgMicrosoft_VisualStudio_Threading_Analyzers>
+    <PkgMicrosoft_VisualStudio_SDK_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_SDK_Analyzers)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.visualstudio.sdk.analyzers\15.8.33</PkgMicrosoft_VisualStudio_SDK_Analyzers>
+    <PkgMicrosoft_VSSDK_BuildTools Condition=" '$(PkgMicrosoft_VSSDK_BuildTools)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.vssdk.buildtools\16.5.2044</PkgMicrosoft_VSSDK_BuildTools>
+    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.common\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Common>
+    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.build.tasks.git\1.0.0-beta2-19367-01</PkgMicrosoft_Build_Tasks_Git>
+    <PkgMicrosoft_SourceLink_Vsts_Git Condition=" '$(PkgMicrosoft_SourceLink_Vsts_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Vsts_Git>
+    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.github\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_GitHub>
+    <PkgMicrosoft_DotNet_Build_Tasks_VisualStudio Condition=" '$(PkgMicrosoft_DotNet_Build_Tasks_VisualStudio)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.dotnet.build.tasks.visualstudio\1.0.0-beta.20215.5</PkgMicrosoft_DotNet_Build_Tasks_VisualStudio>
+  </PropertyGroup>
+</Project>

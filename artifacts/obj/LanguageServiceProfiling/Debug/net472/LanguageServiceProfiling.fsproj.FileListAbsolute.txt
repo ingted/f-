@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.xlf\XlfSources.txt
+D:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.xlf\UpdateXlf.lastrun
+D:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\buildproperties.fs
+E:\fsharp\artifacts\bin\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.exe.config
+E:\fsharp\artifacts\bin\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.exe
+E:\fsharp\artifacts\bin\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.xml
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.xlf\XlfSources.txt
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.xlf\UpdateXlf.lastrun
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\buildproperties.fs
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.exe.config
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.sourcelink.json
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.AssemblyInfo.fs
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.fsproj.CopyComplete
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.exe
+E:\fsharp\artifacts\obj\LanguageServiceProfiling\Debug\net472\LanguageServiceProfiling.xml

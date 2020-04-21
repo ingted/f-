@@ -1,0 +1,2 @@
+Properties.resx
+E:\fsharp\artifacts\obj\FSharp.VS.FSI\Debug\net472\VFSIstrings.resx

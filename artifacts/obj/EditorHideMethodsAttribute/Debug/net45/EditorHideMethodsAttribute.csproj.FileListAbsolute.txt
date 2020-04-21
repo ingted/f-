@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\bin\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.dll
+D:\fsharp\artifacts\bin\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.xml
+D:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.sourcelink.json
+D:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.AssemblyInfo.cs
+D:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.csproj.CopyComplete
+D:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.dll
+D:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.xml
+E:\fsharp\artifacts\bin\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.dll
+E:\fsharp\artifacts\bin\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.xml
+E:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.sourcelink.json
+E:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.AssemblyInfo.cs
+E:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.csproj.CopyComplete
+E:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.dll
+E:\fsharp\artifacts\obj\EditorHideMethodsAttribute\Debug\net45\EditorHideMethodsAttribute.xml

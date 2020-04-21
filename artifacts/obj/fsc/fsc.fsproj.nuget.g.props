@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Administrator\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.3.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\buildCrossTargeting\XliffTasks.props" Condition="Exists('$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\buildCrossTargeting\XliffTasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.SourceLink.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.SourceLink.Vsts.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.SourceLink.Vsts.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\buildCrossTargeting\Microsoft.SourceLink.GitHub.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net472' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props" Condition="Exists('$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props" Condition="Exists('$(NuGetPackageRoot)xlifftasks\1.0.0-beta.19252.1\build\XliffTasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.common\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta2-19367-01\build\Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.Vsts.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net472' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgXliffTasks Condition=" '$(PkgXliffTasks)' == '' ">C:\Users\Administrator\.nuget\packages\xlifftasks\1.0.0-beta.19252.1</PkgXliffTasks>
+    <PkgSystem_Security_Principal Condition=" '$(PkgSystem_Security_Principal)' == '' ">C:\Users\Administrator\.nuget\packages\system.security.principal\4.3.0</PkgSystem_Security_Principal>
+    <PkgSystem_Runtime_Loader Condition=" '$(PkgSystem_Runtime_Loader)' == '' ">C:\Users\Administrator\.nuget\packages\system.runtime.loader\4.3.0</PkgSystem_Runtime_Loader>
+    <PkgSystem_Reflection_Metadata Condition=" '$(PkgSystem_Reflection_Metadata)' == '' ">C:\Users\Administrator\.nuget\packages\system.reflection.metadata\1.6.0</PkgSystem_Reflection_Metadata>
+    <PkgSystem_Linq_Expressions Condition=" '$(PkgSystem_Linq_Expressions)' == '' ">C:\Users\Administrator\.nuget\packages\system.linq.expressions\4.3.0</PkgSystem_Linq_Expressions>
+    <PkgSystem_Console Condition=" '$(PkgSystem_Console)' == '' ">C:\Users\Administrator\.nuget\packages\system.console\4.3.0</PkgSystem_Console>
+    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.common\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Common>
+    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.build.tasks.git\1.0.0-beta2-19367-01</PkgMicrosoft_Build_Tasks_Git>
+    <PkgMicrosoft_SourceLink_Vsts_Git Condition=" '$(PkgMicrosoft_SourceLink_Vsts_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Vsts_Git>
+    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.github\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_GitHub>
+    <PkgMicrosoft_NETFramework_ReferenceAssemblies Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.netframework.referenceassemblies\1.0.0-preview.2</PkgMicrosoft_NETFramework_ReferenceAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgXliffTasks Condition=" '$(PkgXliffTasks)' == '' ">C:\Users\Administrator\.nuget\packages\xlifftasks\1.0.0-beta.19252.1</PkgXliffTasks>
+    <PkgSystem_Security_Principal Condition=" '$(PkgSystem_Security_Principal)' == '' ">C:\Users\Administrator\.nuget\packages\system.security.principal\4.3.0</PkgSystem_Security_Principal>
+    <PkgSystem_Runtime_Loader Condition=" '$(PkgSystem_Runtime_Loader)' == '' ">C:\Users\Administrator\.nuget\packages\system.runtime.loader\4.3.0</PkgSystem_Runtime_Loader>
+    <PkgSystem_Reflection_Metadata Condition=" '$(PkgSystem_Reflection_Metadata)' == '' ">C:\Users\Administrator\.nuget\packages\system.reflection.metadata\1.6.0</PkgSystem_Reflection_Metadata>
+    <PkgSystem_Linq_Expressions Condition=" '$(PkgSystem_Linq_Expressions)' == '' ">C:\Users\Administrator\.nuget\packages\system.linq.expressions\4.3.0</PkgSystem_Linq_Expressions>
+    <PkgSystem_Console Condition=" '$(PkgSystem_Console)' == '' ">C:\Users\Administrator\.nuget\packages\system.console\4.3.0</PkgSystem_Console>
+    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.common\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Common>
+    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.build.tasks.git\1.0.0-beta2-19367-01</PkgMicrosoft_Build_Tasks_Git>
+    <PkgMicrosoft_SourceLink_Vsts_Git Condition=" '$(PkgMicrosoft_SourceLink_Vsts_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Vsts_Git>
+    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.github\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_GitHub>
+    <PkgMicrosoft_NETFramework_ReferenceAssemblies Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.netframework.referenceassemblies\1.0.0-preview.2</PkgMicrosoft_NETFramework_ReferenceAssemblies>
+  </PropertyGroup>
+</Project>

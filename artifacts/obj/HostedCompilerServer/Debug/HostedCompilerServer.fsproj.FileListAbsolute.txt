@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.xlf\XlfSources.txt
+D:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.xlf\UpdateXlf.lastrun
+D:\fsharp\artifacts\obj\HostedCompilerServer\Debug\buildproperties.fs
+E:\fsharp\tests\fsharpqa\testenv\bin\HostedCompilerServer.exe.config
+E:\fsharp\tests\fsharpqa\testenv\bin\HostedCompilerServer.exe
+E:\fsharp\tests\fsharpqa\testenv\bin\HostedCompilerServer.xml
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.xlf\XlfSources.txt
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.xlf\UpdateXlf.lastrun
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\buildproperties.fs
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.exe.config
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.sourcelink.json
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.AssemblyInfo.fs
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.fsproj.CopyComplete
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.exe
+E:\fsharp\artifacts\obj\HostedCompilerServer\Debug\HostedCompilerServer.xml

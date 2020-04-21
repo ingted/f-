@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.Core.UnitTests</name></assembly>
+<members>
+<member name="M:FSharp.Core.UnitTests.LibraryTestFx.CheckThrowsExn``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Check that the lambda throws an exception of the given type. Otherwise
+ calls Assert.Fail()
+</summary>
+</member>
+<member name="M:FSharp.Core.UnitTests.Collections.CollectionModulesConsistency.consistency``1(System.String,``0,``0,``0)">
+<summary>
+ helper function that creates labeled FsCheck properties for equality comparisons
+</summary>
+</member>
+<member name="F:FSharp.Core.UnitTests.Control.AsyncModule.getTicksTask">
+<summary>
+ Simple asynchronous task that delays 200ms and returns a list of the current tick count
+</summary>
+</member>
+<member name="T:FSharp.Core.UnitTests.Control.ChoiceUtils.ChoiceWorkflow">
+<summary>
+ represent a choice workflow
+</summary>
+</member>
+<member name="T:FSharp.Core.UnitTests.Control.ChoiceUtils.ChoiceOp">
+<summary>
+ represents a child computation of a choice workflow
+</summary>
+</member>
+<member name="M:FSharp.Core.UnitTests.Control.ChoiceUtils.runChoice(FSharp.Core.UnitTests.Control.ChoiceUtils.ChoiceWorkflow)">
+<summary>
+ runs specified choice workflow and checks that
+ Async.Choice spec is satisfied
+</summary>
+</member>
+<member name="M:FSharp.Core.UnitTests.Control.ChoiceUtils.normalize(FSharp.Core.UnitTests.Control.ChoiceUtils.ChoiceWorkflow)">
+<summary>
+ normalizes random timeout arguments
+</summary>
+</member>
+</members>
+</doc>

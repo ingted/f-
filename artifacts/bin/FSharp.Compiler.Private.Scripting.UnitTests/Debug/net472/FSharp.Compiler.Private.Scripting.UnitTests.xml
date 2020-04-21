@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharp.Compiler.Private.Scripting.UnitTests</name></assembly>
+<members>
+<member name="M:FSharp.DependencyManager.UnitTests.DependencyManagerInteractiveTests.Verify that Dispose on AssemblyResolveHandler unhooks AssemblyResolve event handler">
+<summary>
+ Native dll resolution is not implemented on desktop
+</summary>
+</member>
+<member name="M:FSharp.Compiler.Scripting.UnitTests.InteractiveTests.Eval script with package manager invalid key">
+<summary>
+ Native dll resolution is not implemented on desktop
+</summary>
+</member>
+</members>
+</doc>

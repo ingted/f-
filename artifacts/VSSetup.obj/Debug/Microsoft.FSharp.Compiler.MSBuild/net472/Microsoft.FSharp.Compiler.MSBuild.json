@@ -1,0 +1,25 @@
+{
+  "manifestVersion": "1.1",
+  "info": {
+    "id": "Microsoft.FSharp.Compiler,version=42.42.42.4242424"
+  },
+  "packages": [
+    {
+      "id": "Microsoft.FSharp.Compiler",
+      "version": "42.42.42.4242424",
+      "type": "Vsix",
+      "payloads": [
+        {
+          "fileName": "Microsoft.FSharp.Compiler.MSBuild.vsix",
+          "size": 11535308
+        }
+      ],
+      "installSizes": {
+        "targetDrive": 34457734
+      },
+      "dependencies": {
+        "Microsoft.FSharp.Dependencies": "42.42.42.4242424"
+      }
+    }
+  ]
+}

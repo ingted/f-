@@ -1,0 +1,11 @@
+D:\fsharp\artifacts\bin\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.dll
+D:\fsharp\artifacts\bin\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.xml
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\buildproperties.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.sourcelink.json
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.InternalsVisibleTo.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.dll
+D:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Proto\net472\FSharp.Compiler.Server.Shared.xml

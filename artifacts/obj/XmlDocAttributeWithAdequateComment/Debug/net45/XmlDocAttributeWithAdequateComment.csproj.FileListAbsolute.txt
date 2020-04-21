@@ -1,0 +1,16 @@
+D:\fsharp\artifacts\bin\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.dll
+D:\fsharp\artifacts\bin\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.xml
+D:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.sourcelink.json
+D:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.AssemblyInfo.cs
+D:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.csproj.CopyComplete
+D:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.dll
+D:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.xml
+E:\fsharp\artifacts\bin\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.dll
+E:\fsharp\artifacts\bin\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.xml
+E:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.sourcelink.json
+E:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.AssemblyInfoInputs.cache
+E:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.AssemblyInfo.cs
+E:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.csproj.CopyComplete
+E:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.dll
+E:\fsharp\artifacts\obj\XmlDocAttributeWithAdequateComment\Debug\net45\XmlDocAttributeWithAdequateComment.xml

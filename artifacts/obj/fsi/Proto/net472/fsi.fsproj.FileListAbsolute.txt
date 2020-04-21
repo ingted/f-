@@ -1,0 +1,12 @@
+D:\fsharp\artifacts\bin\fsi\Proto\net472\fsi.exe.config
+D:\fsharp\artifacts\bin\fsi\Proto\net472\fsi.exe
+D:\fsharp\artifacts\bin\fsi\Proto\net472\fsi.xml
+D:\fsharp\artifacts\obj\fsi\Proto\net472\buildproperties.fs
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.fsprojAssemblyReference.cache
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.exe.config
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.sourcelink.json
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.AssemblyInfoInputs.cache
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.AssemblyInfo.fs
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.fsproj.CopyComplete
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.exe
+D:\fsharp\artifacts\obj\fsi\Proto\net472\fsi.xml

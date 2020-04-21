@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>VisualFSharp.Salsa</name></assembly>
+<members>
+<member name="P:Internal.Utilities.FSharpEnvironment.FSharpBannerVersion">
+<summary>
+ The F# version reported in the banner
+</summary>
+</member>
+<member name="M:Internal.Utilities.FSharpEnvironment.Option.ofString(System.String)">
+<summary>
+ Convert string into Option string where null and String.Empty result in None
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.TfsSubmitSpecificFiles(System.String[],System.String)">
+<summary>
+ Submit a specific set of checked out files to Tfs.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.RoboCopyMirror(System.String,System.String)">
+<summary>
+ Use robocopy to mirror a directory from one place to another
+ NOTE: This command will delete files at the destination if they don&apos;t exist at the source
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.Zip(System.String,System.String[])">
+<summary>
+ Zip some files
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnWithStatisticsExpectCode``1(System.Int32,System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,UnitTests.TestLib.Utils.Spawn.ProcessResults})">
+<summary>
+ Execute a command and expect a particular result code. Return the processor statistics.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnToTextLines``1(System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.Tuple{System.Int32,System.String[]}})">
+<summary>
+ Execute the command a return an array of textlines for the output and error.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnReturnExitCode``1(System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.Int32})">
+<summary>
+ Execute the command and return the exit code
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.SpawnExpectCode``1(System.Int32,System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Execute a command and expect a particular result code
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.Spawn.Spawn``1(System.String,Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})">
+<summary>
+ Execute a command
+</summary>
+</member>
+<member name="P:UnitTests.TestLib.Utils.Spawn.showSpawnedCommands">
+<summary>
+ Set this flag to true to see spawned commands.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.FilesystemHelpers.DoWithTempFile``1(System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,``0})">
+<summary>
+ Create a temporary filename, invoke callback with that filename, then clean up temp file.
+</summary>
+</member>
+<member name="M:UnitTests.TestLib.Utils.FilesystemHelpers.NewTempDirectory(System.String)">
+<summary>
+ Create a new temporary directory.
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.WaitForBackgroundCompile">
+<summary>
+ Block until the background compile finishes.
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.Unhook">
+<summary>
+ Unhook the object. These are the held resources that need to be disposed.
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.OnProjectSettingsChanged(Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite)">
+<summary>
+ Respond to project settings changes
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.OnProjectCleaned(Microsoft.VisualStudio.FSharp.LanguageService.IProjectSite)">
+<summary>
+ Respond to project being cleaned/rebuilt (any live type providers in the project should be refreshed)
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.OnIdle">
+<summary>
+ Do OnIdle processing for the whole language service. dirtyForTypeCheckFiles can be set by events 
+ raised on the background compilation thread.  
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.Initialize(System.IServiceProvider,Microsoft.VisualStudio.FSharp.LanguageService.IDocumentationBuilder_DEPRECATED,Microsoft.VisualStudio.FSharp.LanguageService.LanguagePreferences,Microsoft.FSharp.Core.FSharpFunc{Microsoft.VisualStudio.TextManager.Interop.IVsTextLines,Microsoft.VisualStudio.FSharp.LanguageService.IFSharpSource_DEPRECATED})">
+<summary>
+ Handle late intialization pieces
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.GetColorizer(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+<summary>
+ Get a colorizer for a particular buffer.
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.CreateSource_DEPRECATED(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)">
+<summary>
+ Unittestable complement to LanguageServce.CreateSource_DEPRECATED
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.CloseColorizer(Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED)">
+<summary>
+ Remove a colorizer.
+</summary>
+</member>
+<member name="M:Salsa.FSharpLanguageServiceTestable.ClearLanguageServiceRootCachesAndCollectAndFinalizeAllTransients">
+<summary>
+ Clear all language service caches and finalize all transient references to compiler objects
+</summary>
+</member>
+<member name="T:Salsa.VsMocks.Vs">
+<summary>
+ Mockable versions of various VS interfaces. Use optional function parameters
+ so that we don&apos;t have to specify all of them.       
+</summary>
+</member>
+<member name="T:Salsa.Salsa.MSBuildTestFlavor">
+<summary>
+ Salsa tests which create .fsproj files for projects.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.VsOps.CompleteAtCursorForReason(Salsa.Salsa.OpenFile,Microsoft.VisualStudio.FSharp.LanguageService.BackgroundRequestReason)">
+<summary>
+ like AutoCompleteAtCursor, but can pass e.g. BackgroundRequestReason.CompleteWord to do Ctrl-space rather than auto-dot-popup-completion
+</summary>
+</member>
+<member name="M:Salsa.Salsa.VsOps.AutoCompleteMemberDataTipsThrowsScope(System.String)">
+<summary>
+ True if files outside of the project cone are added as links.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.VsOps.AutoCompleteAtCursor(Salsa.Salsa.OpenFile)">
+<summary>
+ does a BackgroundRequestReason.MemberSelect at the cursor
+</summary>
+</member>
+<member name="T:Salsa.Salsa.VsOps">
+<summary>
+ Methods for simulating VisualStudio    
+</summary>
+</member>
+<member name="T:Salsa.Salsa.NavigationBarResult">
+<summary>
+ Representes the information that is displayed in the navigation bar
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IVisualStudio.OpenExistingProject(Salsa.Salsa.ProjectBehaviorHooks,System.String,System.String)">
+<summary>
+ Open a previously-created project
+</summary>
+</member>
+<member name="T:Salsa.Salsa.IVisualStudio">
+<summary>
+ Private half of the Visual Studio interface   
+</summary>
+</member>
+<member name="T:Salsa.Salsa.VisualStudio">
+<summary>
+ General purpose methods. Loosely represents running instance of VS.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenSolution.CreateProjectFlavor(Salsa.Salsa.ProjectBehaviorHooks,System.String)">
+<summary>
+ Create a new project of the given behaviorHooks that is open in VS.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenSolution.Close">
+<summary>
+ Close the solution.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.OpenSolution">
+<summary>
+ A solution open in VS.
+</summary>
+</member>
+<member name="P:Salsa.Salsa.IOpenProject.ProjectFile">
+<summary>
+ The project file (e.g. foo.fsproj).
+</summary>
+</member>
+<member name="P:Salsa.Salsa.IOpenProject.Errors">
+<summary>
+ Errors (task list) associated with this project
+</summary>
+</member>
+<member name="P:Salsa.Salsa.IOpenProject.Directory">
+<summary>
+ The project directory.
+</summary>
+</member>
+<member name="P:Salsa.Salsa.IOpenProject.ConfigurationAndPlatform">
+<summary>
+ MSBuild &apos;$(Configuration)|$(Platform)&apos;
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.SetVersionFile(System.String)">
+<summary>
+ Set the version file for this project
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.SetProjectDefines(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Set the defines for this project.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.SetOtherFlags(System.String)">
+<summary>
+ Set other flags for this project
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.Save">
+<summary>
+ Save the project.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.PlaceIntoProjectFileBeforeImport(System.String)">
+<summary>
+ Simulate typing into a project file right before the Import
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.OpenFile(System.String)">
+<summary>
+ Open a file that is a member of this project.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.GetOpenFiles">
+<summary>
+ List of already opened files.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.GetMainOutputAssembly">
+<summary>
+ Get the name to the main output assembly for the current configuration.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.Close">
+<summary>
+ Close the project.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.Build(System.String)">
+<summary>
+ Build the project. As CTRL+SHIFT+B in VS.  Can pass null for default target (build).
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.AddProjectReference(Salsa.Salsa.OpenProject)">
+<summary>
+ Add a project reference to the project        
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.AddLinkedFileFromText(System.String,System.String,System.String,Salsa.Salsa.BuildAction,Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Add a file to this project as a linked file.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.AddFileFromText(System.String,System.String,Salsa.Salsa.BuildAction,Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Add a file to this project.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.AddDisabledWarning(System.String)">
+<summary>
+ Add a new disabled warning.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.IOpenProject.AddAssemblyReference(System.String,System.Boolean)">
+<summary>
+ Add an assembly reference to the project
+</summary>
+</member>
+<member name="T:Salsa.Salsa.IOpenProject">
+<summary>
+ Private part of OpenProject
+</summary>
+</member>
+<member name="T:Salsa.Salsa.OpenProject">
+<summary>
+ A project open in VS.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.OpenFile">
+<summary>
+ A file open in VS.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.ProjectBehaviorHooks.CreateProjectHook(System.String,Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,Salsa.Salsa.BuildAction,Microsoft.FSharp.Core.FSharpOption{System.String}}},Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.Boolean}},Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},System.String,System.String,System.String,System.String)">
+<summary>
+ Create an MSBuild project at the given location with the given files and options.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.ProjectBehaviorHooks">
+<summary>
+ Hooks for controlling behaviors
+</summary>
+</member>
+<member name="T:Salsa.Salsa.Error">
+<summary>
+ An error
+</summary>
+</member>
+<member name="T:Salsa.Salsa.File">
+<summary>
+ A file on disk.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.DeclarationType">
+<summary>
+ Declaration types.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.TokenType">
+<summary>
+ Token types.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.InstalledMSBuildTestFlavour">
+<summary>
+ Salsa tests which create .fsproj files using the installed version of Microsoft.FSharp.Targets.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.BuiltMSBuildTestFlavour">
+<summary>
+ Salsa tests which create .fsproj files using the freshly built version of Microsoft.FSharp.Targets and FSharp.Build
+</summary>
+</member>
+<member name="M:Salsa.Salsa.CreateSimple(Salsa.Salsa.VsOps)">
+<summary>
+ Create a simple Salsa API.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.SimpleOpenFile.OnIdleTypeCheck">
+<summary>
+ This is the periodic check that VS                                     
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.SimpleOpenFile.GetLineNumber(System.Int32)">
+<summary>
+ grab a particular line from a file
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.SimpleOpenFile.GetIdentifierAtCursor">
+<summary>
+ get the GotoDefinition-style identifier at a particular location
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.SimpleOpenFile.GetAllLines">
+<summary>
+ Get full file contents.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.SimpleOpenFile.EnsureInitiallyFocusedInVs">
+<summary>
+ When a file is opened, focus it as the topmost file in VS.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.CreateMsBuildProjectText(System.Boolean,Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,Salsa.Salsa.BuildAction,Microsoft.FSharp.Core.FSharpOption{System.String}}},Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,System.Boolean}},Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Collections.FSharpList{System.String},System.String,System.String,System.String,System.String)">
+<summary>
+ Create text of an MSBuild project with the given files and options.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.Mask(System.UInt32,System.UInt32)">
+<summary>
+ Remove the bits given bits from the original.
+</summary>
+</member>
+<member name="P:Salsa.Salsa.Privates.humanTextAttribute">
+<summary>
+ A constant value needed by the colorizer. 
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.RecolorizeLines(Microsoft.VisualStudio.TextManager.Interop.IVsTextView,Microsoft.FSharp.Core.FSharpFunc{Microsoft.VisualStudio.TextManager.Interop.IVsTextView,Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED},System.String[],System.Int32[],System.Int32,System.Int32)">
+<summary>
+ Recolorize a set of lines
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.ColorizeLine(Microsoft.VisualStudio.FSharp.LanguageService.FSharpColorizer_DEPRECATED,System.Int32,System.String,System.Int32,System.UInt32[])">
+<summary>
+ Colorize a single line of text.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Privates.IsolateMarkerSite(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines,System.String)">
+<summary>
+ Find the given marker and return the line and column.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.Privates">
+<summary>
+ Private implementation details.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.Filenames.AreSame(System.String,System.String)">
+<summary>
+ Compare two file names to eachother.
+</summary>
+</member>
+<member name="T:Salsa.Salsa.MSBuild.BuildFlags">
+<summary>
+ Interesting properties and item lists that from typical MSBuild project files.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.GetFlagsAndSources(Microsoft.Build.Evaluation.Project,Salsa.Salsa.HostCompile)">
+<summary>
+ Compute the Flags and Sources 
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.GetFlagsAndSourcesFallback(Microsoft.Build.Evaluation.Project)">
+<summary>
+ Fallback for flags and sources. This is to handle the case in which the user has customized
+ the MSBuild so much that host compilation doesn&apos;t work/
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.GetMainOutputAssembly(System.String,System.String,System.String)">
+<summary>
+ Return the name of the main output assembly but don&apos;t build
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.Build(System.String,System.String,System.String,System.String)">
+<summary>
+ Build the given target on the given project. Return the name of the main output assembly.   
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.GetProject(System.String,System.String,System.String)">
+<summary>
+ Get the MSBuild project for the given project file.
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.SetGlobalProperty(Microsoft.Build.Evaluation.Project,System.String,System.String)">
+<summary>
+ Set a global property on the given project.    
+</summary>
+</member>
+<member name="M:Salsa.Salsa.MSBuild.GlobalEngine">
+<summary>
+ Use the global build engine if it knows the path to MSBuild.exe
+ Otherwise, make a new engine and point it at well-known version of MSBuild
+</summary>
+</member>
+<member name="T:Salsa.Salsa.MSBuild">
+<summary>
+ Methods for dealing with MSBuild project files. 
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.CheckGotoDefnResult(Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String}},Salsa.Salsa.OpenFile,Microsoft.VisualStudio.FSharp.LanguageService.GotoDefinitionResult_DEPRECATED)">
+<summary>
+ Checks that a goto definition result matches the expected value.
+ Expected = Some(identifierAtCursor, lineOfCodeAtCursor)
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.GotoDefnSuccess(System.String,System.String)">
+<summary>
+ Abbreviation for &apos;Some(ident, lineOfCode)&apos;
+</summary>
+</member>
+<member name="P:Salsa.VsOpsUtils.GotoDefnFailure">
+<summary>
+ Abbreviation for &apos;None&apos;, to indiciate a GotoDefn failure
+</summary>
+</member>
+<member name="P:Salsa.VsOpsUtils.DotCompletionAtEndOfMarker">
+<summary>
+ Gets the completion list as if you pressed &apos;.&apos; at the END of the marker.
+</summary>
+</member>
+<member name="P:Salsa.VsOpsUtils.DotCompletionAtStartOfMarker">
+<summary>
+ Gets the completion list as if you pressed &apos;.&apos; at the START of the marker.
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.DotCompletionAtMarker(Salsa.VsOpsUtils.SetMarkerPoint,Salsa.Salsa.OpenFile,System.String)">
+<summary>
+ Simulates pressing &apos;.&apos; at the mark and returns the completion list
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertCompListDoesNotContainAny(Salsa.Salsa.CompletionItem[],Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Verify the completion list does not contain any member in the list
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertCompListDoesNotContain(Salsa.Salsa.CompletionItem[],System.String)">
+<summary>
+ Verify the completion list does not contain a member with the given name
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertCompListContains(Salsa.Salsa.CompletionItem[],System.String)">
+<summary>
+ Verify that the given completion list contains a member with the given name
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertCompListIsEmpty(Salsa.Salsa.CompletionItem[])">
+<summary>
+ Verify the completion list is empty, typically for negative tests
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertNavigationContainsAll(Microsoft.VisualStudio.FSharp.LanguageService.DropDownMember[],System.Collections.Generic.IEnumerable{System.String})">
+<summary>
+ Verify that items obtained from the navigation bar contain all specified item
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertNavigationContains(Microsoft.VisualStudio.FSharp.LanguageService.DropDownMember[],System.String)">
+<summary>
+ Verify that items obtained from the navigation bar contain the specified item
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.AssertRegionListContains(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Tuple{System.Int32,System.Int32},System.Tuple{System.Int32,System.Int32}}},Microsoft.FSharp.Collections.FSharpList{Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion})">
+<summary>
+ Verify that items obtained from the navigation bar contain the specified item
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.CreateNamedSingleFileProject(Salsa.Salsa.VisualStudio,System.Tuple{System.String,System.String})">
+<summary>
+ Creates a single file project/solution where the lone file is named.
+</summary>
+</member>
+<member name="M:Salsa.VsOpsUtils.CreateSingleFileProject(Salsa.Salsa.VisualStudio,System.String)">
+<summary>
+ Creates a single file project/solution
+</summary>
+</member>
+<member name="T:Salsa.VsOpsUtils">
+<summary>
+ Utilities related to VsOps
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,172 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\fsharp\\vsintegration\\Vsix\\VisualFSharpTemplates\\VisualFSharpTemplates.csproj": {}
+  },
+  "projects": {
+    "E:\\fsharp\\vsintegration\\Vsix\\VisualFSharpTemplates\\VisualFSharpTemplates.csproj": {
+      "version": "16.5.0-dev",
+      "restore": {
+        "projectUniqueName": "E:\\fsharp\\vsintegration\\Vsix\\VisualFSharpTemplates\\VisualFSharpTemplates.csproj",
+        "projectName": "VisualFSharpTemplates",
+        "projectPath": "E:\\fsharp\\vsintegration\\Vsix\\VisualFSharpTemplates\\VisualFSharpTemplates.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages",
+        "outputPath": "E:\\fsharp\\artifacts\\obj\\VisualFSharpTemplates\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "E:\\fsharp\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/interactive-window/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-master-nightly/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
+          "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
+          "https://myget.org/F/vs-devcore/api/v3/index.json": {},
+          "https://myget.org/F/vs-editor/api/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vs-impl/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/azure-public/vside/_packaging/vssdk/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5-transport/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {},
+          "https://www.myget.org/F/fsharp-daily/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU5105"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.7.1, )"
+            },
+            "MicroBuild.Plugins.SwixBuild": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.147, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Build": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.Build.Framework": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.Build.Tasks.Core": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.Build.Utilities.Core": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.DotNet.Build.Tasks.VisualStudio": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta.20215.5, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-preview.2, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true
+            },
+            "Microsoft.SourceLink.Vsts.Git": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta2-19367-01, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VSSDK.BuildTools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.5.2044, )",
+              "autoReferenced": true
+            },
+            "System.Buffers": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Collections.Immutable": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "System.IO.Compression": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Memory": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "System.Reflection.Metadata": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "System.ValueTuple": {
+              "include": "Runtime, Compile, Build, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "XliffTasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0-beta.19252.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "E:\\fsharp\\.dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

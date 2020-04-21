@@ -1,0 +1,2 @@
+VSPackage.resx
+MenusAndCommands.vsct
