@@ -113,15 +113,16 @@ let rec fsiConfig =
     }
 
 // Create the console
-let fsiSession : FsiEvaluationSession = FsiEvaluationSession.Create (fsiConfig, [|"fsi.exe"|], Console.In, Console.Out, Console.Error, collectible=false, legacyReferenceResolver=legacyReferenceResolver)
+let fsiSession : FsiEvaluationSession = FsiEvaluationSession.Create (fsiConfig, [|"fsi.exe"; "/langversion:preview"|], Console.In, Console.Out, Console.Error, collectible=false, legacyReferenceResolver=legacyReferenceResolver)
 
 [<EntryPoint>]
 let main argv =
     let a = 
-        fsiSession.EvalInteraction """
+        fsiSession.EvalInteractionNonThrowing """
 #r "nuget: Akka"
 open Akka
 printfn "123"
         """
+    let b = a
     printfn "read: %s" <| Console.ReadLine() 
     0 // return an integer exit code
