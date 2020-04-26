@@ -175,7 +175,6 @@ Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSCore.fs
 Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSharp.Core.xlf\XlfSources.txt
 Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSharp.Core.xlf\UpdateXlf.lastrun
 Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\buildproperties.fs
-Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSharp.Core.fsprojAssemblyReference.cache
 Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSharp.Core.xlf\FSCore.cs.resx
 Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSharp.Core.xlf\FSCore.de.resx
 Z:\fsharp\artifacts\obj\FSharp.Core\Debug\net45\FSharp.Core.xlf\FSCore.es.resx

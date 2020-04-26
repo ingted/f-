@@ -185,7 +185,6 @@ Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Inter
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.xlf\XlfSources.txt
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.xlf\UpdateXlf.lastrun
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\buildproperties.fs
-Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.fsprojAssemblyReference.cache
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.xlf\InteractiveDependencyManager.cs.resx
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.xlf\InteractiveDependencyManager.de.resx
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.xlf\InteractiveDependencyManager.es.resx
@@ -247,3 +246,4 @@ Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\zh-Ha
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.fsproj.CopyComplete
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.dll
 Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.xml
+Z:\fsharp\artifacts\obj\Interactive.DependencyManager\Debug\netstandard2.0\Interactive.DependencyManager.fsprojAssemblyReference.cache

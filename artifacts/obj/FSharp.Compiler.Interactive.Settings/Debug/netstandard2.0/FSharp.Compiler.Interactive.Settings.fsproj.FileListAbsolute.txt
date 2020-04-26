@@ -246,3 +246,4 @@ Z:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.
 Z:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.fsproj.CopyComplete
 Z:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.dll
 Z:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xml
+Z:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.fsprojAssemblyReference.cache
