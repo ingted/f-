@@ -69,6 +69,11 @@
       <Project>{c94c257c-3c0a-4858-b5d8-d746498d1f08}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\src\fsharp\FSharp.Compiler.Interactive.Settings\FSharp.Compiler.Interactive.Settings.fsproj">
+      <Name>FSharp.Compiler.Interactive.Settings</Name>
+      <Project>{649fa588-f02e-457c-9fcf-87e46407481e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\src\fsharp\FSharp.Compiler.Private\FSharp.Compiler.Private.fsproj">
       <Name>FSharp.Compiler.Private</Name>
       <Project>{2e4d67b4-522d-4cf7-97e4-ba940f0b18f3}</Project>
