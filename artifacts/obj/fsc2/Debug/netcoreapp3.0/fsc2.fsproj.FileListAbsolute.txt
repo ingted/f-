@@ -1,0 +1,15 @@
+Z:\fsharp\artifacts\bin\fsc2\Debug\netcoreapp3.0\fsc2.exe
+Z:\fsharp\artifacts\bin\fsc2\Debug\netcoreapp3.0\fsc2.deps.json
+Z:\fsharp\artifacts\bin\fsc2\Debug\netcoreapp3.0\fsc2.runtimeconfig.json
+Z:\fsharp\artifacts\bin\fsc2\Debug\netcoreapp3.0\fsc2.runtimeconfig.dev.json
+Z:\fsharp\artifacts\bin\fsc2\Debug\netcoreapp3.0\fsc2.xml
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.xlf\XlfSources.txt
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.xlf\UpdateXlf.lastrun
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\buildproperties.fs
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.sourcelink.json
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.AssemblyInfoInputs.cache
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.AssemblyInfo.fs
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.exe
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.xml
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.genruntimeconfig.cache
+Z:\fsharp\artifacts\obj\fsc2\Debug\netcoreapp3.0\fsc2.fsprojAssemblyReference.cache

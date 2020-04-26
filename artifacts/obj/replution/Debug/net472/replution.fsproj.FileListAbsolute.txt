@@ -1,0 +1,3 @@
+Z:\fsharp\artifacts\obj\replution\Debug\net472\replution.xlf\XlfSources.txt
+Z:\fsharp\artifacts\obj\replution\Debug\net472\replution.xlf\UpdateXlf.lastrun
+Z:\fsharp\artifacts\obj\replution\Debug\net472\buildproperties.fs
