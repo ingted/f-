@@ -37,3 +37,16 @@ Z:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compil
 Z:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.fsproj.CopyComplete
 Z:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.dll
 Z:\fsharp\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.xml
+Z:\f-\artifacts\bin\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.dll
+Z:\f-\artifacts\bin\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.xml
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.xlf\XlfSources.txt
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.xlf\UpdateXlf.lastrun
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\buildproperties.fs
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.fsprojAssemblyReference.cache
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.sourcelink.json
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.InternalsVisibleTo.fs
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.AssemblyInfoInputs.cache
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.AssemblyInfo.fs
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.fsproj.CopyComplete
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.dll
+Z:\f-\artifacts\obj\FSharp.Compiler.Server.Shared\Debug\net472\FSharp.Compiler.Server.Shared.xml

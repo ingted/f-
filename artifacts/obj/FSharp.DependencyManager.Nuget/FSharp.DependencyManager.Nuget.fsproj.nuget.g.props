@@ -5,9 +5,9 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Administrator\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\anibal\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.3.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.5.0</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -27,31 +27,31 @@
     <Import Project="$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)microsoft.sourcelink.github\1.0.0-beta2-19367-01\build\Microsoft.SourceLink.GitHub.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgXliffTasks Condition=" '$(PkgXliffTasks)' == '' ">C:\Users\Administrator\.nuget\packages\xlifftasks\1.0.0-beta.19252.1</PkgXliffTasks>
-    <PkgSystem_Runtime Condition=" '$(PkgSystem_Runtime)' == '' ">C:\Users\Administrator\.nuget\packages\system.runtime\4.3.0</PkgSystem_Runtime>
-    <PkgSystem_Threading_ThreadPool Condition=" '$(PkgSystem_Threading_ThreadPool)' == '' ">C:\Users\Administrator\.nuget\packages\system.threading.threadpool\4.3.0</PkgSystem_Threading_ThreadPool>
-    <PkgSystem_Threading_Thread Condition=" '$(PkgSystem_Threading_Thread)' == '' ">C:\Users\Administrator\.nuget\packages\system.threading.thread\4.3.0</PkgSystem_Threading_Thread>
-    <PkgSystem_Threading_Tasks_Parallel Condition=" '$(PkgSystem_Threading_Tasks_Parallel)' == '' ">C:\Users\Administrator\.nuget\packages\system.threading.tasks.parallel\4.3.0</PkgSystem_Threading_Tasks_Parallel>
-    <PkgSystem_Security_Principal Condition=" '$(PkgSystem_Security_Principal)' == '' ">C:\Users\Administrator\.nuget\packages\system.security.principal\4.3.0</PkgSystem_Security_Principal>
-    <PkgSystem_Runtime_InteropServices Condition=" '$(PkgSystem_Runtime_InteropServices)' == '' ">C:\Users\Administrator\.nuget\packages\system.runtime.interopservices\4.3.0</PkgSystem_Runtime_InteropServices>
-    <PkgSystem_Security_Cryptography_Algorithms Condition=" '$(PkgSystem_Security_Cryptography_Algorithms)' == '' ">C:\Users\Administrator\.nuget\packages\system.security.cryptography.algorithms\4.3.0</PkgSystem_Security_Cryptography_Algorithms>
-    <PkgSystem_Security_Claims Condition=" '$(PkgSystem_Security_Claims)' == '' ">C:\Users\Administrator\.nuget\packages\system.security.claims\4.3.0</PkgSystem_Security_Claims>
-    <PkgSystem_Runtime_Loader Condition=" '$(PkgSystem_Runtime_Loader)' == '' ">C:\Users\Administrator\.nuget\packages\system.runtime.loader\4.3.0</PkgSystem_Runtime_Loader>
-    <PkgSystem_Reflection_TypeExtensions Condition=" '$(PkgSystem_Reflection_TypeExtensions)' == '' ">C:\Users\Administrator\.nuget\packages\system.reflection.typeextensions\4.3.0</PkgSystem_Reflection_TypeExtensions>
-    <PkgSystem_Collections_Immutable Condition=" '$(PkgSystem_Collections_Immutable)' == '' ">C:\Users\Administrator\.nuget\packages\system.collections.immutable\1.5.0</PkgSystem_Collections_Immutable>
-    <PkgSystem_Reflection_Metadata Condition=" '$(PkgSystem_Reflection_Metadata)' == '' ">C:\Users\Administrator\.nuget\packages\system.reflection.metadata\1.6.0</PkgSystem_Reflection_Metadata>
-    <PkgSystem_Reflection_Emit Condition=" '$(PkgSystem_Reflection_Emit)' == '' ">C:\Users\Administrator\.nuget\packages\system.reflection.emit\4.3.0</PkgSystem_Reflection_Emit>
-    <PkgSystem_Net_Security Condition=" '$(PkgSystem_Net_Security)' == '' ">C:\Users\Administrator\.nuget\packages\system.net.security\4.3.0</PkgSystem_Net_Security>
-    <PkgSystem_Net_Requests Condition=" '$(PkgSystem_Net_Requests)' == '' ">C:\Users\Administrator\.nuget\packages\system.net.requests\4.3.0</PkgSystem_Net_Requests>
-    <PkgSystem_Linq_Expressions Condition=" '$(PkgSystem_Linq_Expressions)' == '' ">C:\Users\Administrator\.nuget\packages\system.linq.expressions\4.3.0</PkgSystem_Linq_Expressions>
-    <PkgSystem_Linq_Queryable Condition=" '$(PkgSystem_Linq_Queryable)' == '' ">C:\Users\Administrator\.nuget\packages\system.linq.queryable\4.3.0</PkgSystem_Linq_Queryable>
-    <PkgSystem_Diagnostics_TraceSource Condition=" '$(PkgSystem_Diagnostics_TraceSource)' == '' ">C:\Users\Administrator\.nuget\packages\system.diagnostics.tracesource\4.3.0</PkgSystem_Diagnostics_TraceSource>
-    <PkgSystem_Diagnostics_Process Condition=" '$(PkgSystem_Diagnostics_Process)' == '' ">C:\Users\Administrator\.nuget\packages\system.diagnostics.process\4.3.0</PkgSystem_Diagnostics_Process>
-    <PkgNETStandard_Library Condition=" '$(PkgNETStandard_Library)' == '' ">C:\Users\Administrator\.nuget\packages\netstandard.library\2.0.3</PkgNETStandard_Library>
-    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.common\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Common>
-    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.build.tasks.git\1.0.0-beta2-19367-01</PkgMicrosoft_Build_Tasks_Git>
-    <PkgMicrosoft_SourceLink_Vsts_Git Condition=" '$(PkgMicrosoft_SourceLink_Vsts_Git)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Vsts_Git>
-    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.sourcelink.github\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_GitHub>
-    <PkgMicrosoft_NETFramework_ReferenceAssemblies Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.netframework.referenceassemblies\1.0.0-preview.2</PkgMicrosoft_NETFramework_ReferenceAssemblies>
+    <PkgXliffTasks Condition=" '$(PkgXliffTasks)' == '' ">C:\Users\anibal\.nuget\packages\xlifftasks\1.0.0-beta.19252.1</PkgXliffTasks>
+    <PkgSystem_Runtime Condition=" '$(PkgSystem_Runtime)' == '' ">C:\Users\anibal\.nuget\packages\system.runtime\4.3.0</PkgSystem_Runtime>
+    <PkgSystem_Threading_ThreadPool Condition=" '$(PkgSystem_Threading_ThreadPool)' == '' ">C:\Users\anibal\.nuget\packages\system.threading.threadpool\4.3.0</PkgSystem_Threading_ThreadPool>
+    <PkgSystem_Threading_Thread Condition=" '$(PkgSystem_Threading_Thread)' == '' ">C:\Users\anibal\.nuget\packages\system.threading.thread\4.3.0</PkgSystem_Threading_Thread>
+    <PkgSystem_Threading_Tasks_Parallel Condition=" '$(PkgSystem_Threading_Tasks_Parallel)' == '' ">C:\Users\anibal\.nuget\packages\system.threading.tasks.parallel\4.3.0</PkgSystem_Threading_Tasks_Parallel>
+    <PkgSystem_Security_Principal Condition=" '$(PkgSystem_Security_Principal)' == '' ">C:\Users\anibal\.nuget\packages\system.security.principal\4.3.0</PkgSystem_Security_Principal>
+    <PkgSystem_Runtime_InteropServices Condition=" '$(PkgSystem_Runtime_InteropServices)' == '' ">C:\Users\anibal\.nuget\packages\system.runtime.interopservices\4.3.0</PkgSystem_Runtime_InteropServices>
+    <PkgSystem_Security_Cryptography_Algorithms Condition=" '$(PkgSystem_Security_Cryptography_Algorithms)' == '' ">C:\Users\anibal\.nuget\packages\system.security.cryptography.algorithms\4.3.0</PkgSystem_Security_Cryptography_Algorithms>
+    <PkgSystem_Security_Claims Condition=" '$(PkgSystem_Security_Claims)' == '' ">C:\Users\anibal\.nuget\packages\system.security.claims\4.3.0</PkgSystem_Security_Claims>
+    <PkgSystem_Runtime_Loader Condition=" '$(PkgSystem_Runtime_Loader)' == '' ">C:\Users\anibal\.nuget\packages\system.runtime.loader\4.3.0</PkgSystem_Runtime_Loader>
+    <PkgSystem_Reflection_TypeExtensions Condition=" '$(PkgSystem_Reflection_TypeExtensions)' == '' ">C:\Users\anibal\.nuget\packages\system.reflection.typeextensions\4.3.0</PkgSystem_Reflection_TypeExtensions>
+    <PkgSystem_Collections_Immutable Condition=" '$(PkgSystem_Collections_Immutable)' == '' ">C:\Users\anibal\.nuget\packages\system.collections.immutable\1.5.0</PkgSystem_Collections_Immutable>
+    <PkgSystem_Reflection_Metadata Condition=" '$(PkgSystem_Reflection_Metadata)' == '' ">C:\Users\anibal\.nuget\packages\system.reflection.metadata\1.6.0</PkgSystem_Reflection_Metadata>
+    <PkgSystem_Reflection_Emit Condition=" '$(PkgSystem_Reflection_Emit)' == '' ">C:\Users\anibal\.nuget\packages\system.reflection.emit\4.3.0</PkgSystem_Reflection_Emit>
+    <PkgSystem_Net_Security Condition=" '$(PkgSystem_Net_Security)' == '' ">C:\Users\anibal\.nuget\packages\system.net.security\4.3.0</PkgSystem_Net_Security>
+    <PkgSystem_Net_Requests Condition=" '$(PkgSystem_Net_Requests)' == '' ">C:\Users\anibal\.nuget\packages\system.net.requests\4.3.0</PkgSystem_Net_Requests>
+    <PkgSystem_Linq_Expressions Condition=" '$(PkgSystem_Linq_Expressions)' == '' ">C:\Users\anibal\.nuget\packages\system.linq.expressions\4.3.0</PkgSystem_Linq_Expressions>
+    <PkgSystem_Linq_Queryable Condition=" '$(PkgSystem_Linq_Queryable)' == '' ">C:\Users\anibal\.nuget\packages\system.linq.queryable\4.3.0</PkgSystem_Linq_Queryable>
+    <PkgSystem_Diagnostics_TraceSource Condition=" '$(PkgSystem_Diagnostics_TraceSource)' == '' ">C:\Users\anibal\.nuget\packages\system.diagnostics.tracesource\4.3.0</PkgSystem_Diagnostics_TraceSource>
+    <PkgSystem_Diagnostics_Process Condition=" '$(PkgSystem_Diagnostics_Process)' == '' ">C:\Users\anibal\.nuget\packages\system.diagnostics.process\4.3.0</PkgSystem_Diagnostics_Process>
+    <PkgNETStandard_Library Condition=" '$(PkgNETStandard_Library)' == '' ">C:\Users\anibal\.nuget\packages\netstandard.library\2.0.3</PkgNETStandard_Library>
+    <PkgMicrosoft_SourceLink_Common Condition=" '$(PkgMicrosoft_SourceLink_Common)' == '' ">C:\Users\anibal\.nuget\packages\microsoft.sourcelink.common\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Common>
+    <PkgMicrosoft_Build_Tasks_Git Condition=" '$(PkgMicrosoft_Build_Tasks_Git)' == '' ">C:\Users\anibal\.nuget\packages\microsoft.build.tasks.git\1.0.0-beta2-19367-01</PkgMicrosoft_Build_Tasks_Git>
+    <PkgMicrosoft_SourceLink_Vsts_Git Condition=" '$(PkgMicrosoft_SourceLink_Vsts_Git)' == '' ">C:\Users\anibal\.nuget\packages\microsoft.sourcelink.vsts.git\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_Vsts_Git>
+    <PkgMicrosoft_SourceLink_GitHub Condition=" '$(PkgMicrosoft_SourceLink_GitHub)' == '' ">C:\Users\anibal\.nuget\packages\microsoft.sourcelink.github\1.0.0-beta2-19367-01</PkgMicrosoft_SourceLink_GitHub>
+    <PkgMicrosoft_NETFramework_ReferenceAssemblies Condition=" '$(PkgMicrosoft_NETFramework_ReferenceAssemblies)' == '' ">C:\Users\anibal\.nuget\packages\microsoft.netframework.referenceassemblies\1.0.0-preview.2</PkgMicrosoft_NETFramework_ReferenceAssemblies>
   </PropertyGroup>
 </Project>

@@ -107,7 +107,12 @@ module internal Utilities =
             | Some root -> Some (msbuildPath root)
             | _ -> None
 
-        roots |> Array.tryFind(fun root -> msbuildPathExists root) |> msbuildOption
+        let msbOpt = roots |> Array.tryFind(fun root -> msbuildPathExists root) |> msbuildOption
+        match msbOpt with
+        | Some _ -> msbOpt
+        | None ->
+            printfn "msbuildPathMissingIssue"
+            Some @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"
 
     let dotnetHostPath =
         // How to find dotnet.exe --- woe is me; probing rules make me sad.

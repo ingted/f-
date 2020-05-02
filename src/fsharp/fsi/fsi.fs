@@ -2712,9 +2712,11 @@ type FsiEvaluationSession (fsi: FsiEvaluationSessionHostConfig, argv:string[], i
         // is not safe to call concurrently.
         let ctok = AssumeCompilationThreadWithoutEvidence()
         let cancellationToken = defaultArg cancellationToken CancellationToken.None
-        fsiInteractionProcessor.EvalInteraction(ctok, sourceText, dummyScriptFileName, errorLogger, cancellationToken)
-        |> commitResult
-        |> ignore
+        let cmr = 
+            fsiInteractionProcessor.EvalInteraction(ctok, sourceText, dummyScriptFileName, errorLogger, cancellationToken)
+            |> commitResult
+        printfn "cmr: %A" cmr //anibal, remove this step
+        cmr |> ignore
 
     member x.EvalInteractionNonThrowing(sourceText, ?cancellationToken) =
         // Explanation: When the user of the FsiInteractiveSession object calls this method, the 

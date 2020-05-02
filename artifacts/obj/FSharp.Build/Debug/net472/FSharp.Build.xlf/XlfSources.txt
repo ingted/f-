@@ -1,1 +1,1 @@
-Z:\fsharp\artifacts\obj\FSharp.Build\Debug\net472\FSBuild.resx
+Z:\f-\artifacts\obj\FSharp.Build\Debug\net472\FSBuild.resx
