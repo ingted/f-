@@ -1,1 +1,1 @@
-Z:\fsharp\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSInteractiveSettings.resx
+Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSInteractiveSettings.resx

@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information.
 
 /// Generate the hash/compare functions we add to user-defined types by default.
-module internal FSharp.Compiler.AugmentWithHashCompare 
+module FSharp.Compiler.AugmentWithHashCompare 
 
 open FSharp.Compiler 
 open FSharp.Compiler.TypedTree

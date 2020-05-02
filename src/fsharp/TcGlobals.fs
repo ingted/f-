@@ -6,7 +6,7 @@
 /// into the compiler.  This lets the compiler perform particular optimizations
 /// for these types and values, for example emitting optimized calls for
 /// comparison and hashing functions.  
-module internal FSharp.Compiler.TcGlobals
+module FSharp.Compiler.TcGlobals
 
 open System.Collections.Generic
 open System.Diagnostics
@@ -25,8 +25,8 @@ open FSharp.Compiler.TypedTreeBasics
 
 open Internal.Utilities
 
-let internal DummyFileNameForRangesWithoutASpecificLocation = startupFileName
-let private envRange = rangeN DummyFileNameForRangesWithoutASpecificLocation 0
+let DummyFileNameForRangesWithoutASpecificLocation = startupFileName
+let envRange = rangeN DummyFileNameForRangesWithoutASpecificLocation 0
 
 /// Represents an intrinsic value from FSharp.Core known to the compiler
 [<NoEquality; NoComparison; StructuredFormatDisplay("{DebugText}")>]
@@ -175,7 +175,7 @@ let tname_IAsyncResult = "System.IAsyncResult"
 // Table of all these "globals"
 //------------------------------------------------------------------------- 
 
-type public TcGlobals(compilingFslib: bool, ilg:ILGlobals, fslibCcu: CcuThunk, directoryToResolveRelativePaths, 
+type public TcGlobalsTcGlobals(compilingFslib: bool, ilg:ILGlobals, fslibCcu: CcuThunk, directoryToResolveRelativePaths, 
                       mlCompatibility: bool, isInteractive:bool, 
                       // The helper to find system types amongst referenced DLLs
                       tryFindSysTypeCcu, 
@@ -1497,6 +1497,8 @@ type public TcGlobals(compilingFslib: bool, ilg:ILGlobals, fslibCcu: CcuThunk, d
   member __.CompilerGeneratedAttribute = mkCompilerGeneratedAttribute ()
 
   member __.eraseClassUnionDef = EraseUnions.mkClassUnionDef (addMethodGeneratedAttrs, addPropertyGeneratedAttrs, addPropertyNeverAttrs, addFieldGeneratedAttrs, addFieldNeverAttrs, mkDebuggerTypeProxyAttribute) ilg
+
+type TcGlobals = TcGlobalsTcGlobals
 
 #if DEBUG
 // This global is only used during debug output 

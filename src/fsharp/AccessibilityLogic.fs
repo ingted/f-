@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.  See License.txt in the project root for license information.
 
 /// The basic logic of private/internal/protected/InternalsVisibleTo/public accessibility
-module internal FSharp.Compiler.AccessibilityLogic
+module FSharp.Compiler.AccessibilityLogic
 
 open FSharp.Compiler.AbstractIL.IL 
 open FSharp.Compiler 
@@ -64,7 +64,7 @@ let IsAccessible ad taccess =
         List.exists (canAccessFrom taccess) cpaths
 
 /// Indicates if an IL member is accessible (ignoring its enclosing type)
-let private IsILMemberAccessible g amap m (tcrefOfViewedItem : TyconRef) ad access = 
+let IsILMemberAccessible g amap m (tcrefOfViewedItem : TyconRef) ad access = 
     match ad with 
     | AccessibleFromEverywhere -> 
             access = ILMemberAccess.Public

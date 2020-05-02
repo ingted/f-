@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All Rights Reserved. See License.txt in the project root for license information.
   
 /// Defines the typed abstract syntax intermediate representation used throughout the F# compiler.
-module internal rec FSharp.Compiler.TypedTree 
+module rec FSharp.Compiler.TypedTree 
 
 open System
 open System.Collections.Generic 

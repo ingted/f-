@@ -1,22 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\fsharp\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj": {}
+    "Z:\\f-\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj": {}
   },
   "projects": {
-    "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+    "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
       "version": "4.7.0-dev",
       "restore": {
-        "projectUniqueName": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj",
+        "projectUniqueName": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj",
         "projectName": "FSharp.Core",
-        "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "Z:\\fsharp\\artifacts\\obj\\FSharp.Core\\",
+        "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\f-\\artifacts\\obj\\FSharp.Core\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "Z:\\fsharp\\NuGet.Config",
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "Z:\\f-\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -172,19 +172,19 @@
         }
       }
     },
-    "Z:\\fsharp\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj": {
+    "Z:\\f-\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj": {
       "version": "10.8.1-dev",
       "restore": {
-        "projectUniqueName": "Z:\\fsharp\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj",
+        "projectUniqueName": "Z:\\f-\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj",
         "projectName": "Interactive.DependencyManager",
-        "projectPath": "Z:\\fsharp\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "Z:\\fsharp\\artifacts\\obj\\Interactive.DependencyManager\\",
+        "projectPath": "Z:\\f-\\src\\fsharp\\Interactive.DependencyManager\\Interactive.DependencyManager.fsproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\f-\\artifacts\\obj\\Interactive.DependencyManager\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "Z:\\fsharp\\NuGet.Config",
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "Z:\\f-\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,15 +213,15 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
-                "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
+              "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
               }
             }
           },
           "netstandard2.0": {
             "projectReferences": {
-              "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
-                "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
+              "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
               }
             }
           }

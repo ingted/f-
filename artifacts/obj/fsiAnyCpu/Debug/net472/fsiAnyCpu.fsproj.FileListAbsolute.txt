@@ -29,3 +29,17 @@ Z:\fsharp\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.AssemblyInfo.fs
 Z:\fsharp\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.fsproj.CopyComplete
 Z:\fsharp\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.exe
 Z:\fsharp\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.xml
+Z:\f-\artifacts\bin\fsiAnyCpu\Debug\net472\fsiAnyCpu.exe.config
+Z:\f-\artifacts\bin\fsiAnyCpu\Debug\net472\fsiAnyCpu.exe
+Z:\f-\artifacts\bin\fsiAnyCpu\Debug\net472\fsiAnyCpu.xml
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.xlf\XlfSources.txt
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.xlf\UpdateXlf.lastrun
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\buildproperties.fs
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.fsprojAssemblyReference.cache
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.exe.config
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.sourcelink.json
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.AssemblyInfoInputs.cache
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.AssemblyInfo.fs
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.fsproj.CopyComplete
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.exe
+Z:\f-\artifacts\obj\fsiAnyCpu\Debug\net472\fsiAnyCpu.xml

@@ -4660,21 +4660,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\anibal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "10.8.1-dev",
     "restore": {
-      "projectUniqueName": "Z:\\fsharp\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj",
+      "projectUniqueName": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj",
       "projectName": "FSharp.Compiler.Interactive.Settings",
-      "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "Z:\\fsharp\\artifacts\\obj\\FSharp.Compiler.Interactive.Settings\\",
+      "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj",
+      "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+      "outputPath": "Z:\\f-\\artifacts\\obj\\FSharp.Compiler.Interactive.Settings\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "Z:\\fsharp\\NuGet.Config",
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "Z:\\f-\\NuGet.Config",
+        "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4703,15 +4703,15 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
-              "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
+            "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+              "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
             }
           }
         },
         "netstandard2.0": {
           "projectReferences": {
-            "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
-              "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
+            "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+              "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
             }
           }
         }

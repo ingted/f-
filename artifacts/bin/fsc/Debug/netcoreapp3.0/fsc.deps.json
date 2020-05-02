@@ -1377,7 +1377,7 @@
     "System.Buffers/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dBR/DLG4WX+V2eVoGOurLTjeFomIhZ0uNICimuZBq2pvM+i7oY4gf7BE5VVwevmwD8DA53vyVMXXIwpmDcZndA==",
+      "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "path": "system.buffers/4.5.0",
       "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
@@ -1755,7 +1755,7 @@
     "System.Security.Principal/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-v7SQaGz5huJ7n3lV4gtq8v3M1S6rTS90zPmpKF5UALPISyHFRnNFR3gJd41MwI2/8JcDG6pIP2R8XmPMJ/KE8g==",
+      "sha512": "sha512-I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
       "path": "system.security.principal/4.3.0",
       "hashPath": "system.security.principal.4.3.0.nupkg.sha512"
     },

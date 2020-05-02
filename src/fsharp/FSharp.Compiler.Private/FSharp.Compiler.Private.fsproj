@@ -715,9 +715,9 @@
     <EmbeddedText Include="..\fsi\FSIstrings.txt">
       <Link>FSIstrings.txt</Link>
     </EmbeddedText>
-    <Compile Include="..\fsi\fsi.fsi">
+    <!--<Compile Include="..\fsi\fsi.fsi">
       <Link>InteractiveSession/fsi.fsi</Link>
-    </Compile>
+    </Compile>-->
     <Compile Include="..\fsi\fsi.fs">
       <Link>InteractiveSession/fsi.fs</Link>
     </Compile>

@@ -4415,11 +4415,12 @@
       ]
     },
     "System.Security.Principal/4.3.0": {
-      "sha512": "v7SQaGz5huJ7n3lV4gtq8v3M1S6rTS90zPmpKF5UALPISyHFRnNFR3gJd41MwI2/8JcDG6pIP2R8XmPMJ/KE8g==",
+      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
       "type": "package",
       "path": "system.security.principal/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4940,21 +4941,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\anibal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "4.7.0-dev",
     "restore": {
-      "projectUniqueName": "Z:\\fsharp\\src\\fsharp\\FSharp.DependencyManager.Nuget\\FSharp.DependencyManager.Nuget.fsproj",
+      "projectUniqueName": "Z:\\f-\\src\\fsharp\\FSharp.DependencyManager.Nuget\\FSharp.DependencyManager.Nuget.fsproj",
       "projectName": "FSharp.DependencyManager.Nuget",
-      "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.DependencyManager.Nuget\\FSharp.DependencyManager.Nuget.fsproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "Z:\\fsharp\\artifacts\\obj\\FSharp.DependencyManager.Nuget\\",
+      "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.DependencyManager.Nuget\\FSharp.DependencyManager.Nuget.fsproj",
+      "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+      "outputPath": "Z:\\f-\\artifacts\\obj\\FSharp.DependencyManager.Nuget\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "Z:\\fsharp\\NuGet.Config",
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "Z:\\f-\\NuGet.Config",
+        "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4982,8 +4983,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
-              "projectPath": "Z:\\fsharp\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
+            "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+              "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
             }
           }
         }
