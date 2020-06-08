@@ -268,7 +268,6 @@ Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FS
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xlf\XlfSources.txt
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xlf\UpdateXlf.lastrun
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\buildproperties.fs
-Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.fsprojAssemblyReference.cache
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xlf\FSInteractiveSettings.cs.resx
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xlf\FSInteractiveSettings.de.resx
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xlf\FSInteractiveSettings.es.resx
@@ -330,3 +329,4 @@ Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\zh
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.fsproj.CopyComplete
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.dll
 Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.xml
+Z:\f-\artifacts\obj\FSharp.Compiler.Interactive.Settings\Debug\netstandard2.0\FSharp.Compiler.Interactive.Settings.fsprojAssemblyReference.cache

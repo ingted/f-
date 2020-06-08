@@ -28,7 +28,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -161,7 +160,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -391,7 +389,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -604,7 +601,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -758,7 +754,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -879,7 +874,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -994,7 +988,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -1374,7 +1367,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -1463,7 +1455,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -1630,7 +1621,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -1829,7 +1819,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -1930,7 +1919,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -1948,8 +1936,17 @@
               "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj"
               },
+              "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj"
+              },
               "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj"
+              },
+              "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj"
+              },
+              "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
               },
               "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
@@ -1964,11 +1961,20 @@
               "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj"
               },
+              "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Interactive.Settings\\FSharp.Compiler.Interactive.Settings.fsproj"
+              },
+              "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj"
+              },
               "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Private\\FSharp.Compiler.Private.fsproj"
               },
               "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Server.Shared\\FSharp.Compiler.Server.Shared.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Compiler.Server.Shared\\FSharp.Compiler.Server.Shared.fsproj"
+              },
+              "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
+                "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
               },
               "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj": {
                 "projectPath": "Z:\\f-\\src\\fsharp\\FSharp.Core\\FSharp.Core.fsproj"
@@ -2158,7 +2164,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},
@@ -2494,7 +2499,6 @@
           "https://dotnet.myget.org/F/roslyn-tools/api/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
           "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
           "https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev": {},
           "https://myget.org/F/roslyn_concord/api/v3/index.json": {},
           "https://myget.org/F/vs-devcore/api/v3/index.json": {},

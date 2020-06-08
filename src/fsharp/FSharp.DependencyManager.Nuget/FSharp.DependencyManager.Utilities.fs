@@ -112,6 +112,7 @@ module internal Utilities =
         | Some _ -> msbOpt
         | None ->
             printfn "msbuildPathMissingIssue"
+            //failwith "msbuildPathMissingIssue"
             Some @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"
 
     let dotnetHostPath =
