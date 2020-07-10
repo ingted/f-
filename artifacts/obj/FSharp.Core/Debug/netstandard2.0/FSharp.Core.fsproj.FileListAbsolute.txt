@@ -316,4 +316,3 @@ Z:\f-\artifacts\obj\FSharp.Core\Debug\netstandard2.0\zh-Hant\FSharp.Core.resourc
 Z:\f-\artifacts\obj\FSharp.Core\Debug\netstandard2.0\zh-Hant\FSharp.Core.resources.dll
 Z:\f-\artifacts\obj\FSharp.Core\Debug\netstandard2.0\FSharp.Core.dll
 Z:\f-\artifacts\obj\FSharp.Core\Debug\netstandard2.0\FSharp.Core.xml
-Z:\f-\artifacts\obj\FSharp.Core\Debug\netstandard2.0\FSharp.Core.fsprojAssemblyReference.cache
